@@ -4253,6 +4253,88 @@
       "Top with ginger beer and stir.",
       "Garnish with lime wedge."
     ]
+  },
+  {
+    "id": 215,
+    "name": "Pineapple Paper Plane",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Fruity", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Pineapple+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Pineapple Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until well chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a small pineapple wedge or dehydrated slice."
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Spiced Maple Paper Plane",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Spiced", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f97316/111111?text=Spiced+Maple+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Maple Syrup",
+      "Dash of Cinnamon"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with a lemon twist dusted lightly with cinnamon."
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Tropical Rum Paper Plane",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Tropical", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Tropical+Rum+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Aged Rum",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime wheel or dried pineapple."
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Smoky Mezcal Paper Plane",
+    "mainLiquor": ["Mezcal", "Liqueur"],
+    "flavor": ["Smoky", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Smoky+Mezcal+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Mezcal",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake with ice until well chilled.",
+      "Strain into coupe glass.",
+      "Garnish with a thin orange peel twist."
+    ]
   }
 ]
 
