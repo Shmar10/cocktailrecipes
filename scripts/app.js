@@ -1,5 +1,8 @@
 // app.js — Cocktail Finder (Search-first design, no "Main Liquor" filter)
 
+// Safety net: ensure global allRecipes exists to avoid early crash
+window.allRecipes = Array.isArray(window.allRecipes) ? window.allRecipes : [];
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Cocktail Finder script loaded (final version)");
 
