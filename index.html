@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cocktail Finder</title>
+  <meta name="description" content="Filter cocktails by base spirit, flavor, difficulty, and glassware." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="antialiased text-slate-800 bg-slate-50" data-js-enabled="false">
+  <div class="min-h-screen w-full flex flex-col max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+    <header class="mb-4 md:mb-6 flex-shrink-0">
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Cocktail Finder</h1>
+      <p class="text-base md:text-lg text-slate-600 mt-1">Find your perfect drink.</p>
+    </header>
+
+    <div class="flex flex-col md:flex-row flex-1 min-h-0">
+      <aside id="desktop-filter-panel" class="hidden md:block w-full md:w-1/3 lg:w-1/4 xl:w-1/5 pr-6 flex-shrink-0">
+        <div class="md:sticky md:top-6">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold text-slate-900">Filters</h2>
+            <button id="clear-filters-desktop" class="text-sm font-medium text-blue-600 hover:text-blue-800">Clear All</button>
+          </div>
+
+          <div id="desktop-search-container" class="mb-4">
+            <label for="search" class="text-sm font-semibold text-slate-900 mb-2 block">Search</label>
+            <div class="relative">
+              <input type="text" id="search" placeholder="e.g. 'margarita' or 'lime'" class="w-full pl-10 pr-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" aria-hidden="true">
+                <i data-lucide="search" class="w-5 h-5"></i>
+              </span>
+            </div>
+          </div>
+
+          <div id="filter-accordions-desktop" class="space-y-2 border-t border-slate-200 pt-2">
+            <div class="border-b border-slate-200 py-2">
+              <button class="accordion-button w-full flex justify-between items-center text-left font-semibold text-slate-900" aria-expanded="true">
+                <span>Main Liquor</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 accordion-icon" aria-hidden="true"></i>
+              </button>
+              <div class="accordion-content pt-3 space-y-2" style="max-height: 500px;">
+                <div id="filter-liquor" class="space-y-2">
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Whiskey" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Whiskey</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Gin" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Gin</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Rum" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Rum</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Vodka" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Vodka</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Tequila" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Tequila</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Bourbon" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Bourbon</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Aperol" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Aperol</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Prosecco" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Prosecco</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Champagne" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Champagne</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Brandy" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Brandy</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Liqueur" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Liqueur</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Mezcal" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Mezcal</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-slate-200 py-2">
+              <button class="accordion-button w-full flex justify-between items-center text-left font-semibold text-slate-900" aria-expanded="false">
+                <span>Flavor Profile</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 accordion-icon" aria-hidden="true"></i>
+              </button>
+              <div class="accordion-content pt-3 space-y-2">
+                <div id="filter-flavor" class="space-y-2">
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Sweet" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Sweet</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Sour" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Sour</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Strong" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Strong</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Refreshing" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Refreshing</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-slate-200 py-2">
+              <button class="accordion-button w-full flex justify-between items-center text-left font-semibold text-slate-900" aria-expanded="false">
+                <span>Difficulty</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 accordion-icon" aria-hidden="true"></i>
+              </button>
+              <div class="accordion-content pt-3 space-y-2">
+                <div id="filter-difficulty" class="space-y-2">
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Easy" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Easy</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Medium" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Medium</span></label>
+                  <label class="flex items-center gap-2 text-slate-700 cursor-pointer"><input type="checkbox" value="Advanced" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>Advanced</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-slate-200 py-2">
+              <button class="accordion-button w-full flex justify-between items-center text-left font-semibold text-slate-900" aria-expanded="false">
+                <span>Glassware</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 accordion-icon" aria-hidden="true"></i>
+              </button>
+              <div class="accordion-content pt-3 space-y-2">
+                <div id="filter-glassware-options" class="space-y-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <button id="show-recipes-desktop" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md mt-6">
+            Show Recipes
+          </button>
+        </div>
+      </aside>
+
+      <main class="flex-1 flex flex-col min-h-0 min-w-0 md:pl-6">
+        <button id="mobile-filter-button" class="md:hidden w-full bg-slate-800 text-white font-semibold py-3 rounded-lg hover:bg-slate-900 transition-colors shadow-md mb-4 flex items-center justify-center gap-2">
+          <i data-lucide="filter" class="w-5 h-5" aria-hidden="true"></i>
+          <span>Show Filters</span>
+        </button>
+
+        <div id="recipe-grid-container" class="flex-1 overflow-y-auto bg-slate-100 p-4 rounded-lg border border-slate-200">
+          <div id="recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" aria-live="polite" aria-busy="false">
+          </div>
+          <div id="no-results" class="hidden text-center text-slate-500 p-10">
+            <p class="text-lg font-medium">No recipes found.</p>
+            <p>Try adjusting your filters or clearing them to see all recipes.</p>
+          </div>
+          <div id="initial-message" class="text-center text-slate-500 p-10">
+            <p class="text-lg font-medium">Select your filters and click "Show Recipes" to begin.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="filter-modal-backdrop" class="fixed inset-0 bg-black/50 z-40 hidden md:hidden"></div>
+  <div id="filter-modal" class="fixed top-0 left-0 w-4/5 max-w-sm h-full bg-white z-50 shadow-xl overflow-y-auto hidden md:hidden" role="dialog" aria-modal="true" aria-label="Filters"></div>
+
+  <template id="recipe-card-template">
+    <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 flex flex-col">
+      <img class="w-full h-40 object-cover" src="" alt="" />
+      <div class="p-5 flex flex-col flex-1">
+        <h3 class="text-xl font-bold text-slate-900 mb-2"></h3>
+        <div class="flex flex-wrap gap-2 mb-4"></div>
+        <div class="mb-4">
+          <h4 class="font-semibold text-slate-800 mb-1">Ingredients:</h4>
+          <ul class="list-disc list-inside text-slate-600 text-sm space-y-1"></ul>
+        </div>
+        <div class="mt-auto">
+          <h4 class="font-semibold text-slate-800 mb-1">Instructions:</h4>
+          <ol class="list-decimal list-inside text-slate-600 text-sm space-y-1"></ol>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script defer src="./scripts/app.js"></script>
+</body>
+</html>

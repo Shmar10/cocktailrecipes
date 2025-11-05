@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Margarita",
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
+    "difficulty": "Easy",
+    "glassware": "Margarita Glass",
+    "image": "https://placehold.co/600x400/90ee90/ffffff?text=Margarita",
+    "ingredients": [
+      "2 oz Tequila (Blanco)",
+      "1 oz Fresh Lime Juice",
+      "1 oz Cointreau (or triple sec)",
+      "Salt (for rim)"
+    ],
+    "instructions": [
+      "Rim a margarita glass with salt.",
+      "Add tequila, lime juice, and Cointreau to a shaker with ice.",
+      "Shake well for 15\u201320 seconds until chilled.",
+      "Strain into the prepared glass over fresh ice."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Old Fashioned",
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f59e0b/ffffff?text=Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "1 sugar cube (or 1/4 oz simple syrup)",
+      "2\u20133 dashes Angostura bitters",
+      "Orange peel"
+    ],
+    "instructions": [
+      "Muddle sugar and bitters with a splash of water in a rocks glass (skip if using simple).",
+      "Add bourbon and large ice.",
+      "Stir 15\u201320 seconds and express orange peel over the glass."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Aperol Spritz",
+    "mainLiquor": [
+      "Aperol",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Spritz",
+    "ingredients": [
+      "3 oz Prosecco",
+      "2 oz Aperol",
+      "1 oz Soda water",
+      "Orange slice"
+    ],
+    "instructions": [
+      "Fill a wine glass with ice.",
+      "Add Prosecco, Aperol, then a splash of soda.",
+      "Garnish with an orange slice."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Moscow Mule",
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sour"
+    ],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/10b981/ffffff?text=Moscow+Mule",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.75 oz Fresh lime juice",
+      "4 oz Ginger beer"
+    ],
+    "instructions": [
+      "Build in a copper mug over ice.",
+      "Add vodka and lime, top with ginger beer, quick stir."
+    ]
+  }
+]
