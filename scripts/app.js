@@ -23,6 +23,11 @@
     });
   }
 
+    document.addEventListener("recipes-loaded", () => {
+    populateGlasswareFilter(desktopGlasswareContainer, window.allRecipes || []);
+  });
+
+
   function populateGlasswareFilter(container, recipes) {
     if (!container || !Array.isArray(recipes)) return;
     const uniq = [...new Set(recipes.map((r) => r.glassware).filter(Boolean))].sort();
