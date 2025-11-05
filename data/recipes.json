@@ -4335,6 +4335,28 @@
       "Strain into coupe glass.",
       "Garnish with a thin orange peel twist."
     ]
-  }
+  },
+  {
+      "id": 219,
+      "name": "Vegan Bourbon Flip (Aquafaba)",
+      "mainLiquor": ["Bourbon"],
+  "flavor": ["Rich","Sweet","Frothy"],
+  "difficulty": "Advanced",
+  "glassware": "Coupe Glass",
+  "image": "https://placehold.co/600x400/99f6e4/111111?text=Vegan+Bourbon+Flip",
+  "ingredients": [
+    "2.0 oz Bourbon",
+    "0.5 oz Simple Syrup",
+    "1.0 oz Aquafaba (Chickpea Liquid)",
+    "Nutmeg for garnish"
+  ],
+  "instructions": [
+    "Combine all ingredients in a cocktail shaker.",
+    "Dry Shake (without ice) vigorously for 30-60 seconds to create a stable foam from the aquafaba.",
+    "Add ice and shake again until well chilled and frothy.",
+    "Double strain into a chilled coupe glass.",
+    "Garnish with freshly grated nutmeg."
+  ]
+}
 ]
 
