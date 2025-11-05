@@ -215,7 +215,7 @@
           ? true
           : matchAll
           ? liquors.every((sel) => recipe.mainLiquor.includes(sel)) // AND
-          : recipe.mainLiquor.some((l) => liquors.includes(l)); // OR
+          : recipe.mainLiquor.some((l) => liquors.includes(l));     // OR
 
       const flavorMatch = flavors.length === 0 || flavors.every((f) => recipe.flavor.includes(f));
       const difficultyMatch = difficulties.length === 0 || difficulties.includes(recipe.difficulty);
