@@ -1,57 +1,74 @@
-# Cocktail Finder
+# 🍸 Cocktail Finder
 
-Filter and discover cocktail recipes by base spirit, flavor, difficulty, and glassware. Built with plain HTML/CSS/JS + Tailwind CDN so it deploys easily to GitHub Pages.
+A clean, mobile-friendly cocktail recipe finder built with **HTML, TailwindCSS, and vanilla JavaScript** — no frameworks or build tools required. Designed to be hosted directly on **GitHub Pages**.
 
-## Features
-- Responsive filter panel with mobile slide-in.
-- Search across names and ingredients.
-- Recipes stored in `data/recipes.json` (easy to extend via PRs).
-- Accessible: live region for results, focusable controls, reduced-motion friendly.
+---
 
-## Getting Started
+## 🚀 Features
 
-1. **Clone**
-   ```bash
-   git clone https://github.com/<your-username>/cocktail-finder.git
-   cd cocktail-finder
-   ```
+- **Live search** for drink names and ingredients (debounced for performance)  
+- **Filter by:** Liquor, Flavor, Difficulty, and Glassware  
+- **Multi-liquor logic** — toggle between **Match ANY** or **Match ALL** selected liquors  
+- **Mobile-first layout** with top search bar, bottom-sheet filters, and active filter chips  
+- **Responsive recipe cards** with lazy-loaded images  
+- **Accessible** and keyboard-friendly controls  
+- **Data separated from UI** — easy to update via `data/recipes.json`
 
-2. **Run locally**
-   ```bash
-   python -m http.server 8080
-   # visit http://localhost:8080
-   ```
+---
 
-3. **Edit recipes**
-   - Add items to `data/recipes.json` following the schema:
-     ```json
-     {
-       "id": 123,
-       "name": "Name",
-       "mainLiquor": ["Tequila"],
-       "flavor": ["Sweet", "Sour"],
-       "difficulty": "Easy",
-       "glassware": "Rocks Glass",
-       "image": "assets/your-image.jpg",
-       "ingredients": ["..."],
-       "instructions": ["..."]
-     }
-     ```
-   - Place any local images under `assets/` and reference them relatively.
+## 📂 File Structure
 
-## Deploy to GitHub Pages
+index.html
+styles.css
+scripts/
+└── app.js
+data/
+└── recipes.json
+assets/
+└── (your images here)
+.nojekyll
+README.md
+LICENSE
+.gitignore
 
-1. Push to a GitHub repo.
-2. Settings → Pages → Source: *Deploy from a branch* → Branch: `main` (Folder: `/`).
-3. Keep `.nojekyll` to avoid Jekyll processing.
 
-## Conventions
-- Data/UI separation (`data/recipes.json`).
-- Semantic elements, alt text for images.
-- External assets via CDN for simplicity; self-host if you want a stricter CSP.
+---
 
-## Roadmap
-- Favorites (localStorage).
-- Pantry mode.
-- Print-friendly recipe cards.
-- PWA & manifest.
+## 💻 Local Preview
+
+To test locally without a server setup:
+
+```bash
+# From the project root:
+python -m http.server 8080
+# Then visit:
+# http://localhost:8080
+
+
+All recipes are stored in data/recipes.json as an array of objects:
+{
+  "id": 7,
+  "name": "Whiskey Boulevardier",
+  "mainLiquor": ["Whiskey", "Aperol"],
+  "flavor": ["Strong", "Bitter"],
+  "difficulty": "Medium",
+  "glassware": "Coupe Glass",
+  "image": "assets/boulevardier.jpg",
+  "ingredients": [
+    "1 oz Whiskey",
+    "1 oz Aperol",
+    "1 oz Sweet Vermouth"
+  ],
+  "instructions": [
+    "Stir ingredients with ice until chilled.",
+    "Strain into a coupe glass.",
+    "Garnish with orange peel."
+  ]
+}
+
+
+Guidelines:
+Each recipe needs a unique id
+Add or remove fields consistently
+Image paths can be local (in assets/) or hosted URLs
+Include "glassware" for every recipe (used in filters)
