@@ -1,356 +1,325 @@
-// Cocktail Finder — improved UX + multi-liquor AND/OR filtering + live chips
-// - Live search & filter (debounced input)
-// - "Match all selected liquors" toggle (AND vs OR)
-// - Active filter chips with one-tap removal
-// - Robust mobile filter panel cloning
-// - Defensive null checks and a11y updates
+// app.js — Search-first UX (comma-separated multi-term), no "Main Liquor" checkboxes
 
-(function () {
-  const state = { allRecipes: [], isLoaded: false };
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Cocktail Finder script loaded (search-first version).");
 
-  // --- Elements ---
-  const recipeGrid = document.getElementById("recipe-grid");
-  const noResultsMessage = document.getElementById("no-results");
-  const initialMessage = document.getElementById("initial-message");
-  const cardTemplate = document.getElementById("recipe-card-template");
+  // Core elements
+  const recipeGrid = document.getElementById('recipe-grid');
+  const noResultsMessage = document.getElementById('no-results');
+  const initialMessage = document.getElementById('initial-message');
+  const cardTemplate = document.getElementById('recipe-card-template');
 
-  const desktopAccordionContainer = document.getElementById("filter-accordions-desktop");
-  const searchInputDesktop = document.getElementById("search");
+  // Desktop panel
+  const desktopAccordionContainer = document.getElementById('filter-accordions-desktop');
+  const showRecipesButtonDesktop = document.getElementById('show-recipes-desktop');
+  const clearFiltersButtonDesktop = document.getElementById('clear-filters-desktop');
+  const searchInputDesktop = document.getElementById('search');
 
-  const showRecipesButtonDesktop = document.getElementById("show-recipes-desktop");
-  const clearFiltersButtonDesktop = document.getElementById("clear-filters-desktop");
-
-  const mobileFilterButton = document.getElementById("mobile-filter-button");
-  const filterModal = document.getElementById("filter-modal");
-  const filterModalBackdrop = document.getElementById("filter-modal-backdrop");
-
-  const activeChipsWrap = document.getElementById("active-chips");
+  // Mobile panel
+  const mobileFilterButton = document.getElementById('mobile-filter-button');
+  const filterModal = document.getElementById('filter-modal');
+  const filterModalBackdrop = document.getElementById('filter-modal-backdrop');
 
   let mobileAccordionContainer, showRecipesButtonMobile, clearFiltersButtonMobile, searchInputMobile;
 
-  // --- Utils ---
-  const debounce = (fn, ms = 200) => {
-    let t;
-    return (...args) => {
-      clearTimeout(t);
-      t = setTimeout(() => fn(...args), ms);
-    };
-  };
+  // ---------------------------
+  // Helpers
+  // ---------------------------
 
-  function setupAccordions(container) {
-    if (!container) return;
-    container.querySelectorAll(".accordion-button").forEach((button) => {
-      const content = button.nextElementSibling;
-      if (!content) return;
-      button.addEventListener("click", () => {
-        const isExpanded = button.getAttribute("aria-expanded") === "true";
-        button.setAttribute("aria-expanded", String(!isExpanded));
-        content.style.maxHeight = isExpanded ? "0px" : content.scrollHeight + "px";
-      });
-    });
-  }
+  const normalize = (s) => (s || '').toString().toLowerCase().trim();
 
-  function openFilterModal() {
-    filterModalBackdrop?.classList.remove("hidden");
-    filterModal?.classList.remove("hidden");
-  }
-  function closeFilterModal() {
-    filterModalBackdrop?.classList.add("hidden");
-    filterModal?.classList.add("hidden");
-  }
-
-  function getMatchAllLiquors(isMobile = false) {
-    const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
-    const el = panel?.querySelector('#match-all-liquors');
-    return !!el?.checked;
+  // Split user input into tokens using commas/semicolons.
+  // - "whiskey, aperol" => ["whiskey","aperol"]
+  // - If no comma present, treat the whole input as a single term (so "orange juice" stays intact)
+  function parseSearchTerms(raw) {
+    const val = (raw || '').trim();
+    if (!val) return [];
+    if (val.includes(',') || val.includes(';')) {
+      return val
+        .split(/[;,]/g)
+        .map(t => t.trim())
+        .filter(Boolean)
+        .map(t => t.toLowerCase());
+    }
+    return [val.toLowerCase()];
   }
 
   function getSelectedFilters(isMobile = false) {
     const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
-    if (!panel) return { liquors: [], flavors: [], difficulties: [], glassware: [] };
+    if (!panel) return { flavors: [], difficulties: [], glassware: [] };
 
-    const selectedLiquors = [...panel.querySelectorAll('#filter-liquor .filter-checkbox:checked')].map((el) => el.value);
-    const selectedFlavors = [...panel.querySelectorAll('#filter-flavor .filter-checkbox:checked')].map((el) => el.value);
-    const selectedDifficulties = [...panel.querySelectorAll('#filter-difficulty .filter-checkbox:checked')].map((el) => el.value);
-    const selectedGlassware = [...panel.querySelectorAll('#filter-glassware-options .filter-checkbox:checked')].map((el) => el.value);
+    const selectedFlavors = [...panel.querySelectorAll('#filter-flavor .filter-checkbox:checked')].map(el => el.value);
+    const selectedDifficulties = [...panel.querySelectorAll('#filter-difficulty .filter-checkbox:checked')].map(el => el.value);
+    const selectedGlassware = [...panel.querySelectorAll('#filter-glassware-options .filter-checkbox:checked')].map(el => el.value);
 
-    return { liquors: selectedLiquors, flavors: selectedFlavors, difficulties: selectedDifficulties, glassware: selectedGlassware };
+    return {
+      flavors: selectedFlavors,
+      difficulties: selectedDifficulties,
+      glassware: selectedGlassware
+    };
   }
 
-  function populateGlasswareFilter(container) {
-    if (!container) return;
-    const allGlassware = state.allRecipes.map((r) => r.glassware);
-    const unique = [...new Set(allGlassware)].sort();
-    container.innerHTML = "";
-    unique.forEach((glass) => {
-      const label = document.createElement("label");
-      label.className = "flex items-center gap-2 text-slate-700 cursor-pointer";
-      label.innerHTML = `<input type="checkbox" value="${glass}" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500" /><span>${glass}</span>`;
-      container.appendChild(label);
+  // Returns true if a single search term matches ANY of the searchable fields for the recipe
+  function termMatchesRecipe(term, recipe) {
+    const t = normalize(term);
+
+    // Collect fields to search
+    const name = normalize(recipe.name);
+    const ingredients = (recipe.ingredients || []).map(normalize);
+    const flavors = (recipe.flavor || []).map(normalize);
+    const glass = normalize(recipe.glassware);
+    // Keep leveraging data's mainLiquor (even though we removed UI)
+    const liquors = (recipe.mainLiquor || []).map(normalize);
+
+    // Any field match counts
+    if (name.includes(t)) return true;
+    if (glass.includes(t)) return true;
+    if (ingredients.some(i => i.includes(t))) return true;
+    if (flavors.some(f => f.includes(t))) return true;
+    if (liquors.some(l => l.includes(t))) return true;
+
+    return false;
+  }
+
+  function recipeMatchesSearchTerms(terms, recipe) {
+    // AND logic across all terms: every term must match somewhere
+    return terms.every(term => termMatchesRecipe(term, recipe));
+  }
+
+  function filterRecipes(isMobile = false) {
+    const { flavors, difficulties, glassware } = getSelectedFilters(isMobile);
+    const rawSearch = isMobile ? (searchInputMobile?.value || '') : (searchInputDesktop?.value || '');
+    const terms = parseSearchTerms(rawSearch);
+
+    const filtered = allRecipes.filter(recipe => {
+      // Static filters
+      const flavorOK = flavors.length === 0 || flavors.every(f => (recipe.flavor || []).includes(f));
+      const diffOK = difficulties.length === 0 || difficulties.includes(recipe.difficulty);
+      const glassOK = glassware.length === 0 || glassware.includes(recipe.glassware);
+
+      // Search terms
+      const searchOK = terms.length === 0 || recipeMatchesSearchTerms(terms, recipe);
+
+      return flavorOK && diffOK && glassOK && searchOK;
     });
+
+    displayRecipes(filtered);
   }
 
   function displayRecipes(recipes) {
     if (!recipeGrid || !initialMessage || !noResultsMessage || !cardTemplate) return;
 
-    recipeGrid.setAttribute("aria-busy", "true");
-    recipeGrid.innerHTML = "";
-    initialMessage.classList.add("hidden");
+    recipeGrid.innerHTML = '';
+    initialMessage.classList.add('hidden');
 
     if (recipes.length === 0) {
-      noResultsMessage.classList.remove("hidden");
-      recipeGrid.classList.add("hidden");
-    } else {
-      noResultsMessage.classList.add("hidden");
-      recipeGrid.classList.remove("hidden");
-
-      recipes.forEach((recipe) => {
-        const card = cardTemplate.content.cloneNode(true).children[0];
-        const img = card.querySelector("img");
-        img.src = recipe.image;
-        img.alt = recipe.name;
-
-        card.querySelector("h3").textContent = recipe.name;
-
-        const tagsContainer = card.querySelector(".flex-wrap");
-        tagsContainer.innerHTML = "";
-
-        const difficultyTag = document.createElement("span");
-        difficultyTag.className = "px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800";
-        difficultyTag.textContent = recipe.difficulty;
-        tagsContainer.appendChild(difficultyTag);
-
-        recipe.flavor.forEach((f) => {
-          const t = document.createElement("span");
-          t.className = "px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800";
-          t.textContent = f;
-          tagsContainer.appendChild(t);
-        });
-
-        const ul = card.querySelector("ul");
-        recipe.ingredients.forEach((ing) => {
-          const li = document.createElement("li");
-          li.textContent = ing;
-          ul.appendChild(li);
-        });
-
-        const ol = card.querySelector("ol");
-        recipe.instructions.forEach((step) => {
-          const li = document.createElement("li");
-          li.textContent = step;
-          ol.appendChild(li);
-        });
-
-        recipeGrid.appendChild(card);
-      });
-
-      if (window.lucide) lucide.createIcons();
+      noResultsMessage.classList.remove('hidden');
+      recipeGrid.classList.add('hidden');
+      return;
     }
 
-    recipeGrid.setAttribute("aria-busy", "false");
-  }
+    noResultsMessage.classList.add('hidden');
+    recipeGrid.classList.remove('hidden');
 
-  function renderActiveChips(isMobile = false) {
-    if (!activeChipsWrap) return;
+    recipes.forEach(recipe => {
+      const card = cardTemplate.content.cloneNode(true).children[0];
 
-    const { liquors, flavors, difficulties, glassware } = getSelectedFilters(isMobile);
-    const terms = (isMobile ? (searchInputMobile?.value || "") : (searchInputDesktop?.value || "")).trim();
-    const matchAll = getMatchAllLiquors(isMobile);
+      const img = card.querySelector('img');
+      img.src = recipe.image;
+      img.alt = recipe.name;
 
-    const chips = [];
-    if (terms) chips.push({ k: "q", label: `“${terms}”` });
-    liquors.forEach((v) => chips.push({ k: "liquor", label: v }));
-    if (matchAll && liquors.length > 1) chips.push({ k: "mode", label: "Liquor: ALL" });
-    flavors.forEach((v) => chips.push({ k: "flavor", label: v }));
-    difficulties.forEach((v) => chips.push({ k: "difficulty", label: v }));
-    glassware.forEach((v) => chips.push({ k: "glass", label: v }));
+      card.querySelector('h3').textContent = recipe.name;
 
-    activeChipsWrap.innerHTML = "";
-    chips.forEach((c) => {
-      const b = document.createElement("button");
-      b.className = "text-sm px-2 py-1 rounded-full bg-slate-200 hover:bg-slate-300";
-      b.textContent = c.label + " ✕";
-      b.addEventListener("click", () => {
-        const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
-        if (c.k === "q") {
-          (isMobile ? searchInputMobile : searchInputDesktop).value = "";
-        } else if (c.k === "mode") {
-          const el = panel?.querySelector("#match-all-liquors");
-          if (el) el.checked = false;
-        } else {
-          const map = {
-            liquor: "#filter-liquor",
-            flavor: "#filter-flavor",
-            difficulty: "#filter-difficulty",
-            glass: "#filter-glassware-options",
-          };
-          const box = panel?.querySelector(`${map[c.k]} input[value="${c.label}"]`);
-          if (box) box.checked = false;
-        }
-        filterRecipes(isMobile);
+      const tagsContainer = card.querySelector('.flex-wrap');
+      tagsContainer.innerHTML = '';
+
+      // Difficulty tag
+      const diff = document.createElement('span');
+      diff.className = 'px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800';
+      diff.textContent = recipe.difficulty;
+      tagsContainer.appendChild(diff);
+
+      // Flavor tags
+      (recipe.flavor || []).forEach(f => {
+        const tag = document.createElement('span');
+        tag.className = 'px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800';
+        tag.textContent = f;
+        tagsContainer.appendChild(tag);
       });
-      activeChipsWrap.appendChild(b);
+
+      // Ingredients
+      const ingredientsList = card.querySelector('ul');
+      ingredientsList.innerHTML = '';
+      (recipe.ingredients || []).forEach(ing => {
+        const li = document.createElement('li');
+        li.textContent = ing;
+        ingredientsList.appendChild(li);
+      });
+
+      // Instructions
+      const instructionsList = card.querySelector('ol');
+      instructionsList.innerHTML = '';
+      (recipe.instructions || []).forEach(step => {
+        const li = document.createElement('li');
+        li.textContent = step;
+        instructionsList.appendChild(li);
+      });
+
+      recipeGrid.appendChild(card);
     });
 
-    if (chips.length) {
-      const clear = document.createElement("button");
-      clear.className = "text-sm px-2 py-1 rounded-full bg-blue-600 text-white hover:bg-blue-700";
-      clear.textContent = "Clear";
-      clear.addEventListener("click", () => clearFilters(isMobile));
-      activeChipsWrap.appendChild(clear);
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
     }
-  }
-
-  function filterRecipes(isMobile = false) {
-    const { liquors, flavors, difficulties, glassware } = getSelectedFilters(isMobile);
-    const searchTerm = (isMobile ? (searchInputMobile?.value || "") : (searchInputDesktop?.value || ""))
-      .toLowerCase()
-      .trim();
-
-    const matchAll = getMatchAllLiquors(isMobile);
-
-    const filtered = state.allRecipes.filter((recipe) => {
-      const liquorMatch =
-        liquors.length === 0
-          ? true
-          : matchAll
-          ? liquors.every((sel) => recipe.mainLiquor.includes(sel)) // AND
-          : recipe.mainLiquor.some((l) => liquors.includes(l));     // OR
-
-      const flavorMatch = flavors.length === 0 || flavors.every((f) => recipe.flavor.includes(f));
-      const difficultyMatch = difficulties.length === 0 || difficulties.includes(recipe.difficulty);
-      const glasswareMatch = glassware.length === 0 || glassware.includes(recipe.glassware);
-
-      const nameMatch = recipe.name.toLowerCase().includes(searchTerm);
-      const ingredientsMatch = recipe.ingredients.some((ing) => ing.toLowerCase().includes(searchTerm));
-      const searchMatch = searchTerm === "" || nameMatch || ingredientsMatch;
-
-      return liquorMatch && flavorMatch && difficultyMatch && glasswareMatch && searchMatch;
-    });
-
-    displayRecipes(filtered);
-    renderActiveChips(isMobile);
   }
 
   function clearFilters(isMobile = false) {
     const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
-    if (panel) panel.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
-    panel?.querySelector('#match-all-liquors') && (panel.querySelector('#match-all-liquors').checked = false);
+    if (!panel) return;
 
-    if (isMobile) {
-      if (searchInputMobile) searchInputMobile.value = "";
-      desktopAccordionContainer?.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
-      const m = desktopAccordionContainer?.querySelector('#match-all-liquors');
-      if (m) m.checked = false;
-      if (searchInputDesktop) searchInputDesktop.value = "";
-    } else {
-      if (searchInputDesktop) searchInputDesktop.value = "";
-      mobileAccordionContainer?.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
-      const m2 = mobileAccordionContainer?.querySelector('#match-all-liquors');
-      if (m2) m2.checked = false;
-      if (searchInputMobile) searchInputMobile.value = "";
+    panel.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
+
+    if (isMobile && searchInputMobile) searchInputMobile.value = '';
+    if (!isMobile && searchInputDesktop) searchInputDesktop.value = '';
+
+    // Keep panels in sync
+    if (isMobile && desktopAccordionContainer) {
+      desktopAccordionContainer.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
+      if (searchInputDesktop) searchInputDesktop.value = '';
+    }
+    if (!isMobile && mobileAccordionContainer) {
+      mobileAccordionContainer.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
+      if (searchInputMobile) searchInputMobile.value = '';
     }
 
-    if (recipeGrid) recipeGrid.innerHTML = "";
-    recipeGrid?.classList.remove("hidden");
-    noResultsMessage?.classList.add("hidden");
-    initialMessage?.classList.remove("hidden");
-    renderActiveChips(isMobile);
+    recipeGrid.innerHTML = '';
+    recipeGrid.classList.remove('hidden');
+    noResultsMessage.classList.add('hidden');
+    initialMessage.classList.remove('hidden');
+  }
+
+  function populateGlasswareFilter(container) {
+    if (!container) return;
+    const allGlass = allRecipes.map(r => r.glassware).filter(Boolean);
+    const unique = [...new Set(allGlass)].sort();
+    container.innerHTML = '';
+    unique.forEach(glass => {
+      const label = document.createElement('label');
+      label.className = 'flex items-center space-x-2 font-normal text-slate-700 cursor-pointer';
+      label.innerHTML = `
+        <input type="checkbox" value="${glass}" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500">
+        <span>${glass}</span>
+      `;
+      container.appendChild(label);
+    });
+  }
+
+  function setupAccordions(container) {
+    if (!container) return;
+    container.querySelectorAll('.accordion-button').forEach(button => {
+      const content = button.nextElementSibling;
+      if (!content) return;
+      button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+        content.style.maxHeight = isExpanded ? '0px' : content.scrollHeight + 'px';
+      });
+    });
   }
 
   function createMobileFilterPanel() {
-    const searchInputDesktopContainer = document.getElementById("desktop-search-container");
-    if (!searchInputDesktopContainer || !desktopAccordionContainer || !filterModal) return;
-
+    const searchInputDesktopContainer = document.getElementById('desktop-search-container');
+    if (!searchInputDesktopContainer) return;
     const mobileSearchContainer = searchInputDesktopContainer.cloneNode(true);
+
     mobileAccordionContainer = desktopAccordionContainer.cloneNode(true);
 
-    const mobileHeader = document.createElement("div");
-    mobileHeader.className = "flex justify-between items-center mb-4 p-6 border-b border-slate-200";
+    const mobileHeader = document.createElement('div');
+    mobileHeader.className = 'flex justify-between items-center mb-4 p-6 border-b border-slate-200';
     mobileHeader.innerHTML = `
       <h2 class="text-2xl font-bold text-slate-900">Filters</h2>
-      <button id="close-filter-modal" class="text-slate-500 hover:text-slate-800" aria-label="Close filters">
-        <i data-lucide="x" class="w-6 h-6" aria-hidden="true"></i>
-      </button>`;
+      <button id="close-filter-modal" class="text-slate-500 hover:text-slate-800">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    `;
 
-    const mobileFooter = document.createElement("div");
-    mobileFooter.className = "mt-6 p-6 border-t border-slate-200 space-y-3";
+    const mobileFooter = document.createElement('div');
+    mobileFooter.className = 'mt-6 p-6 border-t border-slate-200 space-y-3';
     mobileFooter.innerHTML = `
-      <button id="show-recipes-mobile" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md">Show Recipes</button>
-      <button id="clear-filters-mobile" class="w-full bg-slate-200 text-slate-800 font-semibold py-3 rounded-lg hover:bg-slate-300 transition-colors">Clear All</button>`;
+      <button id="show-recipes-mobile" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+        Show Recipes
+      </button>
+      <button id="clear-filters-mobile" class="w-full bg-slate-200 text-slate-800 font-semibold py-3 rounded-lg hover:bg-slate-300 transition-colors">
+        Clear All
+      </button>
+    `;
 
-    const mobileScrollWrapper = document.createElement("div");
-    mobileScrollWrapper.className = "px-6";
+    const mobileScrollWrapper = document.createElement('div');
+    mobileScrollWrapper.className = 'px-6';
     mobileScrollWrapper.appendChild(mobileSearchContainer);
     mobileScrollWrapper.appendChild(mobileAccordionContainer);
 
-    filterModal.innerHTML = "";
+    filterModal.innerHTML = '';
     filterModal.appendChild(mobileHeader);
     filterModal.appendChild(mobileScrollWrapper);
     filterModal.appendChild(mobileFooter);
 
-    searchInputMobile = mobileSearchContainer.querySelector("input");
-    showRecipesButtonMobile = document.getElementById("show-recipes-mobile");
-    clearFiltersButtonMobile = document.getElementById("clear-filters-mobile");
+    searchInputMobile = mobileSearchContainer.querySelector('input');
+    showRecipesButtonMobile = document.getElementById('show-recipes-mobile');
+    clearFiltersButtonMobile = document.getElementById('clear-filters-mobile');
 
-    document.getElementById("close-filter-modal")?.addEventListener("click", closeFilterModal);
-    showRecipesButtonMobile?.addEventListener("click", () => { filterRecipes(true); closeFilterModal(); });
-    clearFiltersButtonMobile?.addEventListener("click", () => clearFilters(true));
+    const closeButton = document.getElementById('close-filter-modal');
+    closeButton?.addEventListener('click', closeFilterModal);
+    showRecipesButtonMobile?.addEventListener('click', () => {
+      filterRecipes(true);
+      closeFilterModal();
+    });
+    clearFiltersButtonMobile?.addEventListener('click', () => clearFilters(true));
 
-    const mobileGlasswareContainer = mobileAccordionContainer.querySelector("#filter-glassware-options");
-    if (mobileGlasswareContainer) populateGlasswareFilter(mobileGlasswareContainer);
+    // repopulate dynamic glassware on mobile
+    const mobileGlasswareContainer = mobileAccordionContainer.querySelector('#filter-glassware-options');
+    populateGlasswareFilter(mobileGlasswareContainer);
 
     setupAccordions(mobileAccordionContainer);
-    if (window.lucide) lucide.createIcons();
+    if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 
-  function initEvents() {
-    // Desktop buttons (still work; live filtering also enabled)
-    showRecipesButtonDesktop?.addEventListener("click", () => filterRecipes(false));
-    clearFiltersButtonDesktop?.addEventListener("click", () => clearFilters(false));
-
-    // Live text search
-    if (searchInputDesktop) {
-      searchInputDesktop.addEventListener("input", debounce(() => filterRecipes(false), 200));
-    }
-
-    // Desktop checkboxes + match-all toggle
-    desktopAccordionContainer?.addEventListener("change", (e) => {
-      if (e.target.matches(".filter-checkbox, #match-all-liquors")) filterRecipes(false);
-    });
-
-    // Mobile open/close
-    mobileFilterButton?.addEventListener("click", openFilterModal);
-    filterModalBackdrop?.addEventListener("click", closeFilterModal);
-
-    // Mobile live filtering (delegate)
-    filterModal?.addEventListener("input", debounce((e) => {
-      if (e.target.id === "search") filterRecipes(true);
-    }, 200));
-    filterModal?.addEventListener("change", (e) => {
-      if (e.target.matches(".filter-checkbox, #match-all-liquors")) filterRecipes(true);
-    });
+  function openFilterModal() {
+    filterModalBackdrop?.classList.remove('hidden');
+    filterModal?.classList.remove('hidden');
   }
 
-  // --- Boot ---
-  document.body.setAttribute("data-js-enabled", "true");
-  fetch("./data/recipes.json")
-    .then((res) => res.json())
-    .then((data) => {
-      state.allRecipes = Array.isArray(data) ? data : [];
-      state.isLoaded = true;
-      console.log(`Total recipes loaded: ${state.allRecipes.length}`);
-      populateGlasswareFilter(document.getElementById("filter-glassware-options"));
-      createMobileFilterPanel();
-      setupAccordions(desktopAccordionContainer);
-      initEvents();
-      renderActiveChips(false);
-      if (window.lucide) lucide.createIcons();
-    })
-    .catch((err) => {
-      console.error("Failed to load recipes.json", err);
-      if (initialMessage) {
-        initialMessage.innerHTML = `<p class="text-red-600">Error loading recipes. Check <code>data/recipes.json</code>.</p>`;
-      }
-    });
-})();
+  function closeFilterModal() {
+    filterModalBackdrop?.classList.add('hidden');
+    filterModal?.classList.add('hidden');
+  }
+
+  // ---------------------------
+  // Initialization
+  // ---------------------------
+
+  console.log(`Total recipes loaded: ${allRecipes.length}`);
+
+  // Build glassware list (desktop)
+  const desktopGlasswareContainer = document.getElementById('filter-glassware-options');
+  populateGlasswareFilter(desktopGlasswareContainer);
+
+  // Create mobile filter panel
+  createMobileFilterPanel();
+
+  // Setup desktop accordions
+  setupAccordions(desktopAccordionContainer);
+
+  // Wire buttons
+  showRecipesButtonDesktop?.addEventListener('click', () => filterRecipes(false));
+  clearFiltersButtonDesktop?.addEventListener('click', () => clearFilters(false));
+  mobileFilterButton?.addEventListener('click', openFilterModal);
+  filterModalBackdrop?.addEventListener('click', closeFilterModal);
+
+  // Init icons
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  } else {
+    console.error("Lucide icons script not loaded.");
+  }
+});
