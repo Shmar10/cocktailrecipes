@@ -12,7 +12,20 @@
 <script src="https://unpkg.com/lucide@latest" defer></script>
 
 <!-- Your app scripts (order matters!) -->
-<script src="scripts/recipes.js" defer></script>
+<script>
+  async function loadRecipes() {
+    try {
+      const res = await fetch("./data/recipes.json", { cache: "no-store" });
+      const data = await res.json();
+      window.allRecipes = Array.isArray(data) ? data : [];
+      console.log("Total recipes loaded (from JSON):", window.allRecipes.length);
+    } catch (err) {
+      console.error("Failed to load recipes.json", err);
+      window.allRecipes = [];
+    }
+  }
+  loadRecipes();
+</script>
 <script src="scripts/app.js" defer></script>
 
   <style>
