@@ -1,45 +1,39 @@
-// app.js — Search-first UX (comma-separated multi-term), no "Main Liquor" checkboxes
+// app.js — Cocktail Finder (Search-first design, no "Main Liquor" filter)
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Cocktail Finder script loaded (search-first version).");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Cocktail Finder script loaded (final version)");
 
-  // Core elements
-  const recipeGrid = document.getElementById('recipe-grid');
-  const noResultsMessage = document.getElementById('no-results');
-  const initialMessage = document.getElementById('initial-message');
-  const cardTemplate = document.getElementById('recipe-card-template');
+  // === Element references ===
+  const recipeGrid = document.getElementById("recipe-grid");
+  const noResultsMessage = document.getElementById("no-results");
+  const initialMessage = document.getElementById("initial-message");
+  const cardTemplate = document.getElementById("recipe-card-template");
 
   // Desktop panel
-  const desktopAccordionContainer = document.getElementById('filter-accordions-desktop');
-  const showRecipesButtonDesktop = document.getElementById('show-recipes-desktop');
-  const clearFiltersButtonDesktop = document.getElementById('clear-filters-desktop');
-  const searchInputDesktop = document.getElementById('search');
+  const desktopAccordionContainer = document.getElementById("filter-accordions-desktop");
+  const showRecipesButtonDesktop = document.getElementById("show-recipes-desktop");
+  const clearFiltersButtonDesktop = document.getElementById("clear-filters-desktop");
+  const searchInputDesktop = document.getElementById("search");
 
-  // Mobile panel
-  const mobileFilterButton = document.getElementById('mobile-filter-button');
-  const filterModal = document.getElementById('filter-modal');
-  const filterModalBackdrop = document.getElementById('filter-modal-backdrop');
+  // Mobile elements
+  const mobileFilterButton = document.getElementById("mobile-filter-button");
+  const filterModal = document.getElementById("filter-modal");
+  const filterModalBackdrop = document.getElementById("filter-modal-backdrop");
 
   let mobileAccordionContainer, showRecipesButtonMobile, clearFiltersButtonMobile, searchInputMobile;
 
-  // ---------------------------
-  // Helpers
-  // ---------------------------
+  // === Utility functions ===
+  const normalize = (s) => (s || "").toString().toLowerCase().trim();
 
-  const normalize = (s) => (s || '').toString().toLowerCase().trim();
-
-  // Split user input into tokens using commas/semicolons.
-  // - "whiskey, aperol" => ["whiskey","aperol"]
-  // - If no comma present, treat the whole input as a single term (so "orange juice" stays intact)
   function parseSearchTerms(raw) {
-    const val = (raw || '').trim();
+    const val = (raw || "").trim();
     if (!val) return [];
-    if (val.includes(',') || val.includes(';')) {
+    if (val.includes(",") || val.includes(";")) {
       return val
         .split(/[;,]/g)
-        .map(t => t.trim())
+        .map((t) => t.trim())
         .filter(Boolean)
-        .map(t => t.toLowerCase());
+        .map((t) => t.toLowerCase());
     }
     return [val.toLowerCase()];
   }
@@ -48,56 +42,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
     if (!panel) return { flavors: [], difficulties: [], glassware: [] };
 
-    const selectedFlavors = [...panel.querySelectorAll('#filter-flavor .filter-checkbox:checked')].map(el => el.value);
-    const selectedDifficulties = [...panel.querySelectorAll('#filter-difficulty .filter-checkbox:checked')].map(el => el.value);
-    const selectedGlassware = [...panel.querySelectorAll('#filter-glassware-options .filter-checkbox:checked')].map(el => el.value);
+    const selectedFlavors = [...panel.querySelectorAll("#filter-flavor .filter-checkbox:checked")].map((el) => el.value);
+    const selectedDifficulties = [...panel.querySelectorAll("#filter-difficulty .filter-checkbox:checked")].map((el) => el.value);
+    const selectedGlassware = [...panel.querySelectorAll("#filter-glassware-options .filter-checkbox:checked")].map((el) => el.value);
 
-    return {
-      flavors: selectedFlavors,
-      difficulties: selectedDifficulties,
-      glassware: selectedGlassware
-    };
+    return { flavors: selectedFlavors, difficulties: selectedDifficulties, glassware: selectedGlassware };
   }
 
-  // Returns true if a single search term matches ANY of the searchable fields for the recipe
+  // === Search Matching ===
   function termMatchesRecipe(term, recipe) {
     const t = normalize(term);
 
-    // Collect fields to search
     const name = normalize(recipe.name);
     const ingredients = (recipe.ingredients || []).map(normalize);
     const flavors = (recipe.flavor || []).map(normalize);
     const glass = normalize(recipe.glassware);
-    // Keep leveraging data's mainLiquor (even though we removed UI)
-    const liquors = (recipe.mainLiquor || []).map(normalize);
+    const liquors = (recipe.mainLiquor || []).map(normalize); // still searchable
 
-    // Any field match counts
     if (name.includes(t)) return true;
     if (glass.includes(t)) return true;
-    if (ingredients.some(i => i.includes(t))) return true;
-    if (flavors.some(f => f.includes(t))) return true;
-    if (liquors.some(l => l.includes(t))) return true;
+    if (ingredients.some((i) => i.includes(t))) return true;
+    if (flavors.some((f) => f.includes(t))) return true;
+    if (liquors.some((l) => l.includes(t))) return true;
 
     return false;
   }
 
   function recipeMatchesSearchTerms(terms, recipe) {
-    // AND logic across all terms: every term must match somewhere
-    return terms.every(term => termMatchesRecipe(term, recipe));
+    return terms.every((term) => termMatchesRecipe(term, recipe));
   }
 
+  // === Filtering ===
   function filterRecipes(isMobile = false) {
     const { flavors, difficulties, glassware } = getSelectedFilters(isMobile);
-    const rawSearch = isMobile ? (searchInputMobile?.value || '') : (searchInputDesktop?.value || '');
+    const rawSearch = isMobile ? (searchInputMobile?.value || "") : (searchInputDesktop?.value || "");
     const terms = parseSearchTerms(rawSearch);
 
-    const filtered = allRecipes.filter(recipe => {
-      // Static filters
-      const flavorOK = flavors.length === 0 || flavors.every(f => (recipe.flavor || []).includes(f));
+    const filtered = allRecipes.filter((recipe) => {
+      const flavorOK = flavors.length === 0 || flavors.every((f) => (recipe.flavor || []).includes(f));
       const diffOK = difficulties.length === 0 || difficulties.includes(recipe.difficulty);
       const glassOK = glassware.length === 0 || glassware.includes(recipe.glassware);
-
-      // Search terms
       const searchOK = terms.length === 0 || recipeMatchesSearchTerms(terms, recipe);
 
       return flavorOK && diffOK && glassOK && searchOK;
@@ -106,61 +90,61 @@ document.addEventListener('DOMContentLoaded', () => {
     displayRecipes(filtered);
   }
 
+  // === Display ===
   function displayRecipes(recipes) {
     if (!recipeGrid || !initialMessage || !noResultsMessage || !cardTemplate) return;
 
-    recipeGrid.innerHTML = '';
-    initialMessage.classList.add('hidden');
+    recipeGrid.innerHTML = "";
+    initialMessage.classList.add("hidden");
 
     if (recipes.length === 0) {
-      noResultsMessage.classList.remove('hidden');
-      recipeGrid.classList.add('hidden');
+      noResultsMessage.classList.remove("hidden");
+      recipeGrid.classList.add("hidden");
       return;
     }
 
-    noResultsMessage.classList.add('hidden');
-    recipeGrid.classList.remove('hidden');
+    noResultsMessage.classList.add("hidden");
+    recipeGrid.classList.remove("hidden");
 
-    recipes.forEach(recipe => {
+    recipes.forEach((recipe) => {
       const card = cardTemplate.content.cloneNode(true).children[0];
 
-      const img = card.querySelector('img');
+      const img = card.querySelector("img");
       img.src = recipe.image;
       img.alt = recipe.name;
+      card.querySelector("h3").textContent = recipe.name;
 
-      card.querySelector('h3').textContent = recipe.name;
-
-      const tagsContainer = card.querySelector('.flex-wrap');
-      tagsContainer.innerHTML = '';
+      const tagsContainer = card.querySelector(".flex-wrap");
+      tagsContainer.innerHTML = "";
 
       // Difficulty tag
-      const diff = document.createElement('span');
-      diff.className = 'px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800';
+      const diff = document.createElement("span");
+      diff.className = "px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800";
       diff.textContent = recipe.difficulty;
       tagsContainer.appendChild(diff);
 
       // Flavor tags
-      (recipe.flavor || []).forEach(f => {
-        const tag = document.createElement('span');
-        tag.className = 'px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800';
+      (recipe.flavor || []).forEach((f) => {
+        const tag = document.createElement("span");
+        tag.className = "px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800";
         tag.textContent = f;
         tagsContainer.appendChild(tag);
       });
 
       // Ingredients
-      const ingredientsList = card.querySelector('ul');
-      ingredientsList.innerHTML = '';
-      (recipe.ingredients || []).forEach(ing => {
-        const li = document.createElement('li');
+      const ingredientsList = card.querySelector("ul");
+      ingredientsList.innerHTML = "";
+      (recipe.ingredients || []).forEach((ing) => {
+        const li = document.createElement("li");
         li.textContent = ing;
         ingredientsList.appendChild(li);
       });
 
       // Instructions
-      const instructionsList = card.querySelector('ol');
-      instructionsList.innerHTML = '';
-      (recipe.instructions || []).forEach(step => {
-        const li = document.createElement('li');
+      const instructionsList = card.querySelector("ol");
+      instructionsList.innerHTML = "";
+      (recipe.instructions || []).forEach((step) => {
+        const li = document.createElement("li");
         li.textContent = step;
         instructionsList.appendChild(li);
       });
@@ -168,44 +152,42 @@ document.addEventListener('DOMContentLoaded', () => {
       recipeGrid.appendChild(card);
     });
 
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
+    if (typeof lucide !== "undefined") lucide.createIcons();
   }
 
+  // === Filter & Modal Helpers ===
   function clearFilters(isMobile = false) {
     const panel = isMobile ? mobileAccordionContainer : desktopAccordionContainer;
     if (!panel) return;
 
-    panel.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
+    panel.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
 
-    if (isMobile && searchInputMobile) searchInputMobile.value = '';
-    if (!isMobile && searchInputDesktop) searchInputDesktop.value = '';
+    if (isMobile && searchInputMobile) searchInputMobile.value = "";
+    if (!isMobile && searchInputDesktop) searchInputDesktop.value = "";
 
-    // Keep panels in sync
     if (isMobile && desktopAccordionContainer) {
-      desktopAccordionContainer.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
-      if (searchInputDesktop) searchInputDesktop.value = '';
+      desktopAccordionContainer.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
+      if (searchInputDesktop) searchInputDesktop.value = "";
     }
     if (!isMobile && mobileAccordionContainer) {
-      mobileAccordionContainer.querySelectorAll('.filter-checkbox').forEach(cb => (cb.checked = false));
-      if (searchInputMobile) searchInputMobile.value = '';
+      mobileAccordionContainer.querySelectorAll(".filter-checkbox").forEach((cb) => (cb.checked = false));
+      if (searchInputMobile) searchInputMobile.value = "";
     }
 
-    recipeGrid.innerHTML = '';
-    recipeGrid.classList.remove('hidden');
-    noResultsMessage.classList.add('hidden');
-    initialMessage.classList.remove('hidden');
+    recipeGrid.innerHTML = "";
+    recipeGrid.classList.remove("hidden");
+    noResultsMessage.classList.add("hidden");
+    initialMessage.classList.remove("hidden");
   }
 
   function populateGlasswareFilter(container) {
     if (!container) return;
-    const allGlass = allRecipes.map(r => r.glassware).filter(Boolean);
+    const allGlass = allRecipes.map((r) => r.glassware).filter(Boolean);
     const unique = [...new Set(allGlass)].sort();
-    container.innerHTML = '';
-    unique.forEach(glass => {
-      const label = document.createElement('label');
-      label.className = 'flex items-center space-x-2 font-normal text-slate-700 cursor-pointer';
+    container.innerHTML = "";
+    unique.forEach((glass) => {
+      const label = document.createElement("label");
+      label.className = "flex items-center space-x-2 font-normal text-slate-700 cursor-pointer";
       label.innerHTML = `
         <input type="checkbox" value="${glass}" class="filter-checkbox rounded text-blue-600 focus:ring-blue-500">
         <span>${glass}</span>
@@ -216,26 +198,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setupAccordions(container) {
     if (!container) return;
-    container.querySelectorAll('.accordion-button').forEach(button => {
+    container.querySelectorAll(".accordion-button").forEach((button) => {
       const content = button.nextElementSibling;
       if (!content) return;
-      button.addEventListener('click', () => {
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', !isExpanded);
-        content.style.maxHeight = isExpanded ? '0px' : content.scrollHeight + 'px';
+      button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !isExpanded);
+        content.style.maxHeight = isExpanded ? "0px" : content.scrollHeight + "px";
       });
     });
   }
 
   function createMobileFilterPanel() {
-    const searchInputDesktopContainer = document.getElementById('desktop-search-container');
+    const searchInputDesktopContainer = document.getElementById("desktop-search-container");
     if (!searchInputDesktopContainer) return;
     const mobileSearchContainer = searchInputDesktopContainer.cloneNode(true);
 
     mobileAccordionContainer = desktopAccordionContainer.cloneNode(true);
 
-    const mobileHeader = document.createElement('div');
-    mobileHeader.className = 'flex justify-between items-center mb-4 p-6 border-b border-slate-200';
+    const mobileHeader = document.createElement("div");
+    mobileHeader.className = "flex justify-between items-center mb-4 p-6 border-b border-slate-200";
     mobileHeader.innerHTML = `
       <h2 class="text-2xl font-bold text-slate-900">Filters</h2>
       <button id="close-filter-modal" class="text-slate-500 hover:text-slate-800">
@@ -243,8 +225,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </button>
     `;
 
-    const mobileFooter = document.createElement('div');
-    mobileFooter.className = 'mt-6 p-6 border-t border-slate-200 space-y-3';
+    const mobileFooter = document.createElement("div");
+    mobileFooter.className = "mt-6 p-6 border-t border-slate-200 space-y-3";
     mobileFooter.innerHTML = `
       <button id="show-recipes-mobile" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
         Show Recipes
@@ -254,72 +236,57 @@ document.addEventListener('DOMContentLoaded', () => {
       </button>
     `;
 
-    const mobileScrollWrapper = document.createElement('div');
-    mobileScrollWrapper.className = 'px-6';
+    const mobileScrollWrapper = document.createElement("div");
+    mobileScrollWrapper.className = "px-6";
     mobileScrollWrapper.appendChild(mobileSearchContainer);
     mobileScrollWrapper.appendChild(mobileAccordionContainer);
 
-    filterModal.innerHTML = '';
+    filterModal.innerHTML = "";
     filterModal.appendChild(mobileHeader);
     filterModal.appendChild(mobileScrollWrapper);
     filterModal.appendChild(mobileFooter);
 
-    searchInputMobile = mobileSearchContainer.querySelector('input');
-    showRecipesButtonMobile = document.getElementById('show-recipes-mobile');
-    clearFiltersButtonMobile = document.getElementById('clear-filters-mobile');
+    searchInputMobile = mobileSearchContainer.querySelector("input");
+    showRecipesButtonMobile = document.getElementById("show-recipes-mobile");
+    clearFiltersButtonMobile = document.getElementById("clear-filters-mobile");
 
-    const closeButton = document.getElementById('close-filter-modal');
-    closeButton?.addEventListener('click', closeFilterModal);
-    showRecipesButtonMobile?.addEventListener('click', () => {
+    const closeButton = document.getElementById("close-filter-modal");
+    closeButton?.addEventListener("click", closeFilterModal);
+    showRecipesButtonMobile?.addEventListener("click", () => {
       filterRecipes(true);
       closeFilterModal();
     });
-    clearFiltersButtonMobile?.addEventListener('click', () => clearFilters(true));
+    clearFiltersButtonMobile?.addEventListener("click", () => clearFilters(true));
 
-    // repopulate dynamic glassware on mobile
-    const mobileGlasswareContainer = mobileAccordionContainer.querySelector('#filter-glassware-options');
+    const mobileGlasswareContainer = mobileAccordionContainer.querySelector("#filter-glassware-options");
     populateGlasswareFilter(mobileGlasswareContainer);
 
     setupAccordions(mobileAccordionContainer);
-    if (typeof lucide !== 'undefined') lucide.createIcons();
+    if (typeof lucide !== "undefined") lucide.createIcons();
   }
 
   function openFilterModal() {
-    filterModalBackdrop?.classList.remove('hidden');
-    filterModal?.classList.remove('hidden');
+    filterModalBackdrop?.classList.remove("hidden");
+    filterModal?.classList.remove("hidden");
   }
 
   function closeFilterModal() {
-    filterModalBackdrop?.classList.add('hidden');
-    filterModal?.classList.add('hidden');
+    filterModalBackdrop?.classList.add("hidden");
+    filterModal?.classList.add("hidden");
   }
 
-  // ---------------------------
-  // Initialization
-  // ---------------------------
-
+  // === Initialization ===
   console.log(`Total recipes loaded: ${allRecipes.length}`);
 
-  // Build glassware list (desktop)
-  const desktopGlasswareContainer = document.getElementById('filter-glassware-options');
+  const desktopGlasswareContainer = document.getElementById("filter-glassware-options");
   populateGlasswareFilter(desktopGlasswareContainer);
-
-  // Create mobile filter panel
   createMobileFilterPanel();
-
-  // Setup desktop accordions
   setupAccordions(desktopAccordionContainer);
 
-  // Wire buttons
-  showRecipesButtonDesktop?.addEventListener('click', () => filterRecipes(false));
-  clearFiltersButtonDesktop?.addEventListener('click', () => clearFilters(false));
-  mobileFilterButton?.addEventListener('click', openFilterModal);
-  filterModalBackdrop?.addEventListener('click', closeFilterModal);
+  showRecipesButtonDesktop?.addEventListener("click", () => filterRecipes(false));
+  clearFiltersButtonDesktop?.addEventListener("click", () => clearFilters(false));
+  mobileFilterButton?.addEventListener("click", openFilterModal);
+  filterModalBackdrop?.addEventListener("click", closeFilterModal);
 
-  // Init icons
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-  } else {
-    console.error("Lucide icons script not loaded.");
-  }
+  if (typeof lucide !== "undefined") lucide.createIcons();
 });
