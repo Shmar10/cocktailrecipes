@@ -180,5 +180,101 @@
     if (typeof lucide !== "undefined") lucide.createIcons();
   }
 
+  /* -----------------------------
+   Mobile Filters: slide-in modal
+--------------------------------*/
+(() => {
+  const btn        = document.getElementById('mobile-filter-button');
+  const modal      = document.getElementById('filter-modal');
+  const backdrop   = document.getElementById('filter-modal-backdrop');
+  const desktopBox = document.querySelector('#desktop-filter-panel > div'); // inner wrapper
+  const desktopApplyBtn = document.getElementById('show-recipes-desktop');
+
+  if (!btn || !modal || !backdrop || !desktopBox) return;
+
+  // Build the mobile panel content once (on first open)
+  const buildMobilePanel = () => {
+    // Basic shell (close + content container + apply/clear)
+    modal.innerHTML = `
+      <div class="h-full flex flex-col">
+        <div class="flex items-center justify-between p-4 border-b">
+          <h2 class="text-xl font-semibold">Filters</h2>
+          <button id="mobile-close" class="p-2 rounded hover:bg-slate-100" aria-label="Close filters">
+            ✕
+          </button>
+        </div>
+        <div id="mobile-filters-content" class="flex-1 overflow-y-auto p-4 space-y-4"></div>
+        <div class="p-4 border-t grid grid-cols-2 gap-3">
+          <button id="mobile-clear" class="w-full border border-slate-300 rounded-lg py-2 font-medium hover:bg-slate-50">Clear</button>
+          <button id="mobile-apply" class="w-full bg-blue-600 text-white rounded-lg py-2 font-semibold hover:bg-blue-700">Apply</button>
+        </div>
+      </div>
+    `;
+
+    // Clone desktop filter UI into mobile content area
+    const content = modal.querySelector('#mobile-filters-content');
+    const clone = desktopBox.cloneNode(true);
+
+    // Remove sticky/width classes that don’t make sense in the drawer
+    clone.classList.remove('sticky', 'top-6', 'md:sticky', 'md:top-6', 'pr-6');
+
+    // Avoid duplicate IDs by stripping id attributes inside the clone
+    clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+
+    content.appendChild(clone);
+
+    // Re-render Lucide icons inside the newly injected HTML (if available)
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+
+    // Wire up buttons
+    modal.querySelector('#mobile-close').addEventListener('click', closeModal);
+    modal.querySelector('#mobile-clear').addEventListener('click', () => {
+      // Clear all checkboxes & the search field (both mobile and desktop, to keep in sync)
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+      const searchInputs = document.querySelectorAll('input#search');
+      searchInputs.forEach(inp => { inp.value = ''; });
+    });
+
+    modal.querySelector('#mobile-apply').addEventListener('click', () => {
+      // Trigger the same apply behavior as desktop
+      if (desktopApplyBtn) desktopApplyBtn.click();
+      closeModal();
+    });
+
+    // Keep search fields synced (typing in mobile mirrors desktop)
+    const mobileSearch = modal.querySelector('input#search');
+    const desktopSearch = document.querySelector('#desktop-filter-panel input#search');
+    if (mobileSearch && desktopSearch) {
+      mobileSearch.addEventListener('input', () => { desktopSearch.value = mobileSearch.value; });
+      desktopSearch.addEventListener('input', () => { mobileSearch.value = desktopSearch.value; });
+    }
+  };
+
+  const openModal = () => {
+    if (!modal.hasChildNodes()) buildMobilePanel();
+    modal.classList.remove('hidden');
+    backdrop.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    modal.classList.add('hidden');
+    backdrop.classList.add('hidden');
+    document.body.style.overflow = '';
+  };
+
+  // Open
+  btn.addEventListener('click', openModal);
+
+  // Close on backdrop or Esc
+  backdrop.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+  });
+})();
+
+
   initWhenReady();
 })();
