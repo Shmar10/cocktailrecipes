@@ -31,6 +31,24 @@
     loadRecipes();
   </script>
 
+  <script>
+  async function loadRecipes() {
+    try {
+      const res = await fetch("./data/recipes.json", { cache: "no-store" });
+      const data = await res.json();
+      window.allRecipes = Array.isArray(data) ? data : [];
+      console.log("Total recipes loaded (from JSON):", window.allRecipes.length);
+      // Notify app.js that recipes are ready
+      document.dispatchEvent(new Event("recipes-loaded"));
+    } catch (err) {
+      console.error("Failed to load recipes.json", err);
+      window.allRecipes = [];
+      document.dispatchEvent(new Event("recipes-loaded"));
+    }
+  }
+  loadRecipes();
+</script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
