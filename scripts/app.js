@@ -49,7 +49,7 @@
       allRecipes = await res.json();
 
       loadPersistedData();
-      populateDropdowns(allRecipes);
+      updateDropdowns();
       renderMyBarIngredients(); // Pre-render the checklist
       setupEventListeners();
 
@@ -83,23 +83,44 @@
   // --- Core Logic ---
 
   // 1. Dropdowns (Search Mode)
-  function populateDropdowns(data) {
-    const extract = (key, isArray) => [...new Set((isArray ? data.flatMap(r => r[key] || []) : data.map(r => r[key]))).values()].sort();
+  // 1. Dropdowns (Cascading Options)
+  function updateDropdowns() {
+    const curSpirit = el.selectSpirit ? el.selectSpirit.value : "";
+    const curFlavor = el.selectFlavor ? el.selectFlavor.value : "";
+    const curDiff = el.selectDifficulty ? el.selectDifficulty.value : "";
 
-    const fill = (sel, items) => {
-      if (!sel) return;
-      const frag = document.createDocumentFragment();
-      items.forEach(i => {
-        const opt = document.createElement("option");
-        opt.value = i; opt.innerText = i;
-        frag.appendChild(opt);
+    const getMatches = (s, f, d) => {
+      return allRecipes.filter(r => {
+        const mS = !s || (r.mainLiquor || []).includes(s);
+        const mF = !f || (r.flavor || []).includes(f);
+        const mD = !d || r.difficulty === d;
+        return mS && mF && mD;
       });
-      sel.appendChild(frag);
-    }
+    };
 
-    fill(el.selectSpirit, extract("mainLiquor", true));
-    fill(el.selectFlavor, extract("flavor", true));
-    fill(el.selectDifficulty, extract("difficulty", false));
+    // Calculate available options based on OTHER filters
+    const spiritSet = new Set(getMatches(null, curFlavor, curDiff).flatMap(r => r.mainLiquor || []));
+    const flavorSet = new Set(getMatches(curSpirit, null, curDiff).flatMap(r => r.flavor || []));
+    const diffSet = new Set(getMatches(curSpirit, curFlavor, null).map(r => r.difficulty));
+
+    const update = (sel, set, current) => {
+      if (!sel) return;
+      // Preserve first option (placeholder)
+      const placeholder = sel.options[0] ? sel.options[0].text : "Select";
+      sel.innerHTML = `<option value="">${placeholder}</option>`;
+
+      [...set].sort().forEach(val => {
+        const opt = document.createElement("option");
+        opt.value = val;
+        opt.innerText = val;
+        if (val === current) opt.selected = true;
+        sel.appendChild(opt);
+      });
+    };
+
+    update(el.selectSpirit, spiritSet, curSpirit);
+    update(el.selectFlavor, flavorSet, curFlavor);
+    update(el.selectDifficulty, diffSet, curDiff);
   }
 
   // 2. My Bar Ingredient List
@@ -252,7 +273,7 @@
 
       // Favorite Button Injection
       const favBtn = document.createElement("button");
-      favBtn.className = "absolute top-4 right-4 p-2 rounded-full bg-slate-900/50 backdrop-blur-sm border border-slate-700 transition-transform hover:scale-110 active:scale-95";
+      favBtn.className = "absolute top-4 right-4 p-2 rounded-full bg-slate-900/50 backdrop-blur-sm border border-slate-700 transition-transform hover:scale-110 active:scale-95 z-20 cursor-pointer";
       const isFav = favorites.has(String(r.id));
       favBtn.innerHTML = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-red-500 text-red-500' : 'text-slate-300'}"></i>`;
 
@@ -328,6 +349,15 @@
     el.navMyBar?.addEventListener("click", () => switchView('mybar'));
     el.navFavorites?.addEventListener("click", () => switchView('favorites'));
 
+    // Dropdown Cascading Logic
+    [el.selectSpirit, el.selectFlavor, el.selectDifficulty].forEach(sel => {
+      if (sel) {
+        sel.addEventListener("change", () => {
+          updateDropdowns(); // Re-calculate options based on new selection
+        });
+      }
+    });
+
     // Search Actions
     el.btnFind?.addEventListener("click", () => render(getFilteredRecipes()));
     el.btnClear?.addEventListener("click", () => {
@@ -335,6 +365,7 @@
       el.selectFlavor.value = "";
       el.selectDifficulty.value = "";
       el.searchInput.value = "";
+      updateDropdowns(); // Reset options
       render([], true);
     });
 
