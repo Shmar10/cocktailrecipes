@@ -293,14 +293,24 @@
           if (el.grid.children.length === 0) render([], false);
         }
       });
-      card.querySelector(".relative").appendChild(favBtn);
+      card.appendChild(favBtn);
 
       // Ingredients list
       const ul = card.querySelector("ul");
-      (r.ingredients || []).slice(0, 4).forEach(i => {
+      (r.ingredients || []).forEach(i => {
         const li = document.createElement("li");
+        li.className = "text-slate-300";
         li.textContent = i;
         ul.appendChild(li);
+      });
+
+      // Instructions list
+      const ol = card.querySelector("ol");
+      (r.instructions || []).forEach(step => {
+        const li = document.createElement("li");
+        li.className = "text-slate-300";
+        li.textContent = step;
+        ol.appendChild(li);
       });
 
       frag.appendChild(card);
