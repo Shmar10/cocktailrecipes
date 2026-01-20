@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.3";
+  const APP_VERSION = "v3.1.4";
 
   // --- State ---
   let allRecipes = [];
@@ -269,7 +269,6 @@
 
       // Content
       card.querySelector("img").src = r.image;
-      card.querySelector("h3").textContent = r.name;
 
       // Favorite Button Injection
       const favBtn = document.createElement("button");
