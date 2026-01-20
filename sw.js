@@ -1,4 +1,4 @@
-const CACHE_NAME = "cocktail-finder-v1";
+const CACHE_NAME = "cocktail-finder-v2";
 const ASSETS = [
     "./",
     "./index.html",
@@ -11,6 +11,7 @@ const ASSETS = [
 
 // Install Event: Cache assets
 self.addEventListener("install", (event) => {
+    self.skipWaiting(); // Force activation immediately
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
             console.log("[SW] Caching assets");
@@ -28,22 +29,27 @@ self.addEventListener("activate", (event) => {
             );
         })
     );
+    self.clients.claim(); // Take control immediately
 });
 
-// Fetch Event: Serve from cache, fall back to network
+// Fetch Event: Network First, Fallback to Cache
 self.addEventListener("fetch", (event) => {
     event.respondWith(
-        caches.match(event.request).then((cached) => {
-            // Return cached response if found
-            if (cached) return cached;
-
-            // Otherwise fetch from network
-            return fetch(event.request).catch(() => {
-                // If offline and request is for main page, return index (optional fallback)
-                if (event.request.mode === 'navigate') {
-                    return caches.match('./index.html');
+        fetch(event.request)
+            .then((networkResponse) => {
+                // If efficient network response, clone and update cache
+                // Check if valid url (scheme http/https) to avoid errors with chrome-extension:// etc
+                if (networkResponse && networkResponse.status === 200 && event.request.url.startsWith('http')) {
+                    const responseToCache = networkResponse.clone();
+                    caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, responseToCache);
+                    });
                 }
-            });
-        })
+                return networkResponse;
+            })
+            .catch(() => {
+                // Network failed, try cache
+                return caches.match(event.request);
+            })
     );
 });
