@@ -5238,30 +5238,30 @@
   },
   {
     "id": 216,
-    "name": "Spiced Maple Paper Plane",
+    "name": "Paper Plane",
     "mainLiquor": [
       "Bourbon",
       "Liqueur"
     ],
     "flavor": [
-      "Spiced",
-      "Citrus"
+      "Bittersweet",
+      "Citrus",
+      "Sour"
     ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/f97316/111111?text=Spiced+Maple+Paper+Plane",
+    "image": "https://placehold.co/600x400/f97316/111111?text=Paper+Plane",
     "ingredients": [
       "0.75 oz Bourbon",
       "0.75 oz Aperol",
       "0.75 oz Amaro Nonino",
-      "0.5 oz Lemon Juice",
-      "0.25 oz Maple Syrup",
-      "Dash of Cinnamon"
+      "0.75 oz Fresh Lemon Juice"
     ],
     "instructions": [
-      "Shake all ingredients with ice until chilled.",
-      "Strain into coupe glass.",
-      "Garnish with a lemon twist dusted lightly with cinnamon."
+      "Add all ingredients to a shaker with ice.",
+      "Shake vigorously until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a small paper plane (optional)."
     ]
   },
   {
