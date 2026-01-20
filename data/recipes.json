@@ -5345,31 +5345,6 @@
     ]
   },
   {
-    "name": "Paper Plane",
-    "mainLiquor": [
-      "Bourbon",
-      "Aperol"
-    ],
-    "flavor": [
-      "Bittersweet",
-      "Citrus"
-    ],
-    "difficulty": "Medium",
-    "glassware": "Coupe Glass",
-    "ingredients": [
-      "0.75 oz Bourbon",
-      "0.75 oz Aperol",
-      "0.75 oz Amaro Nonino",
-      "0.75 oz Lemon Juice"
-    ],
-    "instructions": [
-      "Shake all ingredients with ice.",
-      "Strain into a coupe glass."
-    ],
-    "id": 220,
-    "image": "https://placehold.co/600x400/eeb4b4/ffffff?text=Paper+Plane"
-  },
-  {
     "name": "Last Word",
     "mainLiquor": [
       "Gin",
