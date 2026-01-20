@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.7";
+  const APP_VERSION = "v3.1.8";
 
   // --- State ---
   let allRecipes = [];
@@ -279,9 +279,10 @@
         }
       }
 
-      // Set Image (Clearing text by stripping query and adding space)
-      const cleanImage = r.image.split('?')[0] + '?text=%20';
-      card.querySelector("img").src = cleanImage;
+      const bgPart = parts[4];
+      // Camouflage: Set FG color same as BG color, and text to a dot.
+      const camouImage = `${parts.slice(0, 4).join('/')}/${bgPart}/${bgPart}?text=.`;
+      card.querySelector("img").src = camouImage;
 
       // Set Title
       const h3 = card.querySelector("h3");

@@ -152,7 +152,7 @@
             Reset
           </button>
           <button id="find-recipes-btn"
-            class="flex-1 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold py-3.5 rounded-xl hover:shadow-lg hover:shadow-primary-500/20 hover:scale-[1.01] transition-all duration-300 flex justify-center items-center gap-2 group">
+            class="flex-1 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold py-3.5 rounded-xl hover:shadow-lg hover:shadow-primary-500/20 hover:scale-[1.01] active:scale-95 transition-all duration-150 flex justify-center items-center gap-2 group">
             <span>Find Recipes</span>
             <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
           </button>
@@ -260,7 +260,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=3.1.7')
+        navigator.serviceWorker.register('./sw.js?v=3.1.8')
           .then(reg => {
             console.log('SW registered:', reg.scope);
 
