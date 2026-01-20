@@ -1,5 +1,7 @@
 // scripts/app.js
 (function () {
+  const APP_VERSION = "v3.1.0";
+
   // --- State ---
   let allRecipes = [];
   let favorites = new Set();
@@ -33,11 +35,16 @@
     myBarList: document.getElementById("my-bar-list"),
     btnMyBarFind: document.getElementById("my-bar-find-btn"),
     btnMyBarClear: document.getElementById("my-bar-clear-btn"),
+
+    // Version
+    versionLabel: document.getElementById("app-version"),
   };
 
   // --- Init ---
   async function init() {
     try {
+      if (el.versionLabel) el.versionLabel.textContent = APP_VERSION;
+
       const res = await fetch("./data/recipes.json");
       allRecipes = await res.json();
 
@@ -134,16 +141,16 @@
     el.myBarList.innerHTML = "";
     topIngredients.forEach(ing => {
       const label = document.createElement("label");
-      label.className = "flex items-center space-x-3 p-3 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:bg-slate-700 transition-colors";
+      label.className = "flex items-start space-x-3 p-3 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:bg-slate-700 transition-colors select-none";
 
       const checked = myBarIngredients.has(ing);
 
       label.innerHTML = `
-            <div class="relative flex items-center">
-              <input type="checkbox" value="${ing}" class="peer h-5 w-5 appearance-none rounded border border-slate-600 bg-slate-900 checked:bg-primary-500 checked:border-primary-500 transition-all">
+            <div class="relative flex items-center mt-0.5">
+              <input type="checkbox" value="${ing}" class="peer h-5 w-5 appearance-none rounded border border-slate-600 bg-slate-900 checked:bg-primary-500 checked:border-primary-500 transition-all shrink-0">
               <i data-lucide="check" class="absolute w-3.5 h-3.5 text-white pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity left-0.5"></i>
             </div>
-            <span class="text-sm font-medium text-slate-300 peer-checked:text-white">${ing}</span>
+            <span class="text-sm font-medium text-slate-300 peer-checked:text-white break-words w-full leading-tight pt-0.5">${ing}</span>
           `;
 
       // Bind
