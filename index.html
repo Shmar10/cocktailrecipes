@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/favicon.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cocktail Recipe Finder</title>
+
+  <!-- Tailwind CSS (Local Build) -->
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+
+    /* Custom scrollbar */
+    body::-webkit-scrollbar,
+    #recipe-grid-container::-webkit-scrollbar,
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    body::-webkit-scrollbar-track,
+    #recipe-grid-container::-webkit-scrollbar-track,
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+      border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb,
+    #recipe-grid-container::-webkit-scrollbar-thumb,
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #334155;
+      border-radius: 10px;
+      border: 2px solid #0f172a;
+    }
+
+    body::-webkit-scrollbar-thumb:hover,
+    #recipe-grid-container::-webkit-scrollbar-thumb:hover,
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #475569;
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-800">
+  <div class="min-h-screen w-full flex flex-col max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+    <header class="mb-6 text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-100 tracking-tight"><span
+          class="text-primary-500">Cocktail</span> Finder</h1>
+      <p class="text-base md:text-lg text-slate-400 mt-1">Discover your next favorite drink.</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="flex space-x-6 border-b border-slate-700/50 mb-6">
+      <button id="nav-search"
+        class="pb-3 text-sm font-bold uppercase tracking-wider text-primary-400 border-b-2 border-primary-500 transition-colors">Search</button>
+      <button id="nav-mybar"
+        class="pb-3 text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-slate-200 transition-colors">My
+        Bar</button>
+      <button id="nav-favorites"
+        class="pb-3 text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-slate-200 transition-colors">Favorites</button>
+    </div>
+
+    <!-- Search Hero Section -->
+    <section id="search-hero"
+      class="mb-8 bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-slate-700/50 shadow-xl transition-all">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <!-- Spirit -->
+        <div class="space-y-2">
+          <label for="filter-spirit" class="text-xs font-bold uppercase tracking-wider text-primary-400">1. Choose
+            Spirit</label>
+          <div class="relative">
+            <select id="filter-spirit"
+              class="w-full appearance-none bg-slate-900 border border-slate-700 text-slate-100 py-3.5 px-4 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all font-medium">
+              <option value="">Any Spirit</option>
+              <!-- Populated by JS -->
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flavor -->
+        <div class="space-y-2">
+          <label for="filter-flavor" class="text-xs font-bold uppercase tracking-wider text-primary-400">2. Pick
+            Flavor</label>
+          <div class="relative">
+            <select id="filter-flavor"
+              class="w-full appearance-none bg-slate-900 border border-slate-700 text-slate-100 py-3.5 px-4 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all font-medium">
+              <option value="">Any Flavor</option>
+              <!-- Populated by JS -->
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Difficulty -->
+        <div class="space-y-2">
+          <label for="filter-difficulty" class="text-xs font-bold uppercase tracking-wider text-primary-400">3.
+            Difficulty</label>
+          <div class="relative">
+            <select id="filter-difficulty"
+              class="w-full appearance-none bg-slate-900 border border-slate-700 text-slate-100 py-3.5 px-4 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all font-medium">
+              <option value="">Any Difficulty</option>
+              <!-- Populated by JS -->
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search & Action -->
+      <div class="space-y-4">
+        <div class="relative group">
+          <label for="search" class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 block">Optional:
+            Refine by Ingredients</label>
+          <div class="relative">
+            <input type="text" id="search" placeholder="E.g. 'Lime', 'Mint', 'Ginger Beer'"
+              class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all shadow-inner font-medium">
+            <span
+              class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-primary-500 transition-colors">
+              <i data-lucide="search" class="w-5 h-5"></i>
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-2">Use search to narrow down results even further. Leave empty to see all
+            matches for selected filters.</p>
+        </div>
+
+        <div class="flex gap-4 pt-2">
+          <button id="clear-filters"
+            class="px-6 py-3.5 rounded-xl border border-slate-600 text-slate-300 font-bold hover:bg-slate-800 hover:text-white transition-colors">
+            Reset
+          </button>
+          <button id="find-recipes-btn"
+            class="flex-1 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold py-3.5 rounded-xl hover:shadow-lg hover:shadow-primary-500/20 hover:scale-[1.01] transition-all duration-300 flex justify-center items-center gap-2 group">
+            <span>Find Recipes</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Bar Section (Hidden by Default) -->
+    <section id="my-bar-section"
+      class="hidden mb-8 bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-slate-700/50 shadow-xl transition-all">
+      <div class="mb-4">
+        <h2 class="text-xl font-bold text-slate-100">What's in your bar?</h2>
+        <p class="text-slate-400 text-sm">Select the ingredients you have at home. We'll show you what you can mix.</p>
+      </div>
+
+      <div id="my-bar-list"
+        class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-6 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
+        <!-- Injected by JS -->
+      </div>
+
+      <div class="flex gap-4 border-t border-slate-700/50 pt-4">
+        <button id="my-bar-clear-btn"
+          class="px-6 py-3.5 rounded-xl border border-slate-600 text-slate-300 font-bold hover:bg-slate-800 hover:text-white transition-colors">
+          Clear All
+        </button>
+        <button id="my-bar-find-btn"
+          class="flex-1 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-bold py-3.5 rounded-xl hover:shadow-lg hover:shadow-emerald-500/20 hover:scale-[1.01] transition-all duration-300 flex justify-center items-center gap-2 group">
+          <span>What can I make?</span>
+          <i data-lucide="martini" class="w-5 h-5 group-hover:-rotate-12 transition-transform"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Results Area -->
+    <main class="flex-1 flex flex-col min-h-0 min-w-0">
+      <div id="recipe-grid-container" class="flex-1">
+        <div id="recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-20"></div>
+
+        <div id="no-results"
+          class="hidden text-center text-slate-500 p-10 flex flex-col items-center justify-center py-20">
+          <div class="bg-slate-800/50 p-6 rounded-full mb-4">
+            <i data-lucide="martini" class="w-12 h-12 text-slate-600"></i>
+          </div>
+          <p class="text-xl font-medium text-slate-300">No matching drinks found.</p>
+          <p class="mt-2 text-sm text-slate-500">Try changing your filters or search terms.</p>
+        </div>
+
+        <div id="initial-message"
+          class="text-center text-slate-500 p-10 flex flex-col items-center justify-center py-10">
+          <p class="text-lg font-medium text-slate-400">Select your preferences above and click "Find Recipes"</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Card template -->
+  <template id="recipe-card-template">
+    <div
+      class="recipe-card group bg-slate-800/40 backdrop-blur-md rounded-2xl border border-slate-700/50 overflow-hidden hover:border-primary-500/30 hover:shadow-xl hover:shadow-primary-900/10 transition-all duration-300 flex flex-col h-full relative">
+      <div class="relative h-48 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+        <img class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" src=""
+          alt="Cocktail" />
+      </div>
+
+      <div class="p-5 flex flex-col flex-1">
+        <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-primary-400 transition-colors pr-8"></h3>
+
+        <div class="flex flex-wrap gap-2 mb-4 tags-container">
+          <!-- Tags injected here -->
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-400 flex-1">
+          <div>
+            <h4 class="font-semibold text-slate-300 mb-2 flex items-center gap-2">
+              <i data-lucide="flask-conical" class="w-4 h-4 text-primary-600"></i> Ingredients
+            </h4>
+            <ul class="space-y-1.5 pl-1"></ul>
+          </div>
+
+          <div class="pt-4 border-t border-slate-700/50">
+            <h4 class="font-semibold text-slate-300 mb-2 flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-primary-600"></i> Instructions
+            </h4>
+            <ol class="list-decimal list-inside space-y-1.5 pl-1"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Only this one app script -->
+  <script src="./scripts/app.js" defer></script>
+
+  <!-- PWA Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('SW registered:', reg.scope))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+
+</html>

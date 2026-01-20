@@ -1,0 +1,4362 @@
+[
+    {
+    "id": 1,
+    "name": "Margarita",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Margarita Glass",
+    "image": "https://placehold.co/600x400/90ee90/ffffff?text=Margarita",
+    "ingredients": [
+      "2 oz Tequila (Blanco)",
+      "1 oz Fresh Lime Juice",
+      "1 oz Cointreau (or triple sec)",
+      "Salt (for rim)"
+    ],
+    "instructions": [
+      "Rim a margarita glass with salt.",
+      "Add tequila, lime juice, and Cointreau to a shaker with ice.",
+      "Shake well for 15-20 seconds until well-chilled.",
+      "Strain into the prepared glass over fresh ice."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Old Fashioned",
+    "mainLiquor": ["Whiskey", "Bourbon"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon or Rye Whiskey",
+      "1 Sugar Cube (or 1 tsp sugar)",
+      "2-3 dashes Angostura Bitters",
+      "Splash of Water",
+      "Orange peel (for garnish)"
+    ],
+    "instructions": [
+      "In a rocks glass, muddle the sugar cube, bitters, and a splash of water until sugar is dissolved.",
+      "Fill the glass with a large ice cube.",
+      "Pour the whiskey over the ice.",
+      "Stir gently until well-chilled.",
+      "Express the oil of an orange peel over the glass, then drop it in."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Daiquiri",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f5f5dc/ffffff?text=Daiquiri",
+    "ingredients": [
+      "2 oz Light Rum",
+      "1 oz Fresh Lime Juice",
+      "0.75 oz Simple Syrup",
+      "Lime twist (for garnish)"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake vigorously for 15-20 seconds until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lime twist."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Martini",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Strong"],
+    "difficulty": "Easy",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/c7d2e0/ffffff?text=Gin+Martini",
+    "ingredients": [
+      "2.5 oz Gin (London Dry)",
+      "0.5 oz Dry Vermouth",
+      "Lemon twist or Olive (for garnish)"
+    ],
+    "instructions": [
+      "Add gin and dry vermouth to a mixing glass filled with ice.",
+      "Stir gently for 30 seconds until well-chilled.",
+      "Strain into a chilled martini glass.",
+      "Garnish with a lemon twist or an olive."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Gin & Tonic",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/ffffff?text=Gin+%26+Tonic",
+    "ingredients": [
+      "2 oz Gin",
+      "4-5 oz Tonic Water",
+      "Lime wedge (for garnish)"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Pour in the gin.",
+      "Top with tonic water and stir gently.",
+      "Garnish with a lime wedge."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moscow Mule",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Refreshing", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Moscow+Mule",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.5 oz Fresh Lime Juice",
+      "4 oz Ginger Beer",
+      "Lime wedge (for garnish)"
+    ],
+    "instructions": [
+      "Fill a copper mug or highball glass with ice.",
+      "Pour in the vodka and lime juice.",
+      "Top with ginger beer and stir gently.",
+      "Garnish with a lime wedge."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mojito",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Refreshing", "Sweet", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/a8d8a4/ffffff?text=Mojito",
+    "ingredients": [
+      "2 oz Light Rum",
+      "1 oz Fresh Lime Juice",
+      "2 tsp Sugar",
+      "6-8 Mint Leaves",
+      "Soda Water",
+      "Mint sprig (for garnish)"
+    ],
+    "instructions": [
+      "In a highball glass, gently muddle the mint leaves and sugar.",
+      "Add the lime juice and rum, then stir to dissolve the sugar.",
+      "Fill the glass with crushed ice.",
+      "Top with soda water and stir gently to combine.",
+      "Garnish with a mint sprig and lime wheel."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Cosmopolitan",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/f67280/ffffff?text=Cosmopolitan",
+    "ingredients": [
+      "1.5 oz Vodka (Citron or regular)",
+      "1 oz Cointreau (or triple sec)",
+      "0.5 oz Fresh Lime Juice",
+      "0.25 oz Cranberry Juice",
+      "Lime twist (for garnish)"
+    ],
+    "instructions": [
+      "Add all ingredients (Vodka, Cointreau, lime juice, cranberry juice) to a shaker with ice.",
+      "Shake well for 15-20 seconds until well-chilled.",
+      "Strain into a chilled martini glass.",
+      "Garnish with a lime twist."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Manhattan",
+    "mainLiquor": ["Whiskey", "Bourbon"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Manhattan",
+    "ingredients": [
+      "2 oz Rye Whiskey or Bourbon",
+      "1 oz Sweet Vermouth",
+      "2-3 dashes Angostura Bitters",
+      "Brandied cherry (for garnish)"
+    ],
+    "instructions": [
+      "Add whiskey, sweet vermouth, and bitters to a mixing glass filled with ice.",
+      "Stir gently for 30 seconds until well-chilled.",
+      "Strain into a chilled martini or coupe glass.",
+      "Garnish with a brandied cherry."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Whiskey Sour",
+    "mainLiquor": ["Whiskey", "Bourbon"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/ffbf00/ffffff?text=Whiskey+Sour",
+    "ingredients": [
+      "2 oz Bourbon or Whiskey",
+      "1 oz Fresh Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "1 Egg White (Optional)",
+      "Orange peel (for garnish)"
+    ],
+    "instructions": [
+      "Add whiskey, lemon juice, simple syrup, and optional egg white to a shaker.",
+      "If using egg white, 'dry shake' (without ice) for 15 seconds.",
+      "Add ice to the shaker and shake again vigorously for 30 seconds until well-chilled.",
+      "Strain into a rocks glass filled with fresh ice.",
+      "Garnish with an orange peel and a cherry."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Negroni",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d73c3c/ffffff?text=Negroni",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Campari",
+      "1 oz Sweet Vermouth",
+      "Orange peel (for garnish)"
+    ],
+    "instructions": [
+      "Add the gin, Campari, and sweet vermouth to a rocks glass filled with ice.",
+      "Stir gently until well-chilled (about 20-30 seconds).",
+      "Express the oil of an orange peel over the glass, then drop it in as garnish."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bloody Mary",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Refreshing", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bf4343/ffffff?text=Bloody+Mary",
+    "ingredients": [
+      "2 oz Vodka",
+      "4 oz Tomato Juice",
+      "0.5 oz Fresh Lemon Juice",
+      "2 dashes Worcestershire Sauce",
+      "2 dashes Tabasco Sauce",
+      "Pinch of Celery Salt",
+      "Pinch of Black Pepper",
+      "Celery stalk (for garnish)"
+    ],
+    "instructions": [
+      "Combine vodka, tomato juice, lemon juice, Worcestershire, Tabasco, salt, and pepper in a shaker with ice.",
+      "Shake gently or 'roll' the shaker to combine.",
+      "Strain into a highball glass filled with fresh ice.",
+      "Garnish with a celery stalk and any other desired garnishes (like olives or a lime wedge)."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Mai Tai",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Sour", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f4a460/ffffff?text=Mai+Tai",
+    "ingredients": [
+      "1.5 oz Light Rum",
+      "0.5 oz Dark Rum (for float)",
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Orange Curaçao",
+      "0.5 oz Orgeat Syrup",
+      "Mint sprig (for garnish)"
+    ],
+    "instructions": [
+      "Add light rum, lime juice, orange curaçao, and orgeat to a shaker with ice.",
+      "Shake well and strain into a rocks glass filled with crushed ice.",
+      "Gently float the dark rum on top.",
+      "Garnish with a mint sprig and a lime wheel."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Pina Colada",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Hurricane Glass",
+    "image": "https://placehold.co/600x400/fffacd/ffffff?text=Pina+Colada",
+    "ingredients": [
+      "2 oz Light Rum",
+      "1.5 oz Cream of Coconut",
+      "1.5 oz Pineapple Juice",
+      "1 cup Crushed Ice",
+      "Pineapple wedge (for garnish)"
+    ],
+    "instructions": [
+      "Add rum, cream of coconut, pineapple juice, and crushed ice to a blender.",
+      "Blend until smooth and frothy.",
+      "Pour into a chilled hurricane or highball glass.",
+      "Garnish with a pineapple wedge and a cherry."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Gimlet",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/98fb98/ffffff?text=Gimlet",
+    "ingredients": [
+      "2.5 oz Gin",
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Simple Syrup",
+      "Lime wheel (for garnish)"
+    ],
+    "instructions": [
+      "Add gin, lime juice, and simple syrup to a shaker with ice.",
+      "Shake vigorously until well-chilled.",
+      "Strain into a chilled coupe or martini glass.",
+      "Garnish with a lime wheel."
+    ]
+  },    
+  {
+    "id": 16,
+    "name": "French 75",
+    "mainLiquor": ["Gin", "Champagne"],
+    "flavor": ["Refreshing", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/7dd3fc/ffffff?text=French+75",
+    "ingredients": [
+      "1 oz Gin",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "3 oz Champagne"
+    ],
+    "instructions": [
+      "Shake gin, lemon juice, and syrup with ice.",
+      "Strain into a flute and top with Champagne.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Aperol Spritz",
+    "mainLiquor": ["Aperol", "Prosecco"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Spritz",
+    "ingredients": [
+      "3 oz Prosecco",
+      "2 oz Aperol",
+      "1 oz Soda Water",
+      "Orange slice"
+    ],
+    "instructions": [
+      "Build in a wine glass over ice.",
+      "Add Prosecco, then Aperol, then top with soda water.",
+      "Gently stir once and garnish with an orange slice."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Tom Collins",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Tom+Collins",
+    "ingredients": [
+      "2 oz Gin",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Club Soda"
+    ],
+    "instructions": [
+      "Shake gin, lemon juice, and syrup with ice.",
+      "Strain into a Collins glass filled with ice.",
+      "Top with club soda and stir gently.",
+      "Garnish with a lemon wheel and cherry."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tequila Sunrise",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fca5a5/111111?text=Tequila+Sunrise",
+    "ingredients": [
+      "2 oz Tequila",
+      "4 oz Orange Juice",
+      "0.5 oz Grenadine"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice and add tequila and orange juice.",
+      "Slowly pour grenadine so it sinks and creates a sunrise gradient.",
+      "Do not stir; garnish with an orange slice."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Mimosa",
+    "mainLiquor": ["Champagne"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Mimosa",
+    "ingredients": [
+      "2 oz Fresh Orange Juice",
+      "4 oz Champagne"
+    ],
+    "instructions": [
+      "Pour orange juice into a flute.",
+      "Top gently with chilled Champagne.",
+      "Do not stir; serve immediately."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Paloma",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Refreshing", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Paloma",
+    "ingredients": [
+      "2 oz Tequila",
+      "2 oz Grapefruit Soda",
+      "0.5 oz Lime Juice",
+      "Pinch of Salt"
+    ],
+    "instructions": [
+      "Add all ingredients to a highball glass filled with ice.",
+      "Stir gently to combine.",
+      "Garnish with a grapefruit wedge."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Rum Punch",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Hurricane Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Rum+Punch",
+    "ingredients": [
+      "1.5 oz Dark Rum",
+      "1.5 oz Light Rum",
+      "2 oz Orange Juice",
+      "1 oz Pineapple Juice",
+      "0.5 oz Grenadine"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice and strain into a glass filled with ice.",
+      "Garnish with pineapple and cherry."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Whiskey Smash",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Smash",
+    "ingredients": [
+      "2 oz Whiskey",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "4 Mint Leaves"
+    ],
+    "instructions": [
+      "Muddle mint and syrup in a rocks glass.",
+      "Add lemon juice and whiskey, then fill with crushed ice.",
+      "Stir gently and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Sidecar",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Sour", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fecaca/111111?text=Sidecar",
+    "ingredients": [
+      "2 oz Brandy (Cognac)",
+      "0.75 oz Cointreau",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Double strain into a sugar-rimmed coupe glass.",
+      "Garnish with an orange twist."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dark and Stormy",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Refreshing", "Spicy"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/7f1d1d/ffffff?text=Dark+and+Stormy",
+    "ingredients": [
+      "2 oz Dark Rum",
+      "3 oz Ginger Beer",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add lime juice and ginger beer.",
+      "Float the dark rum on top for a layered effect.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Espresso Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Espresso+Martini",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "1 oz Coffee Liqueur",
+      "1 oz Fresh Espresso",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until frothy.",
+      "Strain into a chilled martini glass.",
+      "Garnish with three coffee beans."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Mai Tai Royale",
+    "mainLiquor": ["Rum", "Prosecco"],
+    "flavor": ["Sweet", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Tiki Glass",
+    "image": "https://placehold.co/600x400/fbbf24/111111?text=Mai+Tai+Royale",
+    "ingredients": [
+      "1 oz Light Rum",
+      "1 oz Dark Rum",
+      "0.75 oz Lime Juice",
+      "0.5 oz Orgeat Syrup",
+      "2 oz Prosecco"
+    ],
+    "instructions": [
+      "Shake all ingredients except Prosecco with ice.",
+      "Strain into a tiki glass filled with crushed ice.",
+      "Top with Prosecco and stir gently."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Gin Fizz",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Fizz",
+    "ingredients": [
+      "2 oz Gin",
+      "1 oz Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "Club Soda"
+    ],
+    "instructions": [
+      "Shake gin, lemon juice, and syrup with ice.",
+      "Strain into a chilled glass without ice.",
+      "Top with soda and let foam form naturally."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Irish Coffee",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Sweet", "Warm"],
+    "difficulty": "Easy",
+    "glassware": "Irish Coffee Mug",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Irish+Coffee",
+    "ingredients": [
+      "1.5 oz Irish Whiskey",
+      "4 oz Hot Coffee",
+      "1 tsp Brown Sugar",
+      "Whipped Cream"
+    ],
+    "instructions": [
+      "Combine hot coffee, whiskey, and sugar in a warm mug.",
+      "Stir to dissolve sugar.",
+      "Top gently with whipped cream."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Smoky Margarita",
+    "mainLiquor": ["Tequila", "Mezcal"],
+    "flavor": ["Sour", "Smoky"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Margarita",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Mezcal",
+      "1 oz Lime Juice",
+      "0.5 oz Agave Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain over fresh ice into a rocks glass.",
+      "Garnish with a lime wheel and smoked salt rim."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Negroni Sbagliato",
+    "mainLiquor": ["Aperol", "Prosecco"],
+    "flavor": ["Bitter", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Negroni+Sbagliato",
+    "ingredients": [
+      "1 oz Aperol",
+      "1 oz Sweet Vermouth",
+      "2 oz Prosecco",
+      "Orange slice"
+    ],
+    "instructions": [
+      "Build in a rocks glass filled with ice.",
+      "Add Aperol and vermouth, then top with Prosecco.",
+      "Stir gently and garnish with an orange slice."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Brandy Alexander",
+    "mainLiquor": ["Brandy", "Liqueur"],
+    "flavor": ["Sweet", "Creamy"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Alexander",
+    "ingredients": [
+      "1 oz Brandy",
+      "1 oz Crème de Cacao (Liqueur)",
+      "1 oz Heavy Cream"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until frothy.",
+      "Strain into a chilled coupe.",
+      "Garnish with grated nutmeg."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "New York Sour",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/ffbf00/111111?text=New+York+Sour",
+    "ingredients": [
+      "2 oz Whiskey",
+      "1 oz Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "0.5 oz Red Wine (float)"
+    ],
+    "instructions": [
+      "Shake whiskey, lemon juice, and syrup with ice.",
+      "Strain over ice into a rocks glass.",
+      "Gently float red wine on top using a spoon."
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Cuba Libre",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Cuba+Libre",
+    "ingredients": [
+      "2 oz Light Rum",
+      "4 oz Cola",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Build in a highball glass filled with ice.",
+      "Add rum, lime juice, and cola.",
+      "Stir gently and garnish with a lime wedge."
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Rusty Nail",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d97706/ffffff?text=Rusty+Nail",
+    "ingredients": [
+      "1.5 oz Scotch Whiskey",
+      "0.75 oz Drambuie (Liqueur)"
+    ],
+    "instructions": [
+      "Add ingredients to a rocks glass with ice.",
+      "Stir gently until chilled.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Rum Espresso Flip",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Sweet", "Strong"],
+    "difficulty": "Advanced",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Flip",
+    "ingredients": [
+      "1 oz Aged Rum",
+      "1 oz Coffee Liqueur",
+      "1 oz Espresso",
+      "0.5 oz Simple Syrup",
+      "1 Egg"
+    ],
+    "instructions": [
+      "Shake all ingredients without ice (dry shake).",
+      "Add ice and shake again until frothy.",
+      "Double strain into a chilled coupe and garnish with cocoa powder."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Whiskey Mule",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Refreshing", "Spicy"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Mule",
+    "ingredients": [
+      "2 oz Whiskey",
+      "0.5 oz Lime Juice",
+      "4 oz Ginger Beer"
+    ],
+    "instructions": [
+      "Build in a copper mug over ice.",
+      "Stir gently and garnish with lime and mint."
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Tequila Negroni",
+    "mainLiquor": ["Tequila", "Aperol"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Tequila+Negroni",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Aperol",
+      "1 oz Sweet Vermouth"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until well-chilled.",
+      "Strain into a rocks glass with fresh ice.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Rum Old Fashioned",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Old+Fashioned",
+    "ingredients": [
+      "2 oz Aged Rum",
+      "0.25 oz Demerara Syrup",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Build in a rocks glass over ice.",
+      "Stir until chilled and garnish with orange peel."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Champagne Cocktail",
+    "mainLiquor": ["Champagne"],
+    "flavor": ["Sweet", "Effervescent"],
+    "difficulty": "Easy",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Champagne+Cocktail",
+    "ingredients": [
+      "1 Sugar Cube",
+      "2 dashes Angostura Bitters",
+      "4 oz Champagne"
+    ],
+    "instructions": [
+      "Place sugar cube in a flute and add bitters.",
+      "Top slowly with chilled Champagne.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Honey Bourbon Smash",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Honey+Bourbon+Smash",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Honey Syrup",
+      "Mint Leaves"
+    ],
+    "instructions": [
+      "Muddle mint with honey syrup.",
+      "Add bourbon and lemon juice, then shake with ice.",
+      "Strain over ice and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Prosecco Royale",
+    "mainLiquor": ["Prosecco", "Liqueur"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/86efac/111111?text=Prosecco+Royale",
+    "ingredients": [
+      "0.5 oz Crème de Cassis (Liqueur)",
+      "4 oz Prosecco"
+    ],
+    "instructions": [
+      "Add cassis to a flute and top with Prosecco.",
+      "Garnish with a raspberry."
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Boulevardier",
+    "mainLiquor": ["Bourbon", "Aperol"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Boulevardier",
+    "ingredients": [
+      "1 oz Bourbon",
+      "1 oz Aperol",
+      "1 oz Sweet Vermouth"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until chilled.",
+      "Strain into a chilled coupe and garnish with orange twist."
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Lemon Drop Martini",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Lemon+Drop",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Triple Sec",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a sugar-rimmed martini glass.",
+      "Garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Mezcal Paloma",
+    "mainLiquor": ["Tequila", "Mezcal"],
+    "flavor": ["Smoky", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Paloma",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Mezcal",
+      "2 oz Grapefruit Juice",
+      "0.5 oz Lime Juice",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Shake tequila, mezcal, and juices with ice.",
+      "Strain into a highball with fresh ice.",
+      "Top with soda water and garnish with grapefruit wedge."
+    ]
+  },
+    
+  {
+    "id": 46,
+    "name": "Brandy Sour",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Sour",
+    "ingredients": [
+      "2 oz Brandy",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain over fresh ice into a rocks glass.",
+      "Garnish with a lemon wedge."
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Gin Basil Smash",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Herbal", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Basil+Smash",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "6 Basil Leaves"
+    ],
+    "instructions": [
+      "Muddle basil with syrup and lemon juice.",
+      "Add gin and ice, then shake well.",
+      "Strain into a rocks glass with ice and garnish with basil leaf."
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Rum Espresso",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso",
+    "ingredients": [
+      "1.5 oz Aged Rum",
+      "1 oz Coffee Liqueur",
+      "1 oz Espresso"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled martini glass.",
+      "Garnish with three coffee beans."
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Tequila Honey Bee",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Tequila+Honey+Bee",
+    "ingredients": [
+      "2 oz Tequila",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Honey Syrup",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake tequila, lemon juice, and syrup with ice.",
+      "Strain into a coupe glass and top with a dash of bitters."
+    ]
+  },
+  {
+    "id": 50,
+    "name": "French Connection",
+    "mainLiquor": ["Brandy", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fecaca/111111?text=French+Connection",
+    "ingredients": [
+      "1.5 oz Brandy",
+      "1.5 oz Amaretto Liqueur"
+    ],
+    "instructions": [
+      "Build ingredients over ice in a rocks glass.",
+      "Stir gently and garnish with an orange peel."
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Vodka Collins",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Collins",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Top with Club Soda"
+    ],
+    "instructions": [
+      "Shake vodka, lemon juice, and syrup with ice.",
+      "Strain into a Collins glass filled with ice.",
+      "Top with soda and garnish with lemon slice."
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Rum Punch Royale",
+    "mainLiquor": ["Rum", "Prosecco"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Hurricane Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Rum+Punch+Royale",
+    "ingredients": [
+      "1 oz Dark Rum",
+      "1 oz Light Rum",
+      "1 oz Pineapple Juice",
+      "1 oz Orange Juice",
+      "0.5 oz Grenadine",
+      "Top with Prosecco"
+    ],
+    "instructions": [
+      "Shake all ingredients except Prosecco with ice.",
+      "Strain into a hurricane glass filled with ice.",
+      "Top with Prosecco and stir gently."
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Aperol Negroni",
+    "mainLiquor": ["Gin", "Aperol"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Negroni",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Aperol",
+      "1 oz Sweet Vermouth"
+    ],
+    "instructions": [
+      "Add all ingredients to a rocks glass filled with ice.",
+      "Stir until chilled and garnish with orange peel."
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Whiskey Ginger",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Refreshing", "Spicy"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Ginger",
+    "ingredients": [
+      "2 oz Whiskey",
+      "4 oz Ginger Ale"
+    ],
+    "instructions": [
+      "Build in a highball glass filled with ice.",
+      "Add whiskey and top with ginger ale.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Golden Daiquiri",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f5f5dc/111111?text=Golden+Daiquiri",
+    "ingredients": [
+      "1.5 oz Aged Rum",
+      "0.5 oz Orange Liqueur",
+      "0.75 oz Lime Juice",
+      "0.25 oz Honey Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Double strain into a coupe glass.",
+      "Garnish with lime twist."
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Vodka Spritz",
+    "mainLiquor": ["Vodka", "Prosecco"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Vodka+Spritz",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "3 oz Prosecco",
+      "1 oz Soda Water",
+      "Lemon slice"
+    ],
+    "instructions": [
+      "Build in a wine glass with ice.",
+      "Add vodka, top with Prosecco and soda water.",
+      "Garnish with lemon slice."
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Smoky Old Fashioned",
+    "mainLiquor": ["Mezcal", "Bourbon"],
+    "flavor": ["Smoky", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Old+Fashioned",
+    "ingredients": [
+      "1 oz Bourbon",
+      "1 oz Mezcal",
+      "0.25 oz Agave Syrup",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until chilled.",
+      "Strain over a large cube and garnish with orange peel."
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Tequila Fizz",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Fizz",
+    "ingredients": [
+      "2 oz Tequila",
+      "1 oz Lemon Juice",
+      "0.5 oz Agave Syrup",
+      "Club Soda"
+    ],
+    "instructions": [
+      "Shake tequila, lemon juice, and syrup with ice.",
+      "Strain into a Collins glass filled with ice.",
+      "Top with soda water and garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Whiskey Clover Club",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Advanced",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Clover+Club",
+    "ingredients": [
+      "2 oz Whiskey",
+      "0.5 oz Raspberry Liqueur",
+      "0.75 oz Lemon Juice",
+      "1 Egg White"
+    ],
+    "instructions": [
+      "Dry shake all ingredients (no ice) for 15 seconds.",
+      "Add ice and shake again.",
+      "Strain into a coupe and garnish with raspberry."
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Champagne Mojito",
+    "mainLiquor": ["Rum", "Champagne"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/a8d8a4/111111?text=Champagne+Mojito",
+    "ingredients": [
+      "1 oz Light Rum",
+      "0.5 oz Lime Juice",
+      "0.25 oz Simple Syrup",
+      "2 Mint Leaves",
+      "Top with Champagne"
+    ],
+    "instructions": [
+      "Muddle mint with syrup and lime juice.",
+      "Add rum, stir, then top with Champagne.",
+      "Garnish with mint sprig."
+    ]
+  },
+    
+  {
+    "id": 61,
+    "name": "Strawberry Gin Smash",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Strawberry+Gin+Smash",
+    "ingredients": [
+      "2 oz Gin",
+      "3 Fresh Strawberries",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Simple Syrup",
+      "Soda Water"
+    ],
+    "instructions": [
+      "Muddle strawberries with syrup and lemon juice.",
+      "Add gin and ice, shake briefly.",
+      "Strain over ice and top with soda water."
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Bourbon Sidecar",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Sour", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Sidecar",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Orange Liqueur",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a sugar-rimmed coupe glass.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Coconut Rum Cooler",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Tropical"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Coconut+Rum+Cooler",
+    "ingredients": [
+      "2 oz Coconut Rum",
+      "3 oz Pineapple Juice",
+      "1 oz Orange Juice",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in a highball with ice.",
+      "Add rum and juices, top with soda water.",
+      "Stir gently and garnish with pineapple slice."
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Aperol Gin Spritz",
+    "mainLiquor": ["Aperol", "Gin", "Prosecco"],
+    "flavor": ["Refreshing", "Bitter"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Gin+Spritz",
+    "ingredients": [
+      "1 oz Gin",
+      "2 oz Aperol",
+      "2 oz Prosecco",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build in a wine glass filled with ice.",
+      "Add gin, Aperol, and Prosecco.",
+      "Top with soda and garnish with orange slice."
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Mezcal Sour",
+    "mainLiquor": ["Mezcal"],
+    "flavor": ["Smoky", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Sour",
+    "ingredients": [
+      "2 oz Mezcal",
+      "0.75 oz Lime Juice",
+      "0.5 oz Agave Syrup",
+      "1 Egg White (optional)"
+    ],
+    "instructions": [
+      "Dry shake all ingredients to foam.",
+      "Add ice and shake again.",
+      "Strain into a coupe glass and garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Rum Sour",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f5f5dc/111111?text=Rum+Sour",
+    "ingredients": [
+      "2 oz Light Rum",
+      "1 oz Lime Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a coupe and garnish with lime twist."
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Brandy Old Fashioned",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Sweet", "Strong"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Old+Fashioned",
+    "ingredients": [
+      "2 oz Brandy",
+      "1 Sugar Cube",
+      "2 dashes Bitters",
+      "Splash of Club Soda"
+    ],
+    "instructions": [
+      "Muddle sugar, bitters, and soda in a rocks glass.",
+      "Add brandy and ice, stir gently.",
+      "Garnish with orange slice and cherry."
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Vodka Mojito",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Mojito",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Lime Juice",
+      "6 Mint Leaves",
+      "1 tsp Sugar",
+      "Soda Water"
+    ],
+    "instructions": [
+      "Muddle mint and sugar in a highball glass.",
+      "Add lime juice and vodka, fill with ice.",
+      "Top with soda and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Gin Rickey",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Rickey",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lime Juice",
+      "Top with Club Soda"
+    ],
+    "instructions": [
+      "Build gin and lime juice over ice.",
+      "Top with club soda and stir gently.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Bourbon Smash",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Smash",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Mint Leaves"
+    ],
+    "instructions": [
+      "Muddle mint with syrup and lemon juice.",
+      "Add bourbon and shake with ice.",
+      "Strain over ice and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Rum Manhattan",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Manhattan",
+    "ingredients": [
+      "2 oz Aged Rum",
+      "1 oz Sweet Vermouth",
+      "2 dashes Bitters"
+    ],
+    "instructions": [
+      "Stir with ice until chilled.",
+      "Strain into a coupe glass and garnish with cherry."
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Prosecco Margarita",
+    "mainLiquor": ["Tequila", "Prosecco"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Prosecco+Margarita",
+    "ingredients": [
+      "1 oz Tequila",
+      "0.75 oz Lime Juice",
+      "0.5 oz Triple Sec",
+      "Top with Prosecco"
+    ],
+    "instructions": [
+      "Shake tequila, lime juice, and triple sec with ice.",
+      "Strain into a coupe and top with Prosecco.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Bourbon Espresso Martini",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Bourbon+Espresso+Martini",
+    "ingredients": [
+      "1.5 oz Bourbon",
+      "1 oz Coffee Liqueur",
+      "1 oz Espresso"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled martini glass.",
+      "Garnish with coffee beans."
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Champagne Spritz",
+    "mainLiquor": ["Champagne", "Aperol"],
+    "flavor": ["Refreshing", "Bitter"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Champagne+Spritz",
+    "ingredients": [
+      "2 oz Champagne",
+      "2 oz Aperol",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build in a wine glass filled with ice.",
+      "Add Champagne, Aperol, and soda water.",
+      "Garnish with an orange slice."
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Rum Espresso Flip",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Sweet", "Rich"],
+    "difficulty": "Advanced",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Flip",
+    "ingredients": [
+      "1 oz Dark Rum",
+      "1 oz Coffee Liqueur",
+      "1 oz Cream",
+      "0.25 oz Simple Syrup",
+      "1 Egg Yolk"
+    ],
+    "instructions": [
+      "Shake all ingredients without ice (dry shake).",
+      "Add ice and shake again until frothy.",
+      "Strain into a coupe and garnish with nutmeg."
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Tequila Smash",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Smash",
+    "ingredients": [
+      "2 oz Tequila",
+      "0.5 oz Lime Juice",
+      "0.5 oz Agave Syrup",
+      "Mint Leaves"
+    ],
+    "instructions": [
+      "Muddle mint and syrup in a rocks glass.",
+      "Add tequila, lime juice, and ice.",
+      "Stir and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Bourbon Cherry Fizz",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sweet", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Cherry+Fizz",
+    "ingredients": [
+      "2 oz Bourbon",
+      "1 oz Cherry Juice",
+      "0.5 oz Lemon Juice",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Shake bourbon, cherry juice, and lemon juice with ice.",
+      "Strain into a highball filled with ice.",
+      "Top with soda water and garnish with cherry."
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Rum Mule",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Spicy", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Rum+Mule",
+    "ingredients": [
+      "2 oz Rum",
+      "0.5 oz Lime Juice",
+      "4 oz Ginger Beer"
+    ],
+    "instructions": [
+      "Build in a copper mug filled with ice.",
+      "Stir gently and garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Mezcal Margarita",
+    "mainLiquor": ["Tequila", "Mezcal"],
+    "flavor": ["Sour", "Smoky"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Margarita",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Mezcal",
+      "1 oz Lime Juice",
+      "0.5 oz Agave Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a coupe glass with salted rim.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 80,
+    "name": "French Spritz",
+    "mainLiquor": ["Liqueur", "Prosecco"],
+    "flavor": ["Sweet", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=French+Spritz",
+    "ingredients": [
+      "1 oz Elderflower Liqueur",
+      "3 oz Prosecco",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build in a wine glass filled with ice.",
+      "Stir gently and garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Spiced Rum Sour",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Spiced+Rum+Sour",
+    "ingredients": [
+      "2 oz Spiced Rum",
+      "1 oz Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a rocks glass with fresh ice.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Bourbon Flip",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sweet", "Rich"],
+    "difficulty": "Advanced",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Flip",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Simple Syrup",
+      "1 Whole Egg",
+      "Nutmeg for garnish"
+    ],
+    "instructions": [
+      "Dry shake all ingredients without ice.",
+      "Add ice and shake again until frothy.",
+      "Strain into a coupe and grate nutmeg on top."
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Vodka Sour",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Sour",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a coupe and garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Gin Spritz",
+    "mainLiquor": ["Gin", "Prosecco"],
+    "flavor": ["Refreshing", "Floral"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Spritz",
+    "ingredients": [
+      "1 oz Gin",
+      "2 oz Prosecco",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build in a wine glass filled with ice.",
+      "Stir and garnish with cucumber slice."
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Smoky Paloma",
+    "mainLiquor": ["Tequila", "Mezcal"],
+    "flavor": ["Smoky", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Paloma",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Mezcal",
+      "2 oz Grapefruit Juice",
+      "0.5 oz Lime Juice",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Shake all ingredients except soda water with ice.",
+      "Strain into a highball with fresh ice and top with soda.",
+      "Garnish with grapefruit wedge."
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Bourbon Spritz",
+    "mainLiquor": ["Bourbon", "Prosecco"],
+    "flavor": ["Sweet", "Effervescent"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Spritz",
+    "ingredients": [
+      "1.5 oz Bourbon",
+      "2 oz Prosecco",
+      "1 oz Soda Water",
+      "0.25 oz Maple Syrup"
+    ],
+    "instructions": [
+      "Build over ice in a wine glass.",
+      "Stir gently and garnish with orange twist."
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Rum Espresso Sour",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Sour",
+    "ingredients": [
+      "1.5 oz Aged Rum",
+      "1 oz Coffee Liqueur",
+      "0.75 oz Lemon Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until frothy.",
+      "Strain into a coupe and garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Citrus Champagne Fizz",
+    "mainLiquor": ["Champagne"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Flute",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Citrus+Champagne+Fizz",
+    "ingredients": [
+      "1 oz Orange Juice",
+      "1 oz Lemon Juice",
+      "3 oz Champagne"
+    ],
+    "instructions": [
+      "Pour juices into a flute.",
+      "Top with chilled Champagne and garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Negroni Royale",
+    "mainLiquor": ["Gin", "Prosecco"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Negroni+Royale",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Sweet Vermouth",
+      "1 oz Prosecco"
+    ],
+    "instructions": [
+      "Build over ice and stir gently.",
+      "Garnish with an orange peel."
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Whiskey Bramble",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Bramble",
+    "ingredients": [
+      "2 oz Whiskey",
+      "0.5 oz Blackberry Liqueur",
+      "0.75 oz Lemon Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake whiskey, lemon juice, and syrup with ice.",
+      "Strain into rocks glass with ice and drizzle liqueur over top.",
+      "Garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Maple Bourbon Sour",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Bourbon+Sour",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Maple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain over fresh ice into rocks glass.",
+      "Garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Aperol Tequila Spritz",
+    "mainLiquor": ["Aperol", "Tequila", "Prosecco"],
+    "flavor": ["Refreshing", "Bitter"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Tequila+Spritz",
+    "ingredients": [
+      "1 oz Tequila",
+      "2 oz Aperol",
+      "2 oz Prosecco",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build in wine glass with ice.",
+      "Stir gently and garnish with orange wedge."
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Honey Gin Fizz",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Honey+Gin+Fizz",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Honey Syrup",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Shake gin, lemon juice, and honey syrup with ice.",
+      "Strain into highball and top with soda water.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Rum Negroni",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Negroni",
+    "ingredients": [
+      "1 oz Dark Rum",
+      "1 oz Sweet Vermouth",
+      "1 oz Campari"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into a rocks glass over ice.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Vodka Gimlet",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Gimlet",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.75 oz Lime Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Whiskey Mule",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Spicy", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Mule",
+    "ingredients": [
+      "2 oz Whiskey",
+      "0.5 oz Lime Juice",
+      "4 oz Ginger Beer"
+    ],
+    "instructions": [
+      "Build in copper mug over ice.",
+      "Stir gently and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Tequila Negroni",
+    "mainLiquor": ["Tequila", "Liqueur"],
+    "flavor": ["Bitter", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Negroni",
+    "ingredients": [
+      "1 oz Tequila",
+      "1 oz Campari",
+      "1 oz Sweet Vermouth"
+    ],
+    "instructions": [
+      "Stir with ice and strain into rocks glass.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Gin & Aperol Collins",
+    "mainLiquor": ["Gin", "Aperol"],
+    "flavor": ["Refreshing", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Gin+%26+Aperol+Collins",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.75 oz Aperol",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Shake all but soda with ice.",
+      "Strain into Collins glass and top with soda.",
+      "Garnish with orange slice."
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Bourbon & Aperol Old Fashioned",
+    "mainLiquor": ["Bourbon", "Aperol"],
+    "flavor": ["Strong", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Bourbon+%26+Aperol+Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Aperol",
+      "1 Sugar Cube",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Muddle sugar and bitters in a rocks glass.",
+      "Add Aperol and bourbon with ice, stir gently.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Algonquin",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Dry", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/90ee90/ffffff?text=Algonquin",
+    "ingredients": [
+      "1.5 oz Rye Whiskey",
+      "0.75 oz Dry Vermouth",
+      "0.75 oz Pineapple Juice"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a pineapple wedge and/or maraschino cherry."
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Angel Face",
+    "mainLiquor": ["Gin", "Brandy", "Liqueur"],
+    "flavor": ["Strong", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f67280/ffffff?text=Angel+Face",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Calvados (or Apple Brandy)",
+      "1 oz Apricot Brandy (or Apricot Liqueur)"
+    ],
+    "instructions": [
+      "Add all ingredients to a shaker with ice.",
+      "Shake well until chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist or apple slice."
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Antibes",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Herbal", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/ffffff?text=Antibes",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Green Chartreuse",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Triple Sec"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Applejack Rabbit",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Sweet", "Spicy"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/b5cda5/ffffff?text=Applejack+Rabbit",
+    "ingredients": [
+      "2 oz Applejack Brandy",
+      "0.75 oz Fresh Lemon Juice",
+      "0.5 oz Ginger Syrup",
+      "Dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a rocks glass filled with ice.",
+      "Garnish with a lemon wheel and candied ginger."
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Aviation Royale",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Floral", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/c1c1f0/ffffff?text=Aviation+Royale",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Maraschino Liqueur",
+      "0.5 oz Crème de Violette",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Champagne (float)"
+    ],
+    "instructions": [
+      "Shake gin, maraschino, crème de violette, and lemon juice with ice.",
+      "Strain into a chilled coupe glass.",
+      "Float champagne gently on top.",
+      "Garnish with a cherry."
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Banana Daiquiri",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Sweet", "Tropical"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/a8d8a4/ffffff?text=Banana+Daiquiri",
+    "ingredients": [
+      "2 oz Light Rum",
+      "0.5 oz Banana Liqueur",
+      "1 oz Fresh Lime Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a banana slice."
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Basil Gimlet",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Herbal", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/7cba82/ffffff?text=Basil+Gimlet",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Basil Syrup",
+      "4-5 Basil Leaves"
+    ],
+    "instructions": [
+      "Muddle basil leaves with syrup and lime juice in a shaker.",
+      "Add gin and ice, shake until chilled.",
+      "Double strain into a chilled coupe glass.",
+      "Garnish with a basil leaf."
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Batanga",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Refreshing", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/70c4a9/ffffff?text=Batanga",
+    "ingredients": [
+      "2 oz Blanco Tequila",
+      "0.5 oz Fresh Lime Juice",
+      "Top with Cola"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add tequila and lime juice, stir gently.",
+      "Top with cola and garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Bee’s Kiss",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Sweet", "Herbal"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f3d953/ffffff?text=Bee’s+Kiss",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Honey Liqueur",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Bijou",
+    "mainLiquor": ["Gin", "Spirits"],
+    "flavor": ["Herbal", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Bijou",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Green Chartreuse",
+      "1 oz Sweet Vermouth",
+      "1 dash Orange Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice until chilled.",
+      "Strain into a rocks glass over a large ice cube.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Blackthorn",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Bittersweet", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/aa6c39/ffffff?text=Blackthorn",
+    "ingredients": [
+      "2 oz Irish Whiskey",
+      "1 oz Sweet Vermouth",
+      "0.5 oz Cherry Liqueur",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a cherry."
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Blue Hawaii",
+    "mainLiquor": ["Vodka", "Rum", "Liqueur"],
+    "flavor": ["Tropical", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Hurricane Glass",
+    "image": "https://placehold.co/600x400/007fff/ffffff?text=Blue+Hawaii",
+    "ingredients": [
+      "1 oz Vodka",
+      "1 oz Light Rum",
+      "0.5 oz Blue Curaçao",
+      "3 oz Pineapple Juice",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a hurricane glass filled with fresh ice.",
+      "Garnish with an orange slice and cherry."
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Bobby Burns",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Smoky", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Bobby+Burns",
+    "ingredients": [
+      "2 oz Scotch Whiskey",
+      "0.75 oz Sweet Vermouth",
+      "0.25 oz Benedictine Liqueur",
+      "1 dash Orange Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice until chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Bronx Cocktail",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Fruity", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f0a1a8/ffffff?text=Bronx+Cocktail",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Sweet Vermouth",
+      "0.5 oz Dry Vermouth",
+      "0.75 oz Orange Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with an orange twist."
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Brooklyn",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Bitter", "Dry"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/b05448/ffffff?text=Brooklyn",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "0.75 oz Dry Vermouth",
+      "0.25 oz Maraschino Liqueur",
+      "0.25 oz Amer Picon (or substitute)",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice until chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a cherry."
+    ]
+  },  
+  {
+    "id": 115,
+    "name": "Brown Derby",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Citrus", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Brown+Derby",
+    "ingredients": [
+      "2 oz Bourbon",
+      "1 oz Grapefruit Juice",
+      "0.5 oz Honey Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a grapefruit twist."
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Cable Car",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Spiced", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/edae51/ffffff?text=Cable+Car",
+    "ingredients": [
+      "1.5 oz Spiced Rum",
+      "0.5 oz Orange Curacao (or Triple Sec)",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Demerara Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with an orange twist."
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Californication",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Fruity", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Californication",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Elderflower Liqueur",
+      "2 oz Grapefruit Juice",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add vodka, elderflower liqueur, and grapefruit juice.",
+      "Top with soda water and stir gently.",
+      "Garnish with grapefruit slice."
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Cameron’s Kick",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Strong", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f4a460/ffffff?text=Cameron’s+Kick",
+    "ingredients": [
+      "2 oz Brandy",
+      "0.75 oz Apricot Brandy",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a rocks glass with ice.",
+      "Garnish with an apricot slice."
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Candied Ginger Mule",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Spicy", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/ffa94d/111111?text=Candied+Ginger+Mule",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.5 oz Fresh Lime Juice",
+      "4 oz Ginger Beer",
+      "2 Candied Ginger Pieces"
+    ],
+    "instructions": [
+      "Fill copper mug with ice.",
+      "Add vodka, lime juice, and ginger beer.",
+      "Stir gently and garnish with candied ginger."
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Captain’s Blood",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Captain’s+Blood",
+    "ingredients": [
+      "2 oz Dark Rum",
+      "0.5 oz Cherry Liqueur",
+      "0.5 oz Lime Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a rocks glass with ice.",
+      "Garnish with a cherry."
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Carajillo",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/6f4e37/ffffff?text=Carajillo",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.75 oz Coffee Liqueur",
+      "1 oz Hot Coffee"
+    ],
+    "instructions": [
+      "Pour vodka and coffee liqueur into a rocks glass.",
+      "Top with hot coffee, stir gently.",
+      "Garnish with coffee beans."
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Casino",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Sour", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Casino",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.25 oz Maraschino Liqueur",
+      "0.75 oz Lemon Juice",
+      "1 dash Orange Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a cherry or lemon twist."
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Champs-Élysées",
+    "mainLiquor": ["Brandy", "Liqueur"],
+    "flavor": ["Herbal", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Champs+Élysées",
+    "ingredients": [
+      "1.5 oz Brandy",
+      "0.5 oz Yellow Chartreuse",
+      "0.75 oz Lemon Juice",
+      "0.25 oz Simple Syrup",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Chartreuse Swizzle",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Herbal", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/4ade80/111111?text=Chartreuse+Swizzle",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.75 oz Green Chartreuse",
+      "0.75 oz Lime Juice",
+      "0.5 oz Simple Syrup",
+      "Crushed Ice"
+    ],
+    "instructions": [
+      "Build over crushed ice in a Collins glass.",
+      "Swizzle until glass frosts.",
+      "Top with a bit more crushed ice and garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Cherry Blossom",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Floral"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f67280/ffffff?text=Cherry+Blossom",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Cherry Liqueur",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a cherry or edible flower."
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Clover Leaf",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Refreshing", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Clover+Leaf",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Avocado-Milk Syrup",
+      "Club Soda"
+    ],
+    "instructions": [
+      "Shake gin, lemon juice, and syrup with ice.",
+      "Strain into highball over ice, top with soda.",
+      "Garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Commodore",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Classic", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Commodore",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "0.75 oz Sweet Vermouth",
+      "0.25 oz Maraschino Liqueur",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice until chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with cherry."
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Cucumber Martini",
+    "mainLiquor": ["Vodka", "Gin"],
+    "flavor": ["Refreshing", "Clean"],
+    "difficulty": "Easy",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Cucumber+Martini",
+    "ingredients": [
+      "2 oz Vodka or Gin",
+      "0.5 oz Dry Vermouth",
+      "4 Cucumber Slices"
+    ],
+    "instructions": [
+      "Muddle cucumber in shaker.",
+      "Add liquor and vermouth with ice and stir.",
+      "Strain into a chilled martini glass and garnish with cucumber ribbon."
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Cynar Spritz",
+    "mainLiquor": ["Liqueur", "Prosecco"],
+    "flavor": ["Bitter", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/60a5fa/ffffff?text=Cynar+Spritz",
+    "ingredients": [
+      "1.5 oz Cynar (Artichoke Liqueur)",
+      "3 oz Prosecco",
+      "1 oz Soda Water"
+    ],
+    "instructions": [
+      "Build over ice in a wine glass.",
+      "Stir gently and garnish with orange slice."
+    ]
+  },
+    {
+    "id": 130,
+    "name": "Daisy de Santiago",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Citrus", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Daisy+de+Santiago",
+    "ingredients": [
+      "1.5 oz Light Rum",
+      "0.5 oz Yellow Chartreuse",
+      "0.75 oz Lime Juice",
+      "0.25 oz Simple Syrup",
+      "Soda Water"
+    ],
+    "instructions": [
+      "Shake all ingredients except soda with ice.",
+      "Strain into highball glass filled with ice.",
+      "Top with soda and garnish with lime wheel and mint sprig."
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Derby Cocktail",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Herbal", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Derby+Cocktail",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Sweet Vermouth",
+      "0.5 oz Orange Curaçao",
+      "2 dashes Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Dr. Funk",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Tropical", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Tiki Mug",
+    "image": "https://placehold.co/600x400/9ca3af/ffffff?text=Dr+Funk",
+    "ingredients": [
+      "1.5 oz Light Rum",
+      "0.5 oz Absinthe or Pastis",
+      "0.75 oz Lime Juice",
+      "0.5 oz Grenadine",
+      "2 oz Soda Water"
+    ],
+    "instructions": [
+      "Shake all but soda with ice.",
+      "Strain into tiki mug filled with crushed ice.",
+      "Top with soda and garnish with mint and lime wheel."
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Eastside",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Herbal", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Eastside",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lime Juice",
+      "0.75 oz Simple Syrup",
+      "4 Mint Leaves",
+      "3 Cucumber Slices"
+    ],
+    "instructions": [
+      "Muddle cucumber and mint with syrup and lime juice in shaker.",
+      "Add gin and ice, shake until chilled.",
+      "Double strain into a coupe glass and garnish with mint leaf."
+    ]
+  },
+  {
+    "id": 134,
+    "name": "El Presidente",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Sweet", "Balanced"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=El+Presidente",
+    "ingredients": [
+      "1.5 oz White Rum",
+      "0.75 oz Dry Vermouth",
+      "0.5 oz Orange Curaçao",
+      "0.25 oz Grenadine"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into chilled coupe.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Emerald",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Herbal", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Emerald",
+    "ingredients": [
+      "2 oz Irish Whiskey",
+      "1 oz Sweet Vermouth",
+      "2 dashes Orange Bitters"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until chilled.",
+      "Strain into rocks glass with large ice cube.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 136,
+    "name": "English Garden",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Floral", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/7cba82/ffffff?text=English+Garden",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Elderflower Liqueur",
+      "2 oz Apple Juice",
+      "0.5 oz Lemon Juice",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in a highball glass over ice.",
+      "Top with soda and stir gently.",
+      "Garnish with cucumber slice or apple fan."
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Espresso Negroni",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Strong", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Espresso+Negroni",
+    "ingredients": [
+      "1 oz Gin",
+      "1 oz Coffee Liqueur",
+      "1 oz Sweet Vermouth",
+      "0.5 oz Espresso"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into rocks glass with ice.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Fallen Leaves",
+    "mainLiquor": ["Brandy", "Liqueur"],
+    "flavor": ["Spicy", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Fallen+Leaves",
+    "ingredients": [
+      "1.5 oz Brandy",
+      "0.5 oz Dry Vermouth",
+      "0.5 oz Sweet Vermouth",
+      "1 dash Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until chilled.",
+      "Strain into coupe and garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Fancy Free",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Strong", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Fancy+Free",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Maraschino Liqueur",
+      "2 dashes Angostura Bitters",
+      "1 dash Orange Bitters"
+    ],
+    "instructions": [
+      "Stir with ice until well chilled.",
+      "Strain into rocks glass over ice.",
+      "Garnish with cherry and orange twist."
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Foghorn",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Spicy", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Foghorn",
+    "ingredients": [
+      "2 oz Gin",
+      "0.5 oz Lime Juice",
+      "4 oz Ginger Beer"
+    ],
+    "instructions": [
+      "Build in a highball glass filled with ice.",
+      "Top with ginger beer and stir.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Forbidden Sour",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Sour", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Forbidden+Sour",
+    "ingredients": [
+      "1.5 oz Bourbon",
+      "0.5 oz Pomegranate Liqueur",
+      "0.75 oz Lemon Juice",
+      "0.25 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into a coupe and garnish with lemon wheel."
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Fort Lauderdale",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Tropical", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Hurricane Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Fort+Lauderdale",
+    "ingredients": [
+      "1 oz Light Rum",
+      "1 oz Dark Rum",
+      "1 oz Lime Juice",
+      "0.5 oz Orange Juice",
+      "0.5 oz Grenadine"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into hurricane glass with crushed ice.",
+      "Garnish with orange slice and cherry."
+    ]
+  },
+  {
+    "id": 143,
+    "name": "French Pearl",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Herbal", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=French+Pearl",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lime Juice",
+      "0.75 oz Simple Syrup",
+      "4 Mint Leaves",
+      "1 dash Absinthe"
+    ],
+    "instructions": [
+      "Muddle mint and syrup, add other ingredients and ice.",
+      "Shake and double strain into coupe glass.",
+      "Garnish with mint leaf."
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Frozen Daiquiri",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Tropical"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Frozen+Daiquiri",
+    "ingredients": [
+      "2 oz Light Rum",
+      "1 oz Lime Juice",
+      "0.5 oz Simple Syrup",
+      "1 cup Crushed Ice"
+    ],
+    "instructions": [
+      "Blend all ingredients until smooth.",
+      "Pour into a chilled coupe glass.",
+      "Garnish with lime wheel."
+    ]
+  },
+    {
+    "id": 145,
+    "name": "Georgia Peach",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Fruity"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Georgia+Peach",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Peach Schnapps",
+      "2 oz Orange Juice",
+      "Top with Cranberry Juice"
+    ],
+    "instructions": [
+      "Build in a highball glass with ice.",
+      "Add vodka and peach schnapps, top with juices.",
+      "Stir gently and garnish with peach slice."
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Gibson",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Dry", "Savory"],
+    "difficulty": "Easy",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Gibson",
+    "ingredients": [
+      "2.5 oz Gin",
+      "0.5 oz Dry Vermouth",
+      "Cocktail Onion for garnish"
+    ],
+    "instructions": [
+      "Stir gin and vermouth with ice until chilled.",
+      "Strain into chilled martini glass.",
+      "Garnish with cocktail onion."
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Godchild",
+    "mainLiquor": ["Liqueur"],
+    "flavor": ["Sweet", "Creamy"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f3e8ff/111111?text=Godchild",
+    "ingredients": [
+      "1 oz Amaretto",
+      "1 oz Vodka",
+      "1 oz Cream"
+    ],
+    "instructions": [
+      "Shake ingredients with ice.",
+      "Strain into rocks glass with fresh ice.",
+      "Garnish with nutmeg sprinkle."
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Golden Dream",
+    "mainLiquor": ["Liqueur"],
+    "flavor": ["Citrus", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Golden+Dream",
+    "ingredients": [
+      "1 oz Galliano",
+      "1 oz Triple Sec",
+      "1 oz Orange Juice",
+      "0.5 oz Cream"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until creamy.",
+      "Strain into chilled coupe glass.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Grapefruit Margarita",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Grapefruit+Margarita",
+    "ingredients": [
+      "2 oz Tequila",
+      "1 oz Grapefruit Juice",
+      "0.5 oz Lime Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into rocks glass with salted rim and ice.",
+      "Garnish with grapefruit slice."
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Green Ghost",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Herbal", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/86efac/111111?text=Green+Ghost",
+    "ingredients": [
+      "2 oz Gin",
+      "0.5 oz Green Chartreuse",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until well chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime twist."
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Hanky Panky",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Herbal", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Hanky+Panky",
+    "ingredients": [
+      "1.5 oz Gin",
+      "1.5 oz Sweet Vermouth",
+      "2 dashes Fernet Branca"
+    ],
+    "instructions": [
+      "Stir with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Hemingway Special",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Tart", "Refreshing"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Hemingway+Special",
+    "ingredients": [
+      "2 oz White Rum",
+      "0.5 oz Maraschino Liqueur",
+      "0.75 oz Grapefruit Juice",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into coupe and garnish with grapefruit twist."
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Honeysuckle",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Tropical"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Honeysuckle",
+    "ingredients": [
+      "2 oz Light Rum",
+      "0.75 oz Honey Syrup",
+      "0.75 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into chilled coupe glass.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Hotel Nacional",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/facc15/111111?text=Hotel+Nacional",
+    "ingredients": [
+      "2 oz White Rum",
+      "0.5 oz Apricot Liqueur",
+      "1 oz Pineapple Juice",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice and strain into coupe.",
+      "Garnish with pineapple wedge."
+    ]
+  },
+  {
+    "id": 155,
+    "name": "In Fashioned",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=In+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.25 oz Coffee Liqueur",
+      "2 dashes Chocolate Bitters"
+    ],
+    "instructions": [
+      "Stir ingredients with ice.",
+      "Strain into rocks glass over large ice cube.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Italian Greyhound",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Bitter", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fca5a5/111111?text=Italian+Greyhound",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Campari",
+      "2 oz Grapefruit Juice"
+    ],
+    "instructions": [
+      "Shake briefly with ice.",
+      "Strain into highball glass with fresh ice.",
+      "Garnish with grapefruit wedge."
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Japanese Slipper",
+    "mainLiquor": ["Liqueur"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/86efac/111111?text=Japanese+Slipper",
+    "ingredients": [
+      "1 oz Midori Melon Liqueur",
+      "1 oz Cointreau",
+      "1 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into martini glass.",
+      "Garnish with cherry."
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Jasmine",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Bitter", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Jasmine",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.25 oz Campari",
+      "0.25 oz Cointreau",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into coupe glass.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 159,
+    "name": "John Collins",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Sour", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=John+Collins",
+    "ingredients": [
+      "2 oz Gin",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in a Collins glass with ice.",
+      "Top with soda water and stir gently.",
+      "Garnish with lemon slice and cherry."
+    ]
+  },
+    {
+    "id": 160,
+    "name": "Jungle Juice",
+    "mainLiquor": ["Vodka", "Rum", "Tequila"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Punch Bowl",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Jungle+Juice",
+    "ingredients": [
+      "1 cup Vodka",
+      "1 cup Light Rum",
+      "1 cup Tequila",
+      "2 cups Fruit Punch",
+      "2 cups Orange Juice",
+      "1 cup Pineapple Juice",
+      "Sliced Fruit for garnish"
+    ],
+    "instructions": [
+      "Combine all ingredients in a large punch bowl.",
+      "Add ice and sliced fruit.",
+      "Stir gently and serve in individual glasses."
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Kamikaze",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Citrus", "Sour"],
+    "difficulty": "Easy",
+    "glassware": "Shot Glass",
+    "image": "https://placehold.co/600x400/d4eaf7/111111?text=Kamikaze",
+    "ingredients": [
+      "1 oz Vodka",
+      "0.5 oz Triple Sec",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into a chilled shot glass.",
+      "Garnish with lime wedge if served as a cocktail."
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Kentucky Buck",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Spicy", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Kentucky+Buck",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "2 Strawberries",
+      "Top with Ginger Beer"
+    ],
+    "instructions": [
+      "Muddle strawberries with syrup and lemon juice.",
+      "Add bourbon and ice, shake briefly.",
+      "Strain into Collins glass and top with ginger beer.",
+      "Garnish with strawberry."
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Key Lime Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Tart"],
+    "difficulty": "Easy",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Key+Lime+Martini",
+    "ingredients": [
+      "1.5 oz Vanilla Vodka",
+      "0.5 oz Lime Juice",
+      "0.5 oz Cream of Coconut",
+      "0.25 oz Triple Sec"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into chilled martini glass.",
+      "Garnish with lime twist or graham rim."
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Ladykiller",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Ladykiller",
+    "ingredients": [
+      "1 oz Gin",
+      "0.5 oz Cointreau",
+      "0.5 oz Passion Fruit Juice",
+      "1 oz Orange Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into coupe and garnish with orange twist."
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Lavender Lemonade",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Floral", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/e0f2fe/111111?text=Lavender+Lemonade",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Lavender Syrup",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in a highball glass over ice.",
+      "Top with soda water and stir gently.",
+      "Garnish with lavender sprig."
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Lemon Basil Smash",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Herbal", "Citrus"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Lemon+Basil+Smash",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Basil Syrup",
+      "5 Basil Leaves"
+    ],
+    "instructions": [
+      "Muddle basil with syrup and lemon juice.",
+      "Add gin and ice, shake until chilled.",
+      "Strain into rocks glass and garnish with basil sprig."
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Lion’s Tail",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Spiced", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Lion’s+Tail",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Allspice Dram",
+      "0.5 oz Lime Juice",
+      "0.25 oz Simple Syrup",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime twist."
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Long Beach Iced Tea",
+    "mainLiquor": ["Vodka", "Gin", "Rum", "Tequila", "Liqueur"],
+    "flavor": ["Strong", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Long+Beach+Iced+Tea",
+    "ingredients": [
+      "0.5 oz Vodka",
+      "0.5 oz Gin",
+      "0.5 oz White Rum",
+      "0.5 oz Tequila",
+      "0.5 oz Triple Sec",
+      "1 oz Lemon Juice",
+      "Top with Cranberry Juice"
+    ],
+    "instructions": [
+      "Build in a highball glass over ice.",
+      "Top with cranberry juice and stir gently.",
+      "Garnish with lemon wedge."
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Lucien Gaudin",
+    "mainLiquor": ["Gin", "Liqueur"],
+    "flavor": ["Bitter", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Lucien+Gaudin",
+    "ingredients": [
+      "1.5 oz Gin",
+      "0.5 oz Cointreau",
+      "0.25 oz Campari",
+      "0.25 oz Dry Vermouth"
+    ],
+    "instructions": [
+      "Stir ingredients with ice until chilled.",
+      "Strain into coupe glass and garnish with orange peel."
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Lynchburg Buck",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Spicy", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Lynchburg+Buck",
+    "ingredients": [
+      "2 oz Tennessee Whiskey",
+      "0.5 oz Lime Juice",
+      "Top with Ginger Beer"
+    ],
+    "instructions": [
+      "Build in a highball glass with ice.",
+      "Top with ginger beer and stir.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Mai Tai Swizzle",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Tropical", "Nutty"],
+    "difficulty": "Medium",
+    "glassware": "Tiki Mug",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Mai+Tai+Swizzle",
+    "ingredients": [
+      "1.5 oz Aged Rum",
+      "0.5 oz Orange Curaçao",
+      "0.5 oz Orgeat Syrup",
+      "0.75 oz Lime Juice",
+      "Crushed Ice"
+    ],
+    "instructions": [
+      "Add all ingredients to a tiki mug.",
+      "Swizzle with crushed ice until glass frosts.",
+      "Garnish with mint sprig and lime wheel."
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Matador",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Matador",
+    "ingredients": [
+      "2 oz Tequila",
+      "1 oz Pineapple Juice",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into chilled coupe glass.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Melon Ball",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Fruity"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/86efac/111111?text=Melon+Ball",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Midori Melon Liqueur",
+      "2 oz Orange Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into highball glass with fresh ice.",
+      "Garnish with melon ball."
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Mexican Firing Squad",
+    "mainLiquor": ["Tequila"],
+    "flavor": ["Spicy", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Mexican+Firing+Squad",
+    "ingredients": [
+      "2 oz Tequila",
+      "0.75 oz Lime Juice",
+      "0.75 oz Grenadine",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into highball with ice and garnish with lime wedge."
+    ]
+  },
+    {
+    "id": 175,
+    "name": "Midnight Stinger",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Minty", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Midnight+Stinger",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Fernet Branca",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until chilled.",
+      "Strain into rocks glass over ice.",
+      "Garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Millionaire",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Spiced", "Fruity"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Millionaire",
+    "ingredients": [
+      "1.5 oz Rye Whiskey",
+      "0.5 oz Sloe Gin",
+      "0.25 oz Absinthe",
+      "0.75 oz Lime Juice",
+      "0.25 oz Grenadine"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until well chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime twist."
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Monte Carlo",
+    "mainLiquor": ["Rye Whiskey", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Monte+Carlo",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "0.5 oz Bénédictine",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir with ice until chilled.",
+      "Strain into rocks glass with large ice cube.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Naked and Famous",
+    "mainLiquor": ["Mezcal", "Liqueur"],
+    "flavor": ["Smoky", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f97316/111111?text=Naked+and+Famous",
+    "ingredients": [
+      "0.75 oz Mezcal",
+      "0.75 oz Aperol",
+      "0.75 oz Yellow Chartreuse",
+      "0.75 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime wheel."
+    ]
+  },
+  {
+    "id": 179,
+    "name": "New York Sour",
+    "mainLiquor": ["Whiskey", "Wine"],
+    "flavor": ["Sour", "Rich"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=New+York+Sour",
+    "ingredients": [
+      "2 oz Bourbon or Rye Whiskey",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "0.5 oz Red Wine (float)"
+    ],
+    "instructions": [
+      "Shake whiskey, lemon juice, and syrup with ice.",
+      "Strain into rocks glass over ice.",
+      "Float red wine on top using back of a spoon."
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Nutty Irishman",
+    "mainLiquor": ["Liqueur"],
+    "flavor": ["Sweet", "Creamy"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f3e8ff/111111?text=Nutty+Irishman",
+    "ingredients": [
+      "1 oz Frangelico",
+      "1 oz Irish Cream",
+      "1 oz Cream"
+    ],
+    "instructions": [
+      "Shake ingredients with ice until chilled.",
+      "Strain into rocks glass with fresh ice.",
+      "Garnish with nutmeg."
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Oaxaca Old Fashioned",
+    "mainLiquor": ["Mezcal", "Tequila"],
+    "flavor": ["Smoky", "Strong"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Oaxaca+Old+Fashioned",
+    "ingredients": [
+      "1.5 oz Reposado Tequila",
+      "0.5 oz Mezcal",
+      "1 tsp Agave Syrup",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice.",
+      "Strain into rocks glass over large ice cube.",
+      "Garnish with orange twist."
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Pain d’Epices",
+    "mainLiquor": ["Brandy", "Liqueur"],
+    "flavor": ["Spiced", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Pain+d’Epices",
+    "ingredients": [
+      "1.5 oz Cognac",
+      "0.5 oz Ginger Liqueur",
+      "0.25 oz Honey Syrup",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into chilled coupe glass.",
+      "Garnish with lemon twist."
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Paper Plane Variation (Amaro-based)",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Bitter", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Paper+Plane+Variation",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into coupe glass.",
+      "Garnish with lemon peel."
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Passion Fruit Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Passion+Fruit+Martini",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Passion Fruit Liqueur",
+      "1 oz Passion Fruit Puree",
+      "0.5 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into martini glass.",
+      "Garnish with half a passion fruit."
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Penicillin",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Smoky", "Spicy"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Penicillin",
+    "ingredients": [
+      "2 oz Blended Scotch",
+      "0.75 oz Lemon Juice",
+      "0.75 oz Honey-Ginger Syrup",
+      "0.25 oz Islay Scotch (float)"
+    ],
+    "instructions": [
+      "Shake all but float with ice.",
+      "Strain into rocks glass over ice.",
+      "Float Islay Scotch on top and garnish with candied ginger."
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Peppermint Patty",
+    "mainLiquor": ["Liqueur"],
+    "flavor": ["Minty", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/86efac/111111?text=Peppermint+Patty",
+    "ingredients": [
+      "1 oz Peppermint Schnapps",
+      "1 oz Chocolate Liqueur",
+      "1 oz Cream"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until frothy.",
+      "Strain into coupe glass.",
+      "Garnish with cocoa powder dust."
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Pisco Sour",
+    "mainLiquor": ["Brandy"],
+    "flavor": ["Sour", "Creamy"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Pisco+Sour",
+    "ingredients": [
+      "2 oz Pisco",
+      "0.75 oz Lime Juice",
+      "0.5 oz Simple Syrup",
+      "1 Egg White",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Dry shake all ingredients without ice, then add ice and shake again.",
+      "Strain into coupe glass and garnish with bitters."
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Pornstar Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Fruity", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Pornstar+Martini",
+    "ingredients": [
+      "1.5 oz Vanilla Vodka",
+      "0.5 oz Passion Fruit Liqueur",
+      "1 oz Passion Fruit Puree",
+      "0.25 oz Lime Juice",
+      "Side of Sparkling Wine"
+    ],
+    "instructions": [
+      "Shake all but sparkling wine with ice.",
+      "Strain into martini glass and serve with sparkling wine on the side."
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Porto Flip",
+    "mainLiquor": ["Brandy", "Wine"],
+    "flavor": ["Rich", "Creamy"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/8b0000/ffffff?text=Porto+Flip",
+    "ingredients": [
+      "1.5 oz Brandy",
+      "1.5 oz Ruby Port",
+      "1 Egg Yolk"
+    ],
+    "instructions": [
+      "Shake all ingredients vigorously with ice.",
+      "Strain into coupe glass and garnish with grated nutmeg."
+    ]
+  },
+    {
+    "id": 190,
+    "name": "Queen’s Park Swizzle",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Minty", "Tropical"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Queen’s+Park+Swizzle",
+    "ingredients": [
+      "2 oz Aged Rum",
+      "0.75 oz Lime Juice",
+      "0.5 oz Simple Syrup",
+      "6 Mint Leaves",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Muddle mint and syrup in highball glass.",
+      "Add crushed ice, rum, and lime juice.",
+      "Swizzle until glass frosts, top with bitters and mint sprig."
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Ramos Rum Fizz",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Creamy", "Citrus"],
+    "difficulty": "Hard",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/fde68a/111111?text=Ramos+Rum+Fizz",
+    "ingredients": [
+      "1.5 oz Light Rum",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Lime Juice",
+      "0.75 oz Cream",
+      "0.5 oz Simple Syrup",
+      "1 Egg White",
+      "2 drops Orange Flower Water",
+      "Soda Water to top"
+    ],
+    "instructions": [
+      "Dry shake all but soda for 30 seconds, then add ice and shake again.",
+      "Strain into Collins glass and top with soda.",
+      "Allow foam to rise above rim."
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Raspberry Mule",
+    "mainLiquor": ["Vodka"],
+    "flavor": ["Fruity", "Spicy"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Raspberry+Mule",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.5 oz Lime Juice",
+      "4 Fresh Raspberries",
+      "Top with Ginger Beer"
+    ],
+    "instructions": [
+      "Muddle raspberries and lime juice in mug.",
+      "Add vodka and ice, top with ginger beer.",
+      "Garnish with raspberries and mint."
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Red Snapper",
+    "mainLiquor": ["Gin"],
+    "flavor": ["Savory", "Spicy"],
+    "difficulty": "Medium",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Red+Snapper",
+    "ingredients": [
+      "1.5 oz Gin",
+      "3 oz Tomato Juice",
+      "0.5 oz Lemon Juice",
+      "2 dashes Worcestershire Sauce",
+      "2 dashes Hot Sauce",
+      "Pinch of Salt and Pepper"
+    ],
+    "instructions": [
+      "Roll all ingredients with ice (don’t shake).",
+      "Pour into highball glass.",
+      "Garnish with celery stalk and lemon wedge."
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Rum Flip",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Rich", "Creamy"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Flip",
+    "ingredients": [
+      "1.5 oz Dark Rum",
+      "0.5 oz Simple Syrup",
+      "1 Whole Egg",
+      "Grated Nutmeg"
+    ],
+    "instructions": [
+      "Dry shake all ingredients, then add ice and shake again.",
+      "Strain into coupe and garnish with nutmeg."
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Salted Caramel Espresso Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Coffee"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Salted+Caramel+Espresso+Martini",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Coffee Liqueur",
+      "1 oz Espresso",
+      "0.5 oz Salted Caramel Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until frothy.",
+      "Strain into martini glass.",
+      "Garnish with coffee beans and caramel drizzle."
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Scorpion",
+    "mainLiquor": ["Rum", "Brandy"],
+    "flavor": ["Tropical", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Tiki Mug",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Scorpion",
+    "ingredients": [
+      "1.5 oz Light Rum",
+      "0.5 oz Brandy",
+      "1 oz Orange Juice",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Orgeat Syrup"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice.",
+      "Strain into tiki mug with crushed ice.",
+      "Garnish with orange slice and mint."
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Sherry Cobbler",
+    "mainLiquor": ["Wine"],
+    "flavor": ["Fruity", "Refreshing"],
+    "difficulty": "Easy",
+    "glassware": "Collins Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Sherry+Cobbler",
+    "ingredients": [
+      "3 oz Sherry",
+      "0.5 oz Simple Syrup",
+      "2 Orange Slices",
+      "3 Berries (optional)"
+    ],
+    "instructions": [
+      "Muddle orange slices and syrup in glass.",
+      "Add sherry and crushed ice.",
+      "Stir and garnish with berries."
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Smoked Maple Old Fashioned",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Smoky", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Smoked+Maple+Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.25 oz Maple Syrup",
+      "2 dashes Angostura Bitters",
+      "1 dash Orange Bitters"
+    ],
+    "instructions": [
+      "Stir ingredients with ice and strain over large cube.",
+      "Smoke glass before serving (optional).",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Winter Spritz",
+    "mainLiquor": ["Prosecco", "Liqueur"],
+    "flavor": ["Bitter", "Spiced"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Winter+Spritz",
+    "ingredients": [
+      "2 oz Aperol",
+      "3 oz Prosecco",
+      "1 oz Spiced Cranberry Syrup",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in a wine glass with ice.",
+      "Top with soda and stir gently.",
+      "Garnish with rosemary and cranberries."
+    ]
+  },
+    {
+    "id": 200,
+    "name": "Bourbon Pear-per Plane",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Fruity", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Pear-per+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Pear Liqueur",
+      "0.75 oz Aperol",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a thin pear slice."
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Maple Bourbon Sour",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Sweet", "Sour"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Bourbon+Sour",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Lemon Juice",
+      "0.5 oz Maple Syrup",
+      "1 oz Aquafaba (or egg white)"
+    ],
+    "instructions": [
+      "Dry shake all ingredients, then add ice and shake again.",
+      "Strain into rocks glass with ice.",
+      "Garnish with lemon twist and a dusting of cinnamon."
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Smoked Maple Old Fashioned",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Smoky", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Smoked+Maple+Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.25 oz Maple Syrup",
+      "2 dashes Angostura Bitters",
+      "Smoke (optional)"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice and strain over large cube.",
+      "Smoke the glass before serving if desired.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Blind Squirrel Old Fashioned",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Strong", "Nutty"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/b87333/ffffff?text=Blind+Squirrel+Old+Fashioned",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.5 oz Toasted Pecan Syrup",
+      "2 dashes Black Walnut Bitters"
+    ],
+    "instructions": [
+      "Stir with ice and strain into rocks glass over large cube.",
+      "Garnish with candied pecan or orange twist."
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Barrel Proof Manhattan",
+    "mainLiquor": ["Whiskey", "Liqueur"],
+    "flavor": ["Strong", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Barrel+Proof+Manhattan",
+    "ingredients": [
+      "2 oz Barrel Strength Rye Whiskey",
+      "1 oz Sweet Vermouth",
+      "2 dashes Angostura Bitters"
+    ],
+    "instructions": [
+      "Stir with ice until chilled.",
+      "Strain into coupe glass and garnish with brandied cherry."
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Maple-Cinnamon Rum Punch",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Sweet", "Spiced"],
+    "difficulty": "Medium",
+    "glassware": "Punch Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Maple+Cinnamon+Rum+Punch",
+    "ingredients": [
+      "2 oz Dark Rum",
+      "1 oz Orange Juice",
+      "0.5 oz Lime Juice",
+      "0.5 oz Maple Syrup",
+      "Dash of Cinnamon"
+    ],
+    "instructions": [
+      "Shake with ice and strain over crushed ice.",
+      "Garnish with cinnamon stick and orange wheel."
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Autumn Boulevardier",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Bitter", "Rich"],
+    "difficulty": "Medium",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/f97316/ffffff?text=Autumn+Boulevardier",
+    "ingredients": [
+      "1 oz Bourbon",
+      "1 oz Campari",
+      "1 oz Sweet Vermouth",
+      "0.25 oz Maple Syrup"
+    ],
+    "instructions": [
+      "Stir all ingredients with ice and strain into rocks glass over ice.",
+      "Garnish with orange peel."
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Cranberry Bourbon Smash",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Tart", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Rocks Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Cranberry+Bourbon+Smash",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Cranberry Syrup",
+      "0.5 oz Lemon Juice",
+      "2 Fresh Cranberries"
+    ],
+    "instructions": [
+      "Muddle cranberries and syrup, add bourbon and lemon juice.",
+      "Shake with ice and strain over ice.",
+      "Garnish with rosemary sprig."
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Coconut Maple Mojito",
+    "mainLiquor": ["Rum"],
+    "flavor": ["Tropical", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Highball Glass",
+    "image": "https://placehold.co/600x400/bae6fd/111111?text=Coconut+Maple+Mojito",
+    "ingredients": [
+      "2 oz White Rum",
+      "0.5 oz Lime Juice",
+      "0.5 oz Maple Syrup",
+      "4 Mint Leaves",
+      "1 oz Coconut Water",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Muddle mint and lime juice, add rum and maple syrup.",
+      "Top with soda and coconut water, stir gently.",
+      "Garnish with mint sprig."
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Bourbon Espresso Flip",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Rich", "Coffee"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Espresso+Flip",
+    "ingredients": [
+      "1.5 oz Bourbon",
+      "0.5 oz Coffee Liqueur",
+      "1 oz Espresso",
+      "0.25 oz Maple Syrup",
+      "1 Egg White or Aquafaba"
+    ],
+    "instructions": [
+      "Dry shake, then add ice and shake again.",
+      "Strain into coupe and garnish with espresso beans."
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Ginger Pear Spritz",
+    "mainLiquor": ["Prosecco", "Liqueur"],
+    "flavor": ["Fruity", "Spicy"],
+    "difficulty": "Easy",
+    "glassware": "Wine Glass",
+    "image": "https://placehold.co/600x400/f9a8d4/111111?text=Ginger+Pear+Spritz",
+    "ingredients": [
+      "1 oz Pear Liqueur",
+      "0.5 oz Ginger Syrup",
+      "3 oz Prosecco",
+      "Top with Soda Water"
+    ],
+    "instructions": [
+      "Build in wine glass with ice.",
+      "Stir gently and garnish with pear slice."
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Maple Chai Toddy",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Warm", "Spiced"],
+    "difficulty": "Easy",
+    "glassware": "Mug",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Chai+Toddy",
+    "ingredients": [
+      "1.5 oz Whiskey",
+      "0.5 oz Maple Syrup",
+      "4 oz Hot Chai Tea",
+      "Lemon Wheel"
+    ],
+    "instructions": [
+      "Build in mug and stir gently.",
+      "Garnish with cinnamon stick."
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Maple Pecan Espresso Martini",
+    "mainLiquor": ["Vodka", "Liqueur"],
+    "flavor": ["Sweet", "Coffee"],
+    "difficulty": "Medium",
+    "glassware": "Martini Glass",
+    "image": "https://placehold.co/600x400/fcd5ce/111111?text=Maple+Pecan+Espresso+Martini",
+    "ingredients": [
+      "1.5 oz Vodka",
+      "0.5 oz Coffee Liqueur",
+      "1 oz Espresso",
+      "0.5 oz Maple Pecan Syrup"
+    ],
+    "instructions": [
+      "Shake with ice until frothy.",
+      "Strain into martini glass.",
+      "Garnish with crushed pecans."
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Vegan Whiskey Flip",
+    "mainLiquor": ["Whiskey"],
+    "flavor": ["Rich", "Sweet"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Vegan+Whiskey+Flip",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Maple Syrup",
+      "1 oz Oat Milk",
+      "Pinch of Nutmeg"
+    ],
+    "instructions": [
+      "Shake with ice until creamy.",
+      "Strain into coupe and dust with nutmeg."
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Barrel Proof Maple Mule",
+    "mainLiquor": ["Bourbon"],
+    "flavor": ["Spicy", "Sweet"],
+    "difficulty": "Easy",
+    "glassware": "Copper Mug",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Barrel+Proof+Maple+Mule",
+    "ingredients": [
+      "2 oz Barrel Strength Bourbon",
+      "0.5 oz Lime Juice",
+      "0.5 oz Maple Syrup",
+      "Top with Ginger Beer"
+    ],
+    "instructions": [
+      "Build in copper mug with ice.",
+      "Top with ginger beer and stir.",
+      "Garnish with lime wedge."
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Pineapple Paper Plane",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Fruity", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Pineapple+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Pineapple Juice"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until well chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a small pineapple wedge or dehydrated slice."
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Spiced Maple Paper Plane",
+    "mainLiquor": ["Bourbon", "Liqueur"],
+    "flavor": ["Spiced", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/f97316/111111?text=Spiced+Maple+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Maple Syrup",
+      "Dash of Cinnamon"
+    ],
+    "instructions": [
+      "Shake all ingredients with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with a lemon twist dusted lightly with cinnamon."
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Tropical Rum Paper Plane",
+    "mainLiquor": ["Rum", "Liqueur"],
+    "flavor": ["Tropical", "Bitter"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Tropical+Rum+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Aged Rum",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Lime Juice"
+    ],
+    "instructions": [
+      "Shake with ice until chilled.",
+      "Strain into coupe glass.",
+      "Garnish with lime wheel or dried pineapple."
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Smoky Mezcal Paper Plane",
+    "mainLiquor": ["Mezcal", "Liqueur"],
+    "flavor": ["Smoky", "Citrus"],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Smoky+Mezcal+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Mezcal",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": [
+      "Shake with ice until well chilled.",
+      "Strain into coupe glass.",
+      "Garnish with a thin orange peel twist."
+    ]
+  },
+  {
+      "id": 219,
+      "name": "Vegan Bourbon Flip (Aquafaba)",
+      "mainLiquor": ["Bourbon"],
+  "flavor": ["Rich","Sweet","Frothy"],
+  "difficulty": "Advanced",
+  "glassware": "Coupe Glass",
+  "image": "https://placehold.co/600x400/99f6e4/111111?text=Vegan+Bourbon+Flip",
+  "ingredients": [
+    "2.0 oz Bourbon",
+    "0.5 oz Simple Syrup",
+    "1.0 oz Aquafaba (Chickpea Liquid)",
+    "Nutmeg for garnish"
+  ],
+  "instructions": [
+    "Combine all ingredients in a cocktail shaker.",
+    "Dry Shake (without ice) vigorously for 30-60 seconds to create a stable foam from the aquafaba.",
+    "Add ice and shake again until well chilled and frothy.",
+    "Double strain into a chilled coupe glass.",
+    "Garnish with freshly grated nutmeg."
+  ]
+}
+]
+

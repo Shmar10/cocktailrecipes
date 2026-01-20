@@ -1,0 +1,12 @@
+# Binaries
+tailwindcss
+
+# Dependencies
+node_modules/
+.npm/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
