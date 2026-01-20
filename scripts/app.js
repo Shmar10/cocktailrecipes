@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.2";
+  const APP_VERSION = "v3.1.3";
 
   // --- State ---
   let allRecipes = [];
@@ -273,7 +273,7 @@
 
       // Favorite Button Injection
       const favBtn = document.createElement("button");
-      favBtn.className = "absolute top-4 right-4 p-2 rounded-full bg-slate-900/50 backdrop-blur-sm border border-slate-700 transition-transform hover:scale-110 active:scale-95 z-20 cursor-pointer";
+      favBtn.className = "absolute top-2 right-2 p-2 rounded-full bg-slate-900/60 backdrop-blur-md border border-slate-700 hover:border-red-500/50 transition-all hover:scale-110 active:scale-95 z-50 cursor-pointer pointer-events-auto shadow-lg";
       const isFav = favorites.has(String(r.id));
       favBtn.innerHTML = `<i data-lucide="heart" class="w-5 h-5 ${isFav ? 'fill-red-500 text-red-500' : 'text-slate-300'}"></i>`;
 
