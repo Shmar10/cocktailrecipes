@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.5";
+  const APP_VERSION = "v3.1.6";
 
   // --- State ---
   let allRecipes = [];
@@ -268,7 +268,25 @@
       card.classList.add('animate-slide-up', 'opacity-0');
 
       // Content
-      card.querySelector("img").src = r.image;
+      // Extract Colors from URL (format: /600x400/BG/FG?...)
+      const parts = r.image.split('/');
+      let textColor = "#ffffff";
+      if (parts.length >= 6) {
+        // parts[5] might be "FG?text=..."
+        const fgPart = parts[5].split('?')[0];
+        if (/^[0-9a-fA-F]{3,6}$/.test(fgPart)) {
+          textColor = "#" + fgPart;
+        }
+      }
+
+      // Set Image (Clearing text)
+      const cleanImage = r.image.replace(/\?text=.*$/, '?text=%20');
+      card.querySelector("img").src = cleanImage;
+
+      // Set Title
+      const h3 = card.querySelector("h3");
+      h3.textContent = r.name;
+      h3.style.color = textColor;
 
       // Favorite Button Injection
       const favBtn = document.createElement("button");
