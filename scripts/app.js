@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.6";
+  const APP_VERSION = "v3.1.7";
 
   // --- State ---
   let allRecipes = [];
@@ -279,8 +279,8 @@
         }
       }
 
-      // Set Image (Clearing text)
-      const cleanImage = r.image.replace(/\?text=.*$/, '?text=%20');
+      // Set Image (Clearing text by stripping query and adding space)
+      const cleanImage = r.image.split('?')[0] + '?text=%20';
       card.querySelector("img").src = cleanImage;
 
       // Set Title
