@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.4";
+  const APP_VERSION = "v3.1.5";
 
   // --- State ---
   let allRecipes = [];
