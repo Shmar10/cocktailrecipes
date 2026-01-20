@@ -1,9 +1,14 @@
 [
-    {
+  {
     "id": 1,
     "name": "Margarita",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Margarita Glass",
     "image": "https://placehold.co/600x400/90ee90/ffffff?text=Margarita",
@@ -23,8 +28,14 @@
   {
     "id": 2,
     "name": "Old Fashioned",
-    "mainLiquor": ["Whiskey", "Bourbon"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Bourbon"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Old+Fashioned",
@@ -46,8 +57,13 @@
   {
     "id": 3,
     "name": "Daiquiri",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f5f5dc/ffffff?text=Daiquiri",
@@ -67,8 +83,12 @@
   {
     "id": 4,
     "name": "Martini",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Strong"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Strong"
+    ],
     "difficulty": "Easy",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/c7d2e0/ffffff?text=Gin+Martini",
@@ -87,8 +107,12 @@
   {
     "id": 5,
     "name": "Gin & Tonic",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/d4eaf7/ffffff?text=Gin+%26+Tonic",
@@ -107,8 +131,13 @@
   {
     "id": 6,
     "name": "Moscow Mule",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Refreshing", "Sour"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/b87333/ffffff?text=Moscow+Mule",
@@ -128,8 +157,14 @@
   {
     "id": 7,
     "name": "Mojito",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Refreshing", "Sweet", "Sour"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/a8d8a4/ffffff?text=Mojito",
@@ -152,8 +187,13 @@
   {
     "id": 8,
     "name": "Cosmopolitan",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/f67280/ffffff?text=Cosmopolitan",
@@ -174,8 +214,14 @@
   {
     "id": 9,
     "name": "Manhattan",
-    "mainLiquor": ["Whiskey", "Bourbon"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Bourbon"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Manhattan",
@@ -195,8 +241,14 @@
   {
     "id": 10,
     "name": "Whiskey Sour",
-    "mainLiquor": ["Whiskey", "Bourbon"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/ffbf00/ffffff?text=Whiskey+Sour",
@@ -218,8 +270,13 @@
   {
     "id": 11,
     "name": "Negroni",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d73c3c/ffffff?text=Negroni",
@@ -238,8 +295,13 @@
   {
     "id": 12,
     "name": "Bloody Mary",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Refreshing", "Strong"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bf4343/ffffff?text=Bloody+Mary",
@@ -263,8 +325,14 @@
   {
     "id": 13,
     "name": "Mai Tai",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Sour", "Strong"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f4a460/ffffff?text=Mai+Tai",
@@ -272,12 +340,12 @@
       "1.5 oz Light Rum",
       "0.5 oz Dark Rum (for float)",
       "0.75 oz Fresh Lime Juice",
-      "0.5 oz Orange Curaçao",
+      "0.5 oz Orange Cura\u00e7ao",
       "0.5 oz Orgeat Syrup",
       "Mint sprig (for garnish)"
     ],
     "instructions": [
-      "Add light rum, lime juice, orange curaçao, and orgeat to a shaker with ice.",
+      "Add light rum, lime juice, orange cura\u00e7ao, and orgeat to a shaker with ice.",
       "Shake well and strain into a rocks glass filled with crushed ice.",
       "Gently float the dark rum on top.",
       "Garnish with a mint sprig and a lime wheel."
@@ -286,8 +354,13 @@
   {
     "id": 14,
     "name": "Pina Colada",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Hurricane Glass",
     "image": "https://placehold.co/600x400/fffacd/ffffff?text=Pina+Colada",
@@ -308,8 +381,13 @@
   {
     "id": 15,
     "name": "Gimlet",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/98fb98/ffffff?text=Gimlet",
@@ -325,12 +403,18 @@
       "Strain into a chilled coupe or martini glass.",
       "Garnish with a lime wheel."
     ]
-  },    
+  },
   {
     "id": 16,
     "name": "French 75",
-    "mainLiquor": ["Gin", "Champagne"],
-    "flavor": ["Refreshing", "Sour"],
+    "mainLiquor": [
+      "Gin",
+      "Champagne"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/7dd3fc/ffffff?text=French+75",
@@ -349,8 +433,14 @@
   {
     "id": 17,
     "name": "Aperol Spritz",
-    "mainLiquor": ["Aperol", "Prosecco"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Aperol",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Spritz",
@@ -369,8 +459,13 @@
   {
     "id": 18,
     "name": "Tom Collins",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Tom+Collins",
@@ -390,8 +485,12 @@
   {
     "id": 19,
     "name": "Tequila Sunrise",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sweet"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fca5a5/111111?text=Tequila+Sunrise",
@@ -409,8 +508,13 @@
   {
     "id": 20,
     "name": "Mimosa",
-    "mainLiquor": ["Champagne"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Champagne"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Mimosa",
@@ -427,8 +531,13 @@
   {
     "id": 21,
     "name": "Paloma",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Refreshing", "Sour"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Paloma",
@@ -447,8 +556,13 @@
   {
     "id": 22,
     "name": "Rum Punch",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Fruity"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Hurricane Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Rum+Punch",
@@ -467,8 +581,13 @@
   {
     "id": 23,
     "name": "Whiskey Smash",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Smash",
@@ -487,8 +606,13 @@
   {
     "id": 24,
     "name": "Sidecar",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Sour", "Strong"],
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Sour",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fecaca/111111?text=Sidecar",
@@ -506,8 +630,13 @@
   {
     "id": 25,
     "name": "Dark and Stormy",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Refreshing", "Spicy"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Spicy"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/7f1d1d/ffffff?text=Dark+and+Stormy",
@@ -526,8 +655,14 @@
   {
     "id": 26,
     "name": "Espresso Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Espresso+Martini",
@@ -546,8 +681,14 @@
   {
     "id": 27,
     "name": "Mai Tai Royale",
-    "mainLiquor": ["Rum", "Prosecco"],
-    "flavor": ["Sweet", "Fruity"],
+    "mainLiquor": [
+      "Rum",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Sweet",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Tiki Glass",
     "image": "https://placehold.co/600x400/fbbf24/111111?text=Mai+Tai+Royale",
@@ -565,30 +706,15 @@
     ]
   },
   {
-    "id": 28,
-    "name": "Gin Fizz",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sour", "Refreshing"],
-    "difficulty": "Medium",
-    "glassware": "Collins Glass",
-    "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Fizz",
-    "ingredients": [
-      "2 oz Gin",
-      "1 oz Lemon Juice",
-      "0.75 oz Simple Syrup",
-      "Club Soda"
-    ],
-    "instructions": [
-      "Shake gin, lemon juice, and syrup with ice.",
-      "Strain into a chilled glass without ice.",
-      "Top with soda and let foam form naturally."
-    ]
-  },
-  {
     "id": 29,
     "name": "Irish Coffee",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Sweet", "Warm"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Sweet",
+      "Warm"
+    ],
     "difficulty": "Easy",
     "glassware": "Irish Coffee Mug",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Irish+Coffee",
@@ -605,30 +731,16 @@
     ]
   },
   {
-    "id": 30,
-    "name": "Smoky Margarita",
-    "mainLiquor": ["Tequila", "Mezcal"],
-    "flavor": ["Sour", "Smoky"],
-    "difficulty": "Medium",
-    "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Margarita",
-    "ingredients": [
-      "1 oz Tequila",
-      "1 oz Mezcal",
-      "1 oz Lime Juice",
-      "0.5 oz Agave Syrup"
-    ],
-    "instructions": [
-      "Shake all ingredients with ice.",
-      "Strain over fresh ice into a rocks glass.",
-      "Garnish with a lime wheel and smoked salt rim."
-    ]
-  },
-  {
     "id": 31,
     "name": "Negroni Sbagliato",
-    "mainLiquor": ["Aperol", "Prosecco"],
-    "flavor": ["Bitter", "Refreshing"],
+    "mainLiquor": [
+      "Aperol",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Bitter",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Negroni+Sbagliato",
@@ -647,14 +759,20 @@
   {
     "id": 32,
     "name": "Brandy Alexander",
-    "mainLiquor": ["Brandy", "Liqueur"],
-    "flavor": ["Sweet", "Creamy"],
+    "mainLiquor": [
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Creamy"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Alexander",
     "ingredients": [
       "1 oz Brandy",
-      "1 oz Crème de Cacao (Liqueur)",
+      "1 oz Cr\u00e8me de Cacao (Liqueur)",
       "1 oz Heavy Cream"
     ],
     "instructions": [
@@ -666,8 +784,13 @@
   {
     "id": 33,
     "name": "New York Sour",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/ffbf00/111111?text=New+York+Sour",
@@ -686,8 +809,13 @@
   {
     "id": 34,
     "name": "Cuba Libre",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Cuba+Libre",
@@ -705,8 +833,14 @@
   {
     "id": 35,
     "name": "Rusty Nail",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d97706/ffffff?text=Rusty+Nail",
@@ -723,8 +857,14 @@
   {
     "id": 36,
     "name": "Rum Espresso Flip",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Sweet", "Strong"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Strong"
+    ],
     "difficulty": "Advanced",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Flip",
@@ -744,8 +884,13 @@
   {
     "id": 37,
     "name": "Whiskey Mule",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Refreshing", "Spicy"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Spicy"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Mule",
@@ -762,8 +907,14 @@
   {
     "id": 38,
     "name": "Tequila Negroni",
-    "mainLiquor": ["Tequila", "Aperol"],
-    "flavor": ["Bitter", "Strong"],
+    "mainLiquor": [
+      "Tequila",
+      "Aperol"
+    ],
+    "flavor": [
+      "Bitter",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Tequila+Negroni",
@@ -781,8 +932,13 @@
   {
     "id": 39,
     "name": "Rum Old Fashioned",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Old+Fashioned",
@@ -799,8 +955,13 @@
   {
     "id": 40,
     "name": "Champagne Cocktail",
-    "mainLiquor": ["Champagne"],
-    "flavor": ["Sweet", "Effervescent"],
+    "mainLiquor": [
+      "Champagne"
+    ],
+    "flavor": [
+      "Sweet",
+      "Effervescent"
+    ],
     "difficulty": "Easy",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Champagne+Cocktail",
@@ -818,8 +979,13 @@
   {
     "id": 41,
     "name": "Honey Bourbon Smash",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Honey+Bourbon+Smash",
@@ -838,13 +1004,19 @@
   {
     "id": 42,
     "name": "Prosecco Royale",
-    "mainLiquor": ["Prosecco", "Liqueur"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Prosecco",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/86efac/111111?text=Prosecco+Royale",
     "ingredients": [
-      "0.5 oz Crème de Cassis (Liqueur)",
+      "0.5 oz Cr\u00e8me de Cassis (Liqueur)",
       "4 oz Prosecco"
     ],
     "instructions": [
@@ -855,8 +1027,14 @@
   {
     "id": 43,
     "name": "Boulevardier",
-    "mainLiquor": ["Bourbon", "Aperol"],
-    "flavor": ["Bitter", "Strong"],
+    "mainLiquor": [
+      "Bourbon",
+      "Aperol"
+    ],
+    "flavor": [
+      "Bitter",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Boulevardier",
@@ -873,8 +1051,13 @@
   {
     "id": 44,
     "name": "Lemon Drop Martini",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Lemon+Drop",
@@ -893,8 +1076,14 @@
   {
     "id": 45,
     "name": "Mezcal Paloma",
-    "mainLiquor": ["Tequila", "Mezcal"],
-    "flavor": ["Smoky", "Refreshing"],
+    "mainLiquor": [
+      "Tequila",
+      "Mezcal"
+    ],
+    "flavor": [
+      "Smoky",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Paloma",
@@ -911,12 +1100,16 @@
       "Top with soda water and garnish with grapefruit wedge."
     ]
   },
-    
   {
     "id": 46,
     "name": "Brandy Sour",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Sour",
@@ -934,8 +1127,13 @@
   {
     "id": 47,
     "name": "Gin Basil Smash",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Herbal", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Herbal",
+      "Refreshing"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Basil+Smash",
@@ -954,8 +1152,14 @@
   {
     "id": 48,
     "name": "Rum Espresso",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso",
@@ -973,8 +1177,13 @@
   {
     "id": 49,
     "name": "Tequila Honey Bee",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sweet", "Sour"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Tequila+Honey+Bee",
@@ -992,8 +1201,14 @@
   {
     "id": 50,
     "name": "French Connection",
-    "mainLiquor": ["Brandy", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fecaca/111111?text=French+Connection",
@@ -1009,8 +1224,13 @@
   {
     "id": 51,
     "name": "Vodka Collins",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Collins",
@@ -1029,8 +1249,14 @@
   {
     "id": 52,
     "name": "Rum Punch Royale",
-    "mainLiquor": ["Rum", "Prosecco"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Hurricane Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Rum+Punch+Royale",
@@ -1051,8 +1277,14 @@
   {
     "id": 53,
     "name": "Aperol Negroni",
-    "mainLiquor": ["Gin", "Aperol"],
-    "flavor": ["Bitter", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Aperol"
+    ],
+    "flavor": [
+      "Bitter",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Negroni",
@@ -1069,8 +1301,13 @@
   {
     "id": 54,
     "name": "Whiskey Ginger",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Refreshing", "Spicy"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Spicy"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Ginger",
@@ -1087,8 +1324,14 @@
   {
     "id": 55,
     "name": "Golden Daiquiri",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Sweet", "Sour"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f5f5dc/111111?text=Golden+Daiquiri",
@@ -1107,8 +1350,14 @@
   {
     "id": 56,
     "name": "Vodka Spritz",
-    "mainLiquor": ["Vodka", "Prosecco"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Vodka+Spritz",
@@ -1127,8 +1376,14 @@
   {
     "id": 57,
     "name": "Smoky Old Fashioned",
-    "mainLiquor": ["Mezcal", "Bourbon"],
-    "flavor": ["Smoky", "Strong"],
+    "mainLiquor": [
+      "Mezcal",
+      "Bourbon"
+    ],
+    "flavor": [
+      "Smoky",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Old+Fashioned",
@@ -1146,8 +1401,13 @@
   {
     "id": 58,
     "name": "Tequila Fizz",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Medium",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Fizz",
@@ -1166,8 +1426,14 @@
   {
     "id": 59,
     "name": "Whiskey Clover Club",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Sweet", "Sour"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Advanced",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Clover+Club",
@@ -1186,8 +1452,14 @@
   {
     "id": 60,
     "name": "Champagne Mojito",
-    "mainLiquor": ["Rum", "Champagne"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Champagne"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/a8d8a4/111111?text=Champagne+Mojito",
@@ -1204,12 +1476,16 @@
       "Garnish with mint sprig."
     ]
   },
-    
   {
     "id": 61,
     "name": "Strawberry Gin Smash",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Strawberry+Gin+Smash",
@@ -1229,8 +1505,14 @@
   {
     "id": 62,
     "name": "Bourbon Sidecar",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Sour", "Strong"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sour",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Sidecar",
@@ -1248,8 +1530,13 @@
   {
     "id": 63,
     "name": "Coconut Rum Cooler",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Tropical"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Tropical"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Coconut+Rum+Cooler",
@@ -1268,8 +1555,15 @@
   {
     "id": 64,
     "name": "Aperol Gin Spritz",
-    "mainLiquor": ["Aperol", "Gin", "Prosecco"],
-    "flavor": ["Refreshing", "Bitter"],
+    "mainLiquor": [
+      "Aperol",
+      "Gin",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Bitter"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Gin+Spritz",
@@ -1288,8 +1582,13 @@
   {
     "id": 65,
     "name": "Mezcal Sour",
-    "mainLiquor": ["Mezcal"],
-    "flavor": ["Smoky", "Sour"],
+    "mainLiquor": [
+      "Mezcal"
+    ],
+    "flavor": [
+      "Smoky",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Sour",
@@ -1308,8 +1607,13 @@
   {
     "id": 66,
     "name": "Rum Sour",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f5f5dc/111111?text=Rum+Sour",
@@ -1326,8 +1630,13 @@
   {
     "id": 67,
     "name": "Brandy Old Fashioned",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Sweet", "Strong"],
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Sweet",
+      "Strong"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fecaca/111111?text=Brandy+Old+Fashioned",
@@ -1346,8 +1655,13 @@
   {
     "id": 68,
     "name": "Vodka Mojito",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Mojito",
@@ -1367,8 +1681,13 @@
   {
     "id": 69,
     "name": "Gin Rickey",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Rickey",
@@ -1386,8 +1705,13 @@
   {
     "id": 70,
     "name": "Bourbon Smash",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Smash",
@@ -1406,8 +1730,14 @@
   {
     "id": 71,
     "name": "Rum Manhattan",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Manhattan",
@@ -1424,8 +1754,14 @@
   {
     "id": 72,
     "name": "Prosecco Margarita",
-    "mainLiquor": ["Tequila", "Prosecco"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Tequila",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Prosecco+Margarita",
@@ -1444,8 +1780,14 @@
   {
     "id": 73,
     "name": "Bourbon Espresso Martini",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Bourbon+Espresso+Martini",
@@ -1463,8 +1805,14 @@
   {
     "id": 74,
     "name": "Champagne Spritz",
-    "mainLiquor": ["Champagne", "Aperol"],
-    "flavor": ["Refreshing", "Bitter"],
+    "mainLiquor": [
+      "Champagne",
+      "Aperol"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Bitter"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Champagne+Spritz",
@@ -1480,31 +1828,15 @@
     ]
   },
   {
-    "id": 75,
-    "name": "Rum Espresso Flip",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Sweet", "Rich"],
-    "difficulty": "Advanced",
-    "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Flip",
-    "ingredients": [
-      "1 oz Dark Rum",
-      "1 oz Coffee Liqueur",
-      "1 oz Cream",
-      "0.25 oz Simple Syrup",
-      "1 Egg Yolk"
-    ],
-    "instructions": [
-      "Shake all ingredients without ice (dry shake).",
-      "Add ice and shake again until frothy.",
-      "Strain into a coupe and garnish with nutmeg."
-    ]
-  },
-  {
     "id": 76,
     "name": "Tequila Smash",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Smash",
@@ -1523,8 +1855,13 @@
   {
     "id": 77,
     "name": "Bourbon Cherry Fizz",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sweet", "Fruity"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sweet",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Cherry+Fizz",
@@ -1543,8 +1880,13 @@
   {
     "id": 78,
     "name": "Rum Mule",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Spicy", "Refreshing"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Spicy",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/b87333/ffffff?text=Rum+Mule",
@@ -1561,8 +1903,14 @@
   {
     "id": 79,
     "name": "Mezcal Margarita",
-    "mainLiquor": ["Tequila", "Mezcal"],
-    "flavor": ["Sour", "Smoky"],
+    "mainLiquor": [
+      "Tequila",
+      "Mezcal"
+    ],
+    "flavor": [
+      "Sour",
+      "Smoky"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/737373/ffffff?text=Mezcal+Margarita",
@@ -1581,8 +1929,14 @@
   {
     "id": 80,
     "name": "French Spritz",
-    "mainLiquor": ["Liqueur", "Prosecco"],
-    "flavor": ["Sweet", "Refreshing"],
+    "mainLiquor": [
+      "Liqueur",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Sweet",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=French+Spritz",
@@ -1599,8 +1953,13 @@
   {
     "id": 81,
     "name": "Spiced Rum Sour",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Sour"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Spiced+Rum+Sour",
@@ -1619,8 +1978,13 @@
   {
     "id": 82,
     "name": "Bourbon Flip",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sweet", "Rich"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sweet",
+      "Rich"
+    ],
     "difficulty": "Advanced",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Flip",
@@ -1639,8 +2003,13 @@
   {
     "id": 83,
     "name": "Vodka Sour",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Sour",
@@ -1657,8 +2026,14 @@
   {
     "id": 84,
     "name": "Gin Spritz",
-    "mainLiquor": ["Gin", "Prosecco"],
-    "flavor": ["Refreshing", "Floral"],
+    "mainLiquor": [
+      "Gin",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Floral"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Gin+Spritz",
@@ -1673,31 +2048,16 @@
     ]
   },
   {
-    "id": 85,
-    "name": "Smoky Paloma",
-    "mainLiquor": ["Tequila", "Mezcal"],
-    "flavor": ["Smoky", "Refreshing"],
-    "difficulty": "Medium",
-    "glassware": "Highball Glass",
-    "image": "https://placehold.co/600x400/737373/ffffff?text=Smoky+Paloma",
-    "ingredients": [
-      "1 oz Tequila",
-      "1 oz Mezcal",
-      "2 oz Grapefruit Juice",
-      "0.5 oz Lime Juice",
-      "Top with Soda Water"
-    ],
-    "instructions": [
-      "Shake all ingredients except soda water with ice.",
-      "Strain into a highball with fresh ice and top with soda.",
-      "Garnish with grapefruit wedge."
-    ]
-  },
-  {
     "id": 86,
     "name": "Bourbon Spritz",
-    "mainLiquor": ["Bourbon", "Prosecco"],
-    "flavor": ["Sweet", "Effervescent"],
+    "mainLiquor": [
+      "Bourbon",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Sweet",
+      "Effervescent"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Spritz",
@@ -1715,8 +2075,14 @@
   {
     "id": 87,
     "name": "Rum Espresso Sour",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Rum+Espresso+Sour",
@@ -1734,8 +2100,13 @@
   {
     "id": 88,
     "name": "Citrus Champagne Fizz",
-    "mainLiquor": ["Champagne"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Champagne"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Flute",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Citrus+Champagne+Fizz",
@@ -1752,8 +2123,14 @@
   {
     "id": 89,
     "name": "Negroni Royale",
-    "mainLiquor": ["Gin", "Prosecco"],
-    "flavor": ["Bitter", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Bitter",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Negroni+Royale",
@@ -1770,8 +2147,14 @@
   {
     "id": 90,
     "name": "Whiskey Bramble",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Sweet", "Sour"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Whiskey+Bramble",
@@ -1790,8 +2173,13 @@
   {
     "id": 91,
     "name": "Maple Bourbon Sour",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Bourbon+Sour",
@@ -1809,8 +2197,15 @@
   {
     "id": 92,
     "name": "Aperol Tequila Spritz",
-    "mainLiquor": ["Aperol", "Tequila", "Prosecco"],
-    "flavor": ["Refreshing", "Bitter"],
+    "mainLiquor": [
+      "Aperol",
+      "Tequila",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Bitter"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Aperol+Tequila+Spritz",
@@ -1828,8 +2223,13 @@
   {
     "id": 93,
     "name": "Honey Gin Fizz",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Honey+Gin+Fizz",
@@ -1848,8 +2248,14 @@
   {
     "id": 94,
     "name": "Rum Negroni",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Bitter", "Strong"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Negroni",
@@ -1867,8 +2273,13 @@
   {
     "id": 95,
     "name": "Vodka Gimlet",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Vodka+Gimlet",
@@ -1884,46 +2295,16 @@
     ]
   },
   {
-    "id": 96,
-    "name": "Whiskey Mule",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Spicy", "Refreshing"],
-    "difficulty": "Easy",
-    "glassware": "Copper Mug",
-    "image": "https://placehold.co/600x400/b87333/ffffff?text=Whiskey+Mule",
-    "ingredients": [
-      "2 oz Whiskey",
-      "0.5 oz Lime Juice",
-      "4 oz Ginger Beer"
-    ],
-    "instructions": [
-      "Build in copper mug over ice.",
-      "Stir gently and garnish with mint sprig."
-    ]
-  },
-  {
-    "id": 97,
-    "name": "Tequila Negroni",
-    "mainLiquor": ["Tequila", "Liqueur"],
-    "flavor": ["Bitter", "Strong"],
-    "difficulty": "Medium",
-    "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/a7f3d0/111111?text=Tequila+Negroni",
-    "ingredients": [
-      "1 oz Tequila",
-      "1 oz Campari",
-      "1 oz Sweet Vermouth"
-    ],
-    "instructions": [
-      "Stir with ice and strain into rocks glass.",
-      "Garnish with orange peel."
-    ]
-  },
-  {
     "id": 98,
     "name": "Gin & Aperol Collins",
-    "mainLiquor": ["Gin", "Aperol"],
-    "flavor": ["Refreshing", "Bitter"],
+    "mainLiquor": [
+      "Gin",
+      "Aperol"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Gin+%26+Aperol+Collins",
@@ -1943,8 +2324,14 @@
   {
     "id": 99,
     "name": "Bourbon & Aperol Old Fashioned",
-    "mainLiquor": ["Bourbon", "Aperol"],
-    "flavor": ["Strong", "Bitter"],
+    "mainLiquor": [
+      "Bourbon",
+      "Aperol"
+    ],
+    "flavor": [
+      "Strong",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Bourbon+%26+Aperol+Old+Fashioned",
@@ -1963,8 +2350,13 @@
   {
     "id": 100,
     "name": "Algonquin",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Dry", "Fruity"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Dry",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/90ee90/ffffff?text=Algonquin",
@@ -1983,8 +2375,15 @@
   {
     "id": 101,
     "name": "Angel Face",
-    "mainLiquor": ["Gin", "Brandy", "Liqueur"],
-    "flavor": ["Strong", "Fruity"],
+    "mainLiquor": [
+      "Gin",
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f67280/ffffff?text=Angel+Face",
@@ -2003,8 +2402,14 @@
   {
     "id": 102,
     "name": "Antibes",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Herbal", "Citrus"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Herbal",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d4eaf7/ffffff?text=Antibes",
@@ -2023,8 +2428,13 @@
   {
     "id": 103,
     "name": "Applejack Rabbit",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Sweet", "Spicy"],
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Sweet",
+      "Spicy"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/b5cda5/ffffff?text=Applejack+Rabbit",
@@ -2043,20 +2453,26 @@
   {
     "id": 104,
     "name": "Aviation Royale",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Floral", "Sour"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Floral",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/c1c1f0/ffffff?text=Aviation+Royale",
     "ingredients": [
       "1.5 oz Gin",
       "0.5 oz Maraschino Liqueur",
-      "0.5 oz Crème de Violette",
+      "0.5 oz Cr\u00e8me de Violette",
       "0.75 oz Lemon Juice",
       "0.5 oz Champagne (float)"
     ],
     "instructions": [
-      "Shake gin, maraschino, crème de violette, and lemon juice with ice.",
+      "Shake gin, maraschino, cr\u00e8me de violette, and lemon juice with ice.",
       "Strain into a chilled coupe glass.",
       "Float champagne gently on top.",
       "Garnish with a cherry."
@@ -2065,8 +2481,14 @@
   {
     "id": 105,
     "name": "Banana Daiquiri",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Sweet", "Tropical"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Tropical"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/a8d8a4/ffffff?text=Banana+Daiquiri",
@@ -2085,8 +2507,13 @@
   {
     "id": 106,
     "name": "Basil Gimlet",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Herbal", "Sour"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Herbal",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/7cba82/ffffff?text=Basil+Gimlet",
@@ -2106,8 +2533,13 @@
   {
     "id": 107,
     "name": "Batanga",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Refreshing", "Sour"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/70c4a9/ffffff?text=Batanga",
@@ -2124,12 +2556,18 @@
   },
   {
     "id": 108,
-    "name": "Bee’s Kiss",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Sweet", "Herbal"],
+    "name": "Bee\u2019s Kiss",
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Herbal"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/f3d953/ffffff?text=Bee’s+Kiss",
+    "image": "https://placehold.co/600x400/f3d953/ffffff?text=Bee\u2019s+Kiss",
     "ingredients": [
       "1.5 oz Gin",
       "0.5 oz Honey Liqueur",
@@ -2145,8 +2583,14 @@
   {
     "id": 109,
     "name": "Bijou",
-    "mainLiquor": ["Gin", "Spirits"],
-    "flavor": ["Herbal", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Spirits"
+    ],
+    "flavor": [
+      "Herbal",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Bijou",
@@ -2165,8 +2609,14 @@
   {
     "id": 110,
     "name": "Blackthorn",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Bittersweet", "Strong"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bittersweet",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/aa6c39/ffffff?text=Blackthorn",
@@ -2185,15 +2635,22 @@
   {
     "id": 111,
     "name": "Blue Hawaii",
-    "mainLiquor": ["Vodka", "Rum", "Liqueur"],
-    "flavor": ["Tropical", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Tropical",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Hurricane Glass",
     "image": "https://placehold.co/600x400/007fff/ffffff?text=Blue+Hawaii",
     "ingredients": [
       "1 oz Vodka",
       "1 oz Light Rum",
-      "0.5 oz Blue Curaçao",
+      "0.5 oz Blue Cura\u00e7ao",
       "3 oz Pineapple Juice",
       "0.5 oz Lime Juice"
     ],
@@ -2206,8 +2663,14 @@
   {
     "id": 112,
     "name": "Bobby Burns",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Smoky", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Smoky",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Bobby+Burns",
@@ -2226,8 +2689,13 @@
   {
     "id": 113,
     "name": "Bronx Cocktail",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Fruity", "Sour"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f0a1a8/ffffff?text=Bronx+Cocktail",
@@ -2246,8 +2714,13 @@
   {
     "id": 114,
     "name": "Brooklyn",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Bitter", "Dry"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Bitter",
+      "Dry"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/b05448/ffffff?text=Brooklyn",
@@ -2263,12 +2736,17 @@
       "Strain into a chilled coupe glass.",
       "Garnish with a cherry."
     ]
-  },  
+  },
   {
     "id": 115,
     "name": "Brown Derby",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Citrus", "Sweet"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Citrus",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Brown+Derby",
@@ -2286,8 +2764,14 @@
   {
     "id": 116,
     "name": "Cable Car",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Spiced", "Citrus"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spiced",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/edae51/ffffff?text=Cable+Car",
@@ -2306,8 +2790,13 @@
   {
     "id": 117,
     "name": "Californication",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Fruity", "Refreshing"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Fruity",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Californication",
@@ -2326,12 +2815,17 @@
   },
   {
     "id": 118,
-    "name": "Cameron’s Kick",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Strong", "Citrus"],
+    "name": "Cameron\u2019s Kick",
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Strong",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/f4a460/ffffff?text=Cameron’s+Kick",
+    "image": "https://placehold.co/600x400/f4a460/ffffff?text=Cameron\u2019s+Kick",
     "ingredients": [
       "2 oz Brandy",
       "0.75 oz Apricot Brandy",
@@ -2347,8 +2841,13 @@
   {
     "id": 119,
     "name": "Candied Ginger Mule",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Spicy", "Refreshing"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Spicy",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/ffa94d/111111?text=Candied+Ginger+Mule",
@@ -2366,12 +2865,17 @@
   },
   {
     "id": 120,
-    "name": "Captain’s Blood",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Strong"],
+    "name": "Captain\u2019s Blood",
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Captain’s+Blood",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Captain\u2019s+Blood",
     "ingredients": [
       "2 oz Dark Rum",
       "0.5 oz Cherry Liqueur",
@@ -2387,8 +2891,14 @@
   {
     "id": 121,
     "name": "Carajillo",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/6f4e37/ffffff?text=Carajillo",
@@ -2406,8 +2916,14 @@
   {
     "id": 122,
     "name": "Casino",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Sour", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sour",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Casino",
@@ -2425,12 +2941,18 @@
   },
   {
     "id": 123,
-    "name": "Champs-Élysées",
-    "mainLiquor": ["Brandy", "Liqueur"],
-    "flavor": ["Herbal", "Sour"],
+    "name": "Champs-\u00c9lys\u00e9es",
+    "mainLiquor": [
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Herbal",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Champs+Élysées",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Champs+\u00c9lys\u00e9es",
     "ingredients": [
       "1.5 oz Brandy",
       "0.5 oz Yellow Chartreuse",
@@ -2447,8 +2969,14 @@
   {
     "id": 124,
     "name": "Chartreuse Swizzle",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Herbal", "Refreshing"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Herbal",
+      "Refreshing"
+    ],
     "difficulty": "Medium",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/4ade80/111111?text=Chartreuse+Swizzle",
@@ -2468,8 +2996,14 @@
   {
     "id": 125,
     "name": "Cherry Blossom",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Floral"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Floral"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f67280/ffffff?text=Cherry+Blossom",
@@ -2488,8 +3022,13 @@
   {
     "id": 126,
     "name": "Clover Leaf",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Refreshing", "Sweet"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Clover+Leaf",
@@ -2508,8 +3047,14 @@
   {
     "id": 127,
     "name": "Commodore",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Classic", "Strong"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Classic",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Commodore",
@@ -2528,8 +3073,14 @@
   {
     "id": 128,
     "name": "Cucumber Martini",
-    "mainLiquor": ["Vodka", "Gin"],
-    "flavor": ["Refreshing", "Clean"],
+    "mainLiquor": [
+      "Vodka",
+      "Gin"
+    ],
+    "flavor": [
+      "Refreshing",
+      "Clean"
+    ],
     "difficulty": "Easy",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Cucumber+Martini",
@@ -2547,8 +3098,14 @@
   {
     "id": 129,
     "name": "Cynar Spritz",
-    "mainLiquor": ["Liqueur", "Prosecco"],
-    "flavor": ["Bitter", "Refreshing"],
+    "mainLiquor": [
+      "Liqueur",
+      "Prosecco"
+    ],
+    "flavor": [
+      "Bitter",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/60a5fa/ffffff?text=Cynar+Spritz",
@@ -2562,11 +3119,17 @@
       "Stir gently and garnish with orange slice."
     ]
   },
-    {
+  {
     "id": 130,
     "name": "Daisy de Santiago",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Citrus", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Citrus",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Daisy+de+Santiago",
@@ -2586,15 +3149,20 @@
   {
     "id": 131,
     "name": "Derby Cocktail",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Herbal", "Strong"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Herbal",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Derby+Cocktail",
     "ingredients": [
       "2 oz Bourbon",
       "0.5 oz Sweet Vermouth",
-      "0.5 oz Orange Curaçao",
+      "0.5 oz Orange Cura\u00e7ao",
       "2 dashes Bitters"
     ],
     "instructions": [
@@ -2606,8 +3174,14 @@
   {
     "id": 132,
     "name": "Dr. Funk",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Tropical", "Refreshing"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Tropical",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Tiki Mug",
     "image": "https://placehold.co/600x400/9ca3af/ffffff?text=Dr+Funk",
@@ -2627,8 +3201,13 @@
   {
     "id": 133,
     "name": "Eastside",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Herbal", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Herbal",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Eastside",
@@ -2648,15 +3227,21 @@
   {
     "id": 134,
     "name": "El Presidente",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Sweet", "Balanced"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Balanced"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=El+Presidente",
     "ingredients": [
       "1.5 oz White Rum",
       "0.75 oz Dry Vermouth",
-      "0.5 oz Orange Curaçao",
+      "0.5 oz Orange Cura\u00e7ao",
       "0.25 oz Grenadine"
     ],
     "instructions": [
@@ -2668,8 +3253,13 @@
   {
     "id": 135,
     "name": "Emerald",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Herbal", "Strong"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Herbal",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Emerald",
@@ -2687,8 +3277,14 @@
   {
     "id": 136,
     "name": "English Garden",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Floral", "Refreshing"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Floral",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/7cba82/ffffff?text=English+Garden",
@@ -2708,8 +3304,14 @@
   {
     "id": 137,
     "name": "Espresso Negroni",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Strong", "Bitter"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/0f172a/ffffff?text=Espresso+Negroni",
@@ -2728,8 +3330,14 @@
   {
     "id": 138,
     "name": "Fallen Leaves",
-    "mainLiquor": ["Brandy", "Liqueur"],
-    "flavor": ["Spicy", "Sweet"],
+    "mainLiquor": [
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spicy",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Fallen+Leaves",
@@ -2747,8 +3355,14 @@
   {
     "id": 139,
     "name": "Fancy Free",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Strong", "Bitter"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Fancy+Free",
@@ -2767,8 +3381,13 @@
   {
     "id": 140,
     "name": "Foghorn",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Spicy", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Spicy",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Foghorn",
@@ -2786,8 +3405,14 @@
   {
     "id": 141,
     "name": "Forbidden Sour",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Sour", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sour",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Forbidden+Sour",
@@ -2805,8 +3430,13 @@
   {
     "id": 142,
     "name": "Fort Lauderdale",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Tropical", "Sweet"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Tropical",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Hurricane Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Fort+Lauderdale",
@@ -2826,8 +3456,13 @@
   {
     "id": 143,
     "name": "French Pearl",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Herbal", "Sweet"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Herbal",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=French+Pearl",
@@ -2847,8 +3482,13 @@
   {
     "id": 144,
     "name": "Frozen Daiquiri",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Tropical"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Tropical"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Frozen+Daiquiri",
@@ -2864,11 +3504,17 @@
       "Garnish with lime wheel."
     ]
   },
-    {
+  {
     "id": 145,
     "name": "Georgia Peach",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Fruity"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Fruity"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Georgia+Peach",
@@ -2887,8 +3533,13 @@
   {
     "id": 146,
     "name": "Gibson",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Dry", "Savory"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Dry",
+      "Savory"
+    ],
     "difficulty": "Easy",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Gibson",
@@ -2906,8 +3557,13 @@
   {
     "id": 147,
     "name": "Godchild",
-    "mainLiquor": ["Liqueur"],
-    "flavor": ["Sweet", "Creamy"],
+    "mainLiquor": [
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Creamy"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f3e8ff/111111?text=Godchild",
@@ -2925,8 +3581,13 @@
   {
     "id": 148,
     "name": "Golden Dream",
-    "mainLiquor": ["Liqueur"],
-    "flavor": ["Citrus", "Sweet"],
+    "mainLiquor": [
+      "Liqueur"
+    ],
+    "flavor": [
+      "Citrus",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Golden+Dream",
@@ -2945,8 +3606,13 @@
   {
     "id": 149,
     "name": "Grapefruit Margarita",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Grapefruit+Margarita",
@@ -2965,8 +3631,14 @@
   {
     "id": 150,
     "name": "Green Ghost",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Herbal", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Herbal",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/86efac/111111?text=Green+Ghost",
@@ -2984,8 +3656,14 @@
   {
     "id": 151,
     "name": "Hanky Panky",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Herbal", "Strong"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Herbal",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Hanky+Panky",
@@ -3003,8 +3681,14 @@
   {
     "id": 152,
     "name": "Hemingway Special",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Tart", "Refreshing"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Tart",
+      "Refreshing"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Hemingway+Special",
@@ -3022,8 +3706,13 @@
   {
     "id": 153,
     "name": "Honeysuckle",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Tropical"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Tropical"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Honeysuckle",
@@ -3041,8 +3730,14 @@
   {
     "id": 154,
     "name": "Hotel Nacional",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/facc15/111111?text=Hotel+Nacional",
@@ -3060,8 +3755,14 @@
   {
     "id": 155,
     "name": "In Fashioned",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=In+Fashioned",
@@ -3079,8 +3780,14 @@
   {
     "id": 156,
     "name": "Italian Greyhound",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Bitter", "Refreshing"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fca5a5/111111?text=Italian+Greyhound",
@@ -3098,8 +3805,13 @@
   {
     "id": 157,
     "name": "Japanese Slipper",
-    "mainLiquor": ["Liqueur"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/86efac/111111?text=Japanese+Slipper",
@@ -3117,8 +3829,14 @@
   {
     "id": 158,
     "name": "Jasmine",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Bitter", "Citrus"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Jasmine",
@@ -3137,8 +3855,13 @@
   {
     "id": 159,
     "name": "John Collins",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Sour", "Refreshing"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Sour",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=John+Collins",
@@ -3154,11 +3877,18 @@
       "Garnish with lemon slice and cherry."
     ]
   },
-    {
+  {
     "id": 160,
     "name": "Jungle Juice",
-    "mainLiquor": ["Vodka", "Rum", "Tequila"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Rum",
+      "Tequila"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Punch Bowl",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Jungle+Juice",
@@ -3180,8 +3910,14 @@
   {
     "id": 161,
     "name": "Kamikaze",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Citrus", "Sour"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Citrus",
+      "Sour"
+    ],
     "difficulty": "Easy",
     "glassware": "Shot Glass",
     "image": "https://placehold.co/600x400/d4eaf7/111111?text=Kamikaze",
@@ -3199,8 +3935,13 @@
   {
     "id": 162,
     "name": "Kentucky Buck",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Spicy", "Fruity"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Spicy",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Kentucky+Buck",
@@ -3221,8 +3962,14 @@
   {
     "id": 163,
     "name": "Key Lime Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Tart"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Tart"
+    ],
     "difficulty": "Easy",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Key+Lime+Martini",
@@ -3241,8 +3988,14 @@
   {
     "id": 164,
     "name": "Ladykiller",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Ladykiller",
@@ -3260,8 +4013,13 @@
   {
     "id": 165,
     "name": "Lavender Lemonade",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Floral", "Refreshing"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Floral",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/e0f2fe/111111?text=Lavender+Lemonade",
@@ -3280,8 +4038,13 @@
   {
     "id": 166,
     "name": "Lemon Basil Smash",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Herbal", "Citrus"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Herbal",
+      "Citrus"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Lemon+Basil+Smash",
@@ -3299,12 +4062,18 @@
   },
   {
     "id": 167,
-    "name": "Lion’s Tail",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Spiced", "Citrus"],
+    "name": "Lion\u2019s Tail",
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spiced",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/fcd34d/111111?text=Lion’s+Tail",
+    "image": "https://placehold.co/600x400/fcd34d/111111?text=Lion\u2019s+Tail",
     "ingredients": [
       "2 oz Bourbon",
       "0.5 oz Allspice Dram",
@@ -3321,8 +4090,17 @@
   {
     "id": 168,
     "name": "Long Beach Iced Tea",
-    "mainLiquor": ["Vodka", "Gin", "Rum", "Tequila", "Liqueur"],
-    "flavor": ["Strong", "Fruity"],
+    "mainLiquor": [
+      "Vodka",
+      "Gin",
+      "Rum",
+      "Tequila",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Long+Beach+Iced+Tea",
@@ -3344,8 +4122,14 @@
   {
     "id": 169,
     "name": "Lucien Gaudin",
-    "mainLiquor": ["Gin", "Liqueur"],
-    "flavor": ["Bitter", "Citrus"],
+    "mainLiquor": [
+      "Gin",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Lucien+Gaudin",
@@ -3363,8 +4147,13 @@
   {
     "id": 170,
     "name": "Lynchburg Buck",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Spicy", "Refreshing"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Spicy",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Lynchburg+Buck",
@@ -3382,14 +4171,20 @@
   {
     "id": 171,
     "name": "Mai Tai Swizzle",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Tropical", "Nutty"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Tropical",
+      "Nutty"
+    ],
     "difficulty": "Medium",
     "glassware": "Tiki Mug",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Mai+Tai+Swizzle",
     "ingredients": [
       "1.5 oz Aged Rum",
-      "0.5 oz Orange Curaçao",
+      "0.5 oz Orange Cura\u00e7ao",
       "0.5 oz Orgeat Syrup",
       "0.75 oz Lime Juice",
       "Crushed Ice"
@@ -3403,8 +4198,13 @@
   {
     "id": 172,
     "name": "Matador",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Matador",
@@ -3422,8 +4222,14 @@
   {
     "id": 173,
     "name": "Melon Ball",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Fruity"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Fruity"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/86efac/111111?text=Melon+Ball",
@@ -3441,8 +4247,13 @@
   {
     "id": 174,
     "name": "Mexican Firing Squad",
-    "mainLiquor": ["Tequila"],
-    "flavor": ["Spicy", "Sour"],
+    "mainLiquor": [
+      "Tequila"
+    ],
+    "flavor": [
+      "Spicy",
+      "Sour"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Mexican+Firing+Squad",
@@ -3457,11 +4268,17 @@
       "Strain into highball with ice and garnish with lime wedge."
     ]
   },
-    {
+  {
     "id": 175,
     "name": "Midnight Stinger",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Minty", "Strong"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Minty",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Midnight+Stinger",
@@ -3480,8 +4297,14 @@
   {
     "id": 176,
     "name": "Millionaire",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Spiced", "Fruity"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spiced",
+      "Fruity"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Millionaire",
@@ -3501,14 +4324,20 @@
   {
     "id": 177,
     "name": "Monte Carlo",
-    "mainLiquor": ["Rye Whiskey", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Rye Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Monte+Carlo",
     "ingredients": [
       "2 oz Rye Whiskey",
-      "0.5 oz Bénédictine",
+      "0.5 oz B\u00e9n\u00e9dictine",
       "2 dashes Angostura Bitters"
     ],
     "instructions": [
@@ -3520,8 +4349,14 @@
   {
     "id": 178,
     "name": "Naked and Famous",
-    "mainLiquor": ["Mezcal", "Liqueur"],
-    "flavor": ["Smoky", "Citrus"],
+    "mainLiquor": [
+      "Mezcal",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Smoky",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f97316/111111?text=Naked+and+Famous",
@@ -3538,30 +4373,15 @@
     ]
   },
   {
-    "id": 179,
-    "name": "New York Sour",
-    "mainLiquor": ["Whiskey", "Wine"],
-    "flavor": ["Sour", "Rich"],
-    "difficulty": "Medium",
-    "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/fcd34d/111111?text=New+York+Sour",
-    "ingredients": [
-      "2 oz Bourbon or Rye Whiskey",
-      "0.75 oz Lemon Juice",
-      "0.5 oz Simple Syrup",
-      "0.5 oz Red Wine (float)"
-    ],
-    "instructions": [
-      "Shake whiskey, lemon juice, and syrup with ice.",
-      "Strain into rocks glass over ice.",
-      "Float red wine on top using back of a spoon."
-    ]
-  },
-  {
     "id": 180,
     "name": "Nutty Irishman",
-    "mainLiquor": ["Liqueur"],
-    "flavor": ["Sweet", "Creamy"],
+    "mainLiquor": [
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Creamy"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f3e8ff/111111?text=Nutty+Irishman",
@@ -3579,8 +4399,14 @@
   {
     "id": 181,
     "name": "Oaxaca Old Fashioned",
-    "mainLiquor": ["Mezcal", "Tequila"],
-    "flavor": ["Smoky", "Strong"],
+    "mainLiquor": [
+      "Mezcal",
+      "Tequila"
+    ],
+    "flavor": [
+      "Smoky",
+      "Strong"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Oaxaca+Old+Fashioned",
@@ -3598,12 +4424,18 @@
   },
   {
     "id": 182,
-    "name": "Pain d’Epices",
-    "mainLiquor": ["Brandy", "Liqueur"],
-    "flavor": ["Spiced", "Sweet"],
+    "name": "Pain d\u2019Epices",
+    "mainLiquor": [
+      "Brandy",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spiced",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
-    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Pain+d’Epices",
+    "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Pain+d\u2019Epices",
     "ingredients": [
       "1.5 oz Cognac",
       "0.5 oz Ginger Liqueur",
@@ -3619,8 +4451,14 @@
   {
     "id": 183,
     "name": "Paper Plane Variation (Amaro-based)",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Bitter", "Citrus"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Paper+Plane+Variation",
@@ -3639,8 +4477,14 @@
   {
     "id": 184,
     "name": "Passion Fruit Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Passion+Fruit+Martini",
@@ -3659,8 +4503,14 @@
   {
     "id": 185,
     "name": "Penicillin",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Smoky", "Spicy"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Smoky",
+      "Spicy"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Penicillin",
@@ -3679,8 +4529,13 @@
   {
     "id": 186,
     "name": "Peppermint Patty",
-    "mainLiquor": ["Liqueur"],
-    "flavor": ["Minty", "Sweet"],
+    "mainLiquor": [
+      "Liqueur"
+    ],
+    "flavor": [
+      "Minty",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/86efac/111111?text=Peppermint+Patty",
@@ -3698,8 +4553,13 @@
   {
     "id": 187,
     "name": "Pisco Sour",
-    "mainLiquor": ["Brandy"],
-    "flavor": ["Sour", "Creamy"],
+    "mainLiquor": [
+      "Brandy"
+    ],
+    "flavor": [
+      "Sour",
+      "Creamy"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/e08b4c/ffffff?text=Pisco+Sour",
@@ -3718,8 +4578,14 @@
   {
     "id": 188,
     "name": "Pornstar Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Fruity", "Sweet"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Pornstar+Martini",
@@ -3738,8 +4604,14 @@
   {
     "id": 189,
     "name": "Porto Flip",
-    "mainLiquor": ["Brandy", "Wine"],
-    "flavor": ["Rich", "Creamy"],
+    "mainLiquor": [
+      "Brandy",
+      "Wine"
+    ],
+    "flavor": [
+      "Rich",
+      "Creamy"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Porto+Flip",
@@ -3753,14 +4625,19 @@
       "Strain into coupe glass and garnish with grated nutmeg."
     ]
   },
-    {
+  {
     "id": 190,
-    "name": "Queen’s Park Swizzle",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Minty", "Tropical"],
+    "name": "Queen\u2019s Park Swizzle",
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Minty",
+      "Tropical"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
-    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Queen’s+Park+Swizzle",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Queen\u2019s+Park+Swizzle",
     "ingredients": [
       "2 oz Aged Rum",
       "0.75 oz Lime Juice",
@@ -3777,8 +4654,13 @@
   {
     "id": 191,
     "name": "Ramos Rum Fizz",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Creamy", "Citrus"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Creamy",
+      "Citrus"
+    ],
     "difficulty": "Hard",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/fde68a/111111?text=Ramos+Rum+Fizz",
@@ -3801,8 +4683,13 @@
   {
     "id": 192,
     "name": "Raspberry Mule",
-    "mainLiquor": ["Vodka"],
-    "flavor": ["Fruity", "Spicy"],
+    "mainLiquor": [
+      "Vodka"
+    ],
+    "flavor": [
+      "Fruity",
+      "Spicy"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Raspberry+Mule",
@@ -3821,8 +4708,13 @@
   {
     "id": 193,
     "name": "Red Snapper",
-    "mainLiquor": ["Gin"],
-    "flavor": ["Savory", "Spicy"],
+    "mainLiquor": [
+      "Gin"
+    ],
+    "flavor": [
+      "Savory",
+      "Spicy"
+    ],
     "difficulty": "Medium",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Red+Snapper",
@@ -3835,7 +4727,7 @@
       "Pinch of Salt and Pepper"
     ],
     "instructions": [
-      "Roll all ingredients with ice (don’t shake).",
+      "Roll all ingredients with ice (don\u2019t shake).",
       "Pour into highball glass.",
       "Garnish with celery stalk and lemon wedge."
     ]
@@ -3843,8 +4735,13 @@
   {
     "id": 194,
     "name": "Rum Flip",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Rich", "Creamy"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Rich",
+      "Creamy"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Rum+Flip",
@@ -3862,8 +4759,14 @@
   {
     "id": 195,
     "name": "Salted Caramel Espresso Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Coffee"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Coffee"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Salted+Caramel+Espresso+Martini",
@@ -3882,8 +4785,14 @@
   {
     "id": 196,
     "name": "Scorpion",
-    "mainLiquor": ["Rum", "Brandy"],
-    "flavor": ["Tropical", "Citrus"],
+    "mainLiquor": [
+      "Rum",
+      "Brandy"
+    ],
+    "flavor": [
+      "Tropical",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Tiki Mug",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Scorpion",
@@ -3903,8 +4812,13 @@
   {
     "id": 197,
     "name": "Sherry Cobbler",
-    "mainLiquor": ["Wine"],
-    "flavor": ["Fruity", "Refreshing"],
+    "mainLiquor": [
+      "Wine"
+    ],
+    "flavor": [
+      "Fruity",
+      "Refreshing"
+    ],
     "difficulty": "Easy",
     "glassware": "Collins Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Sherry+Cobbler",
@@ -3923,8 +4837,13 @@
   {
     "id": 198,
     "name": "Smoked Maple Old Fashioned",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Smoky", "Sweet"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Smoky",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Smoked+Maple+Old+Fashioned",
@@ -3943,8 +4862,14 @@
   {
     "id": 199,
     "name": "Winter Spritz",
-    "mainLiquor": ["Prosecco", "Liqueur"],
-    "flavor": ["Bitter", "Spiced"],
+    "mainLiquor": [
+      "Prosecco",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Spiced"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Winter+Spritz",
@@ -3960,11 +4885,17 @@
       "Garnish with rosemary and cranberries."
     ]
   },
-    {
+  {
     "id": 200,
     "name": "Bourbon Pear-per Plane",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Fruity", "Bitter"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Pear-per+Plane",
@@ -3981,50 +4912,15 @@
     ]
   },
   {
-    "id": 201,
-    "name": "Maple Bourbon Sour",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Sweet", "Sour"],
-    "difficulty": "Medium",
-    "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Bourbon+Sour",
-    "ingredients": [
-      "2 oz Bourbon",
-      "0.75 oz Lemon Juice",
-      "0.5 oz Maple Syrup",
-      "1 oz Aquafaba (or egg white)"
-    ],
-    "instructions": [
-      "Dry shake all ingredients, then add ice and shake again.",
-      "Strain into rocks glass with ice.",
-      "Garnish with lemon twist and a dusting of cinnamon."
-    ]
-  },
-  {
-    "id": 202,
-    "name": "Smoked Maple Old Fashioned",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Smoky", "Sweet"],
-    "difficulty": "Medium",
-    "glassware": "Rocks Glass",
-    "image": "https://placehold.co/600x400/fcd34d/111111?text=Smoked+Maple+Old+Fashioned",
-    "ingredients": [
-      "2 oz Bourbon",
-      "0.25 oz Maple Syrup",
-      "2 dashes Angostura Bitters",
-      "Smoke (optional)"
-    ],
-    "instructions": [
-      "Stir all ingredients with ice and strain over large cube.",
-      "Smoke the glass before serving if desired.",
-      "Garnish with orange peel."
-    ]
-  },
-  {
     "id": 203,
     "name": "Blind Squirrel Old Fashioned",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Strong", "Nutty"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Strong",
+      "Nutty"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/b87333/ffffff?text=Blind+Squirrel+Old+Fashioned",
@@ -4041,8 +4937,14 @@
   {
     "id": 204,
     "name": "Barrel Proof Manhattan",
-    "mainLiquor": ["Whiskey", "Liqueur"],
-    "flavor": ["Strong", "Sweet"],
+    "mainLiquor": [
+      "Whiskey",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Strong",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Barrel+Proof+Manhattan",
@@ -4059,8 +4961,13 @@
   {
     "id": 205,
     "name": "Maple-Cinnamon Rum Punch",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Sweet", "Spiced"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Sweet",
+      "Spiced"
+    ],
     "difficulty": "Medium",
     "glassware": "Punch Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Maple+Cinnamon+Rum+Punch",
@@ -4079,8 +4986,14 @@
   {
     "id": 206,
     "name": "Autumn Boulevardier",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Bitter", "Rich"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Bitter",
+      "Rich"
+    ],
     "difficulty": "Medium",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/f97316/ffffff?text=Autumn+Boulevardier",
@@ -4098,8 +5011,13 @@
   {
     "id": 207,
     "name": "Cranberry Bourbon Smash",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Tart", "Sweet"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Tart",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Rocks Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Cranberry+Bourbon+Smash",
@@ -4118,8 +5036,13 @@
   {
     "id": 208,
     "name": "Coconut Maple Mojito",
-    "mainLiquor": ["Rum"],
-    "flavor": ["Tropical", "Sweet"],
+    "mainLiquor": [
+      "Rum"
+    ],
+    "flavor": [
+      "Tropical",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Highball Glass",
     "image": "https://placehold.co/600x400/bae6fd/111111?text=Coconut+Maple+Mojito",
@@ -4140,8 +5063,14 @@
   {
     "id": 209,
     "name": "Bourbon Espresso Flip",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Rich", "Coffee"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Rich",
+      "Coffee"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Bourbon+Espresso+Flip",
@@ -4160,8 +5089,14 @@
   {
     "id": 210,
     "name": "Ginger Pear Spritz",
-    "mainLiquor": ["Prosecco", "Liqueur"],
-    "flavor": ["Fruity", "Spicy"],
+    "mainLiquor": [
+      "Prosecco",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Spicy"
+    ],
     "difficulty": "Easy",
     "glassware": "Wine Glass",
     "image": "https://placehold.co/600x400/f9a8d4/111111?text=Ginger+Pear+Spritz",
@@ -4179,8 +5114,13 @@
   {
     "id": 211,
     "name": "Maple Chai Toddy",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Warm", "Spiced"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Warm",
+      "Spiced"
+    ],
     "difficulty": "Easy",
     "glassware": "Mug",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Maple+Chai+Toddy",
@@ -4198,8 +5138,14 @@
   {
     "id": 212,
     "name": "Maple Pecan Espresso Martini",
-    "mainLiquor": ["Vodka", "Liqueur"],
-    "flavor": ["Sweet", "Coffee"],
+    "mainLiquor": [
+      "Vodka",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Sweet",
+      "Coffee"
+    ],
     "difficulty": "Medium",
     "glassware": "Martini Glass",
     "image": "https://placehold.co/600x400/fcd5ce/111111?text=Maple+Pecan+Espresso+Martini",
@@ -4218,8 +5164,13 @@
   {
     "id": 213,
     "name": "Vegan Whiskey Flip",
-    "mainLiquor": ["Whiskey"],
-    "flavor": ["Rich", "Sweet"],
+    "mainLiquor": [
+      "Whiskey"
+    ],
+    "flavor": [
+      "Rich",
+      "Sweet"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Vegan+Whiskey+Flip",
@@ -4237,8 +5188,13 @@
   {
     "id": 214,
     "name": "Barrel Proof Maple Mule",
-    "mainLiquor": ["Bourbon"],
-    "flavor": ["Spicy", "Sweet"],
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Spicy",
+      "Sweet"
+    ],
     "difficulty": "Easy",
     "glassware": "Copper Mug",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Barrel+Proof+Maple+Mule",
@@ -4257,8 +5213,14 @@
   {
     "id": 215,
     "name": "Pineapple Paper Plane",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Fruity", "Bitter"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Fruity",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/fcd34d/111111?text=Pineapple+Paper+Plane",
@@ -4277,8 +5239,14 @@
   {
     "id": 216,
     "name": "Spiced Maple Paper Plane",
-    "mainLiquor": ["Bourbon", "Liqueur"],
-    "flavor": ["Spiced", "Citrus"],
+    "mainLiquor": [
+      "Bourbon",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Spiced",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/f97316/111111?text=Spiced+Maple+Paper+Plane",
@@ -4299,8 +5267,14 @@
   {
     "id": 217,
     "name": "Tropical Rum Paper Plane",
-    "mainLiquor": ["Rum", "Liqueur"],
-    "flavor": ["Tropical", "Bitter"],
+    "mainLiquor": [
+      "Rum",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Tropical",
+      "Bitter"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/d2691e/ffffff?text=Tropical+Rum+Paper+Plane",
@@ -4319,8 +5293,14 @@
   {
     "id": 218,
     "name": "Smoky Mezcal Paper Plane",
-    "mainLiquor": ["Mezcal", "Liqueur"],
-    "flavor": ["Smoky", "Citrus"],
+    "mainLiquor": [
+      "Mezcal",
+      "Liqueur"
+    ],
+    "flavor": [
+      "Smoky",
+      "Citrus"
+    ],
     "difficulty": "Medium",
     "glassware": "Coupe Glass",
     "image": "https://placehold.co/600x400/a7f3d0/111111?text=Smoky+Mezcal+Paper+Plane",
@@ -4337,26 +5317,31 @@
     ]
   },
   {
-      "id": 219,
-      "name": "Vegan Bourbon Flip (Aquafaba)",
-      "mainLiquor": ["Bourbon"],
-  "flavor": ["Rich","Sweet","Frothy"],
-  "difficulty": "Advanced",
-  "glassware": "Coupe Glass",
-  "image": "https://placehold.co/600x400/99f6e4/111111?text=Vegan+Bourbon+Flip",
-  "ingredients": [
-    "2.0 oz Bourbon",
-    "0.5 oz Simple Syrup",
-    "1.0 oz Aquafaba (Chickpea Liquid)",
-    "Nutmeg for garnish"
-  ],
-  "instructions": [
-    "Combine all ingredients in a cocktail shaker.",
-    "Dry Shake (without ice) vigorously for 30-60 seconds to create a stable foam from the aquafaba.",
-    "Add ice and shake again until well chilled and frothy.",
-    "Double strain into a chilled coupe glass.",
-    "Garnish with freshly grated nutmeg."
-  ]
-}
+    "id": 219,
+    "name": "Vegan Bourbon Flip (Aquafaba)",
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Rich",
+      "Sweet",
+      "Frothy"
+    ],
+    "difficulty": "Advanced",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/99f6e4/111111?text=Vegan+Bourbon+Flip",
+    "ingredients": [
+      "2.0 oz Bourbon",
+      "0.5 oz Simple Syrup",
+      "1.0 oz Aquafaba (Chickpea Liquid)",
+      "Nutmeg for garnish"
+    ],
+    "instructions": [
+      "Combine all ingredients in a cocktail shaker.",
+      "Dry Shake (without ice) vigorously for 30-60 seconds to create a stable foam from the aquafaba.",
+      "Add ice and shake again until well chilled and frothy.",
+      "Double strain into a chilled coupe glass.",
+      "Garnish with freshly grated nutmeg."
+    ]
+  }
 ]
-
