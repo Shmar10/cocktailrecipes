@@ -6363,5 +6363,34 @@
     ],
     "id": 259,
     "image": "https://placehold.co/600x400/8b0000/ffffff?text=Trinidad+Sour"
+  },
+  {
+    "id": 260,
+    "name": "Spiced Maple Paper Plane",
+    "mainLiquor": [
+      "Bourbon"
+    ],
+    "flavor": [
+      "Spiced",
+      "Citrus",
+      "Bittersweet"
+    ],
+    "difficulty": "Medium",
+    "glassware": "Coupe Glass",
+    "image": "https://placehold.co/600x400/d2691e/ffffff?text=Spiced+Maple+Paper+Plane",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino",
+      "0.5 oz Lemon Juice",
+      "0.25 oz Maple Syrup (Spiced)",
+      "Dash of Cinnamon"
+    ],
+    "instructions": [
+      "Add bourbon, Aperol, Amaro Nonino, lemon juice, maple syrup, and cinnamon to a shaker with ice.",
+      "Shake vigorously until well-chilled.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lemon twist or orange peel."
+    ]
   }
 ]
