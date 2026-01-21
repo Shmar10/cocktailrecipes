@@ -26,7 +26,7 @@
     // Search View Inputs
     selectSpirit: document.getElementById("filter-spirit"),
     selectFlavor: document.getElementById("filter-flavor"),
-    selectDifficulty: document.getElementById("filter-difficulty"),
+    selectIngredient: document.getElementById("filter-ingredient"),
     searchInput: document.getElementById("search"),
     btnFind: document.getElementById("find-recipes-btn"),
     btnClear: document.getElementById("clear-filters"),
@@ -82,26 +82,57 @@
 
   // --- Core Logic ---
 
-  // 1. Dropdowns (Search Mode)
+  // Helper: Normalize Ingredient Name
+  function normalizeIngredient(raw) {
+    let name = raw.toLowerCase();
+    // Remove parens
+    name = name.split('(')[0];
+    // Remove prefixes
+    name = name.replace(/^(fresh|juice of|chilled|hot|dry|sweet) /g, '');
+    // Remove quantities and units (aggressive)
+    name = name.replace(/^[\d\s\.\/\-\u00BC-\u00BE\u2150-\u215E]+(oz|cl|ml|dash|dashes|tsp|tbsp|cup|cups|qt|liter|litre|shot|shots|part|parts|piece|pieces|slice|slices|wedge|wedges|leaf|leaves|sprig|sprigs|stick|sticks|drop|drops|bottle|bottles|can|cans)?\s*/g, '');
+    // Remove "of " if left
+    name = name.replace(/^of\s+/, '');
+    // Capitalize
+    return name.trim().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+  }
+
   // 1. Dropdowns (Cascading Options)
   function updateDropdowns() {
     const curSpirit = el.selectSpirit ? el.selectSpirit.value : "";
     const curFlavor = el.selectFlavor ? el.selectFlavor.value : "";
-    const curDiff = el.selectDifficulty ? el.selectDifficulty.value : "";
+    const curIng = el.selectIngredient ? el.selectIngredient.value : "";
 
-    const getMatches = (s, f, d) => {
+    const getMatches = (s, f, i) => {
       return allRecipes.filter(r => {
         const mS = !s || (r.mainLiquor || []).includes(s);
         const mF = !f || (r.flavor || []).includes(f);
-        const mD = !d || r.difficulty === d;
-        return mS && mF && mD;
+
+        // For ingredient matching in dropdowns, we check if the recipe HAS this ingredient
+        // We use the normalized names for comparison
+        const mI = !i || (r.ingredients || []).some(ing => normalizeIngredient(ing) === i);
+
+        return mS && mF && mI;
       });
     };
 
     // Calculate available options based on OTHER filters
-    const spiritSet = new Set(getMatches(null, curFlavor, curDiff).flatMap(r => r.mainLiquor || []));
-    const flavorSet = new Set(getMatches(curSpirit, null, curDiff).flatMap(r => r.flavor || []));
-    const diffSet = new Set(getMatches(curSpirit, curFlavor, null).map(r => r.difficulty));
+    // available Spirits = matched by Flavor + Ingredient
+    const spiritSet = new Set(getMatches(null, curFlavor, curIng).flatMap(r => r.mainLiquor || []));
+
+    // available Flavors = matched by Spirit + Ingredient
+    const flavorSet = new Set(getMatches(curSpirit, null, curIng).flatMap(r => r.flavor || []));
+
+    // available Ingredients = matched by Spirit + Flavor
+    // We collect ALL ingredients from the matched recipes
+    const matchesForIng = getMatches(curSpirit, curFlavor, null);
+    const ingSet = new Set();
+    matchesForIng.forEach(r => {
+      (r.ingredients || []).forEach(raw => {
+        const norm = normalizeIngredient(raw);
+        if (norm) ingSet.add(norm);
+      });
+    });
 
     const update = (sel, set, current) => {
       if (!sel) return;
@@ -120,7 +151,7 @@
 
     update(el.selectSpirit, spiritSet, curSpirit);
     update(el.selectFlavor, flavorSet, curFlavor);
-    update(el.selectDifficulty, diffSet, curDiff);
+    update(el.selectIngredient, ingSet, curIng);
   }
 
   // 2. My Bar Ingredient List
@@ -131,24 +162,7 @@
     const counts = {};
     allRecipes.forEach(r => {
       (r.ingredients || []).forEach(raw => {
-        // Robust normalization
-        let name = raw.toLowerCase();
-
-        // Remove parens
-        name = name.split('(')[0];
-
-        // Remove prefixes
-        name = name.replace(/^(fresh|juice of|chilled|hot|dry|sweet) /g, '');
-
-        // Remove quantities and units (aggressive)
-        // Matches: Numbers, fractions, ranges followed by potential units
-        name = name.replace(/^[\d\s\.\/\-\u00BC-\u00BE\u2150-\u215E]+(oz|cl|ml|dash|dashes|tsp|tbsp|cup|cups|qt|liter|litre|shot|shots|part|parts|piece|pieces|slice|slices|wedge|wedges|leaf|leaves|sprig|sprigs|stick|sticks|drop|drops|bottle|bottles|can|cans)?\s*/g, '');
-
-        // Remove "of " if left
-        name = name.replace(/^of\s+/, '');
-
-        // Capitalize
-        name = name.trim().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+        const name = normalizeIngredient(raw);
 
         if (name) counts[name] = (counts[name] || 0) + 1;
       });
@@ -212,7 +226,7 @@
     const filters = {
       spirit: el.selectSpirit?.value || "",
       flavor: el.selectFlavor?.value || "",
-      difficulty: el.selectDifficulty?.value || "",
+      ingredient: el.selectIngredient?.value || "",
       search: (el.searchInput?.value || "").toLowerCase().trim()
     };
 
@@ -221,12 +235,12 @@
     return allRecipes.filter(r => {
       const mSpirit = !filters.spirit || (r.mainLiquor || []).includes(filters.spirit);
       const mFlavor = !filters.flavor || (r.flavor || []).includes(filters.flavor);
-      const mDiff = !filters.difficulty || r.difficulty === filters.difficulty;
+      const mIng = !filters.ingredient || (r.ingredients || []).some(ing => normalizeIngredient(ing) === filters.ingredient);
 
       const text = [r.name, ...(r.ingredients || [])].join(" ").toLowerCase();
       const mSearch = !terms.length || terms.every(t => text.includes(t));
 
-      return mSpirit && mFlavor && mDiff && mSearch;
+      return mSpirit && mFlavor && mIng && mSearch;
     });
   }
 
@@ -378,7 +392,7 @@
     el.navFavorites?.addEventListener("click", () => switchView('favorites'));
 
     // Dropdown Cascading Logic
-    [el.selectSpirit, el.selectFlavor, el.selectDifficulty].forEach(sel => {
+    [el.selectSpirit, el.selectFlavor, el.selectIngredient].forEach(sel => {
       if (sel) {
         sel.addEventListener("change", () => {
           updateDropdowns(); // Re-calculate options based on new selection
@@ -391,7 +405,7 @@
     el.btnClear?.addEventListener("click", () => {
       el.selectSpirit.value = "";
       el.selectFlavor.value = "";
-      el.selectDifficulty.value = "";
+      el.selectIngredient.value = "";
       el.searchInput.value = "";
       updateDropdowns(); // Reset options
       render([], true);
