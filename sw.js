@@ -1,4 +1,4 @@
-const CACHE_NAME = "cocktail-finder-v5";
+const CACHE_NAME = "cocktail-finder-v3.2.0";
 const ASSETS = [
     "./",
     "./index.html",

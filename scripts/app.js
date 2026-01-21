@@ -1,6 +1,6 @@
 // scripts/app.js
 (function () {
-  const APP_VERSION = "v3.1.8";
+  const APP_VERSION = "v3.2.0";
 
   // --- State ---
   let allRecipes = [];
@@ -130,7 +130,8 @@
     matchesForIng.forEach(r => {
       (r.ingredients || []).forEach(raw => {
         const norm = normalizeIngredient(raw);
-        if (norm) ingSet.add(norm);
+        // Exclude if it matches the selected spirit (avoid redundancy)
+        if (norm && norm !== curSpirit) ingSet.add(norm);
       });
     });
 
